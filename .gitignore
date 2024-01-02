@@ -21,7 +21,7 @@
 *.pem
 
 #webstorm
-.idea/
+
 
 # debug
 npm-debug.log*
