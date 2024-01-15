@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h1 {
+    @apply lg:text-[90px] md:text-[48px] text-[35px] font-normal leading-tight;
+  }
+  h2{
+    @apply lg:text-[20px] md:text-[17px] text-[14px];
+  }
+  p, span{
+    @apply lg:text-[20px] text-[14px] font-light;
+  }
+  button{
+    @apply text-[14px]
+  }
+
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -14,4 +30,17 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+}
+
+body{
+  /*background: black;
+  background: linear-gradient(0deg, rgb(31, 127, 201) 15%, rgb(43, 61, 81) 65%, rgb(0, 0, 0) 100%);*/
+  background-color: #04203b;
+}
+
+.section1{
+  background-image: url("/img/background.png");
+  background-size: cover ;
+  background-repeat: no-repeat;
+  background-position: right 0% bottom 162%;
 }
