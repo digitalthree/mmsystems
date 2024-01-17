@@ -3,6 +3,7 @@ import { Inter, Montserrat } from 'next/font/google'
 import './globals.css'
 import Navbar from "@/app/components/navbar/Navbar";
 import Footer from "@/app/components/footer/Footer";
+import {globalStore} from "@/store/globalStore";
 
 const inter = Inter({ subsets: ['latin'] })
 

@@ -13,18 +13,18 @@ export interface SecondSectionProps{
 const SecondSection: React.FC<SecondSectionProps> = ({}) => {
     return(
         <>
-            <div className="container flex py-20 mx-auto">
-                <div className=" flex flex-col gap-10 w-2/3">
-                    <div className="col-span-10 flex flex-col">
+            <div className="container flex px-5 py-20 mx-auto">
+                <div className="flex flex-col items-center xl:items-start text-center xl:text-start gap-10 xl:w-2/3">
+                    <div className="xl:col-span-10 flex flex-col">
                         <span className="text-white mb-5">Il nostro scopo è fornire eccellenza nel servizio e nell`esecuzione</span>
                         <span className="text-primary">PROGETTAZIONE: <span className="text-primary">Elettrica, Meccanica, Simulazione dinamica</span></span>
                         <span className="text-primary">ATTIVITA`: <span className="text-primary">Metrologia</span></span>
                         <span className="text-primary">PROGRAMMAZIONE: <span className="text-primary">PLC</span></span>
                         <span className="text-primary">ROBOTICA: <span className="text-primary">Isole robotizzate, Robot Collaborativi e Banchi semiautomatici</span></span>
-                        <hr className="w-1/3 border border-white mt-5"/>
+                        <hr className="xl:w-1/3 w-full border border-white mt-5"/>
                     </div>
                     <div className="flex flex-col">
-                        <h1 className="text-white text-7xl"> perchè <span className="text-[#c7c7c7] text-7xl">sceglierci?</span></h1>
+                        <h1 className="text-white text-7xl lg:text-[60px] md:text-[48px] text-[35px]"> perchè <span className="text-[#c7c7c7] text-7xl lg:text-[60px] md:text-[48px] text-[35px] ">sceglierci?</span></h1>
                     </div>
                     <div className="flex flex-col">
                         <span className="text-white">Perché siamo in grado di risolvere le più svariate problematiche nell`ambito dell`industria, individuando con voi la migliore soluzione. Gli uffici tecnici sono attrezzati con 5 postazioni per la progettazione meccanica (CAD CAD), hardware (Spac/Eplan) software PLC (Siemens, Allen Bradley, Omron, Schneider) e Software ROBOT (Kuka, ABB, Motoman, Comau, Fanuc). Il nostro stabilimento di Mozzagrogna si sviluppa su una superficie di 1550 metri quadrati - tutti coperti- ed è dotato di macchinari all`avanguardia per la realizzazione dei nostri prodotti.</span>
@@ -36,12 +36,21 @@ const SecondSection: React.FC<SecondSectionProps> = ({}) => {
                         </div>
                     </Link>
                 </div>
-                <div className="flex flex-col gap-20 w-1/3 items-center">
-                    <Image src={icon1} alt={"icon 1"} className="w-1/3"/>
-                    <Image src={icon2} alt={"icon 2"} className="w-1/3"/>
-                    <Image src={icon3} alt={"icon 3"} className="w-1/3"/>
-                </div>
+                {window.innerWidth > 1300 &&
+                    <div className="flex flex-col gap-20 w-1/3 items-center">
+                        <Image src={icon1} alt={"icon 1"} className="w-1/3"/>
+                        <Image src={icon2} alt={"icon 2"} className="w-1/3"/>
+                        <Image src={icon3} alt={"icon 3"} className="w-1/3"/>
+                    </div>
+                }
             </div>
+            {window.innerWidth <= 1300 &&
+                <div className="flex gap-10 justify-evenly items-center pb-20">
+                    <Image src={icon1} alt={"icon 1"} className="w-1/6"/>
+                    <Image src={icon2} alt={"icon 2"} className="w-1/6"/>
+                    <Image src={icon3} alt={"icon 3"} className="w-1/6"/>
+                </div>
+            }
         </>
     )
 }

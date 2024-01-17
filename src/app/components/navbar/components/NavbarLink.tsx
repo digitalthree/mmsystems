@@ -1,19 +1,28 @@
 import React from 'react';
 import Link from "next/link";
+import {globalStore} from "@/store/globalStore";
 
 export interface NavbarLinkProps{
     link: 'progettazione' | 'programmazione' | 'robotica' | 'attivita' | 'chisiamo' | 'contattaci' | '/' | undefined,
     title: string
     hrVisibility: 'progettazione' | 'programmazione' | 'robotica' | 'attivita' | 'chisiamo' | 'contattaci' | '/' | undefined,
     setHrVisibility: ((v: 'progettazione' | 'programmazione' | 'robotica' | 'attivita' | 'chisiamo' | 'contattaci' | '/' | undefined) => void) | undefined
+    footer?: boolean
 }
 
-const NavbarLink: React.FC<NavbarLinkProps> = ({link, title, hrVisibility, setHrVisibility}) => {
+const NavbarLink: React.FC<NavbarLinkProps> = ({link, title, hrVisibility, setHrVisibility, footer}) => {
+    const updateLoading = globalStore((state:any) => state.updateLoading)
+    const updateNavbarBackgroundColor = globalStore((state:any) => state.updateNavbarBackgroundColor)
+    const navbarBackgroundColor = globalStore((state:any) => state.navbarBackgroundColor)
     return(
-        <Link href={link ? link : '/'} className="uppercase text-white hover:opacity-50 md:block hidden" onClick={() => setHrVisibility && setHrVisibility(link)}>
+        <Link href={link ? "/"+link : '/'} className={`uppercase ${footer ? 'text-white' : navbarBackgroundColor === "#04203b" ? 'text-white' : "#3f3f3f"} hover:opacity-50`} onClick={() => {
+            setHrVisibility && setHrVisibility(link)
+            updateLoading(false)
+            updateNavbarBackgroundColor("#04203b")
+        }}>
             <div className="flex flex-col">
                 {title}
-                {hrVisibility && hrVisibility === link && <hr className="w-full border border-white"/>}
+                {hrVisibility && hrVisibility === link && <hr className={`w-full border ${(navbarBackgroundColor === "#04203b" && !footer)  ? 'border-white' : "border-[#3f3f3f]"}`}/>}
             </div>
         </Link>
     )

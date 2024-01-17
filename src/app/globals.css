@@ -4,7 +4,7 @@
 
 @layer base {
   h1 {
-    @apply lg:text-[90px] md:text-[48px] text-[35px] font-normal leading-tight;
+    @apply xl:text-[90px] lg:text-[60px] md:text-[48px] text-[35px] font-normal leading-tight;
   }
   h2{
     @apply lg:text-[20px] md:text-[17px] text-[14px];
@@ -32,15 +32,23 @@
   }
 }
 
-body{
-  /*background: black;
-  background: linear-gradient(0deg, rgb(31, 127, 201) 15%, rgb(43, 61, 81) 65%, rgb(0, 0, 0) 100%);*/
-  background-color: #04203b;
-}
+
 
 .section1{
   background-image: url("/img/background.png");
   background-size: cover ;
   background-repeat: no-repeat;
-  background-position: right 0% bottom 162%;
+  background-attachment: local;
+  @media (min-width: 1920px) {
+    background-position: right 0 bottom 162%;
+  }
+  @media (max-width: 600px) {
+    background-position: right 90% bottom 12%;
+  }
+}
+
+.progettazione{
+  background-image: url("/img/progettazione/background.png");
+  background-size: cover;
+  background-color: white;
 }
