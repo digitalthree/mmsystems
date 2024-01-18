@@ -52,3 +52,24 @@
   background-size: cover;
   background-color: white;
 }
+
+.metrologia{
+  position: relative;
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/img/attivita/metrologia/background.png");
+  background-size: cover;
+}
+
+.metrologia::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(224, 226, 228, 0.92);
+}

@@ -5,12 +5,14 @@ import Image from "next/image";
 import icon1 from "../../../../../public/img/icon1.png";
 import icon2 from "../../../../../public/img/icon2.png";
 import icon3 from "../../../../../public/img/icon3.png";
+import {useWindowInnerWidth} from "@/hook/useWindowInnerWidth";
 
 export interface SecondSectionProps{
 
 }
 
 const SecondSection: React.FC<SecondSectionProps> = ({}) => {
+    const windowInnerWidth = useWindowInnerWidth()
     return(
         <>
             <div className="container flex px-5 py-20 mx-auto">
@@ -36,7 +38,7 @@ const SecondSection: React.FC<SecondSectionProps> = ({}) => {
                         </div>
                     </Link>
                 </div>
-                {window.innerWidth > 1300 &&
+                {windowInnerWidth > 1300 &&
                     <div className="flex flex-col gap-20 w-1/3 items-center">
                         <Image src={icon1} alt={"icon 1"} className="w-1/3"/>
                         <Image src={icon2} alt={"icon 2"} className="w-1/3"/>
@@ -44,7 +46,7 @@ const SecondSection: React.FC<SecondSectionProps> = ({}) => {
                     </div>
                 }
             </div>
-            {window.innerWidth <= 1300 &&
+            {windowInnerWidth <= 1300 &&
                 <div className="flex gap-10 justify-evenly items-center pb-20">
                     <Image src={icon1} alt={"icon 1"} className="w-1/6"/>
                     <Image src={icon2} alt={"icon 2"} className="w-1/6"/>

@@ -25,10 +25,11 @@ export default function Home() {
 
     const navbarBackgroundColor = globalStore((state:any) => state.navbarBackgroundColor)
     const updateNavbarBackgroundColor = globalStore((state:any) => state.updateNavbarBackgroundColor)
-    const updateFooteBackgroundColor = globalStore((state:any) => state.updateFooterBackgroundColor)
+    const updateFooterBackgroundColor = globalStore((state:any) => state.updateFooterBackgroundColor)
 
     useEffect(() => {
-        updateFooteBackgroundColor("#04203b")
+        updateFooterBackgroundColor("#04203b")
+        updateNavbarBackgroundColor("#04203b")
         if(loading){
             updateShowNavbarOrFooter(false)
             updateNavbarBackgroundColor("black")

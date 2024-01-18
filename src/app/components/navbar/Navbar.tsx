@@ -24,15 +24,15 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
     return(
         <>
             {showNavbarOrFooter &&
-                <div className="w-full" style={{backgroundColor: navbarBackgroundColor}}>
-                    <div className="xl:flex hidden xl:justify-between xl:md:w-3/4 xl:mx-auto py-3 xl:items-center xl:h-[15vh]"
+                <div className="w-full sticky top-0 z-[100]" style={{backgroundColor: navbarBackgroundColor}}>
+                    <div className="xl:flex hidden xl:justify-between xl:md:container xl:mx-auto py-3 xl:items-center xl:h-[12vh]"
                         style={{backgroundColor: navbarBackgroundColor}}
                     >
                         <Link href={"/"} className="w-1/2 md:w-1/4" onClick={() => {
                             updateNavbarBackgroundColor("#04203b")
                             setHrVisibility("/")
                         }}>
-                            <Image src={navbarBackgroundColor === "#04203b" ? logo : logoDark} alt="logo MM Systems" className="w-24"/>
+                            <Image src={navbarBackgroundColor === "#04203b" ? logo : logoDark} alt="logo MM Systems" className="w-20"/>
                         </Link>
                         <div className={`flex justify-evenly gap-10 capitalize ${navbarBackgroundColor === "#04203b" ? 'text-white' : "#3f3f3f"}`}>
                             <NavbarLink link={'/'} title={"Home"} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility}/>

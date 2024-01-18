@@ -24,12 +24,12 @@ const NavbarDropdown: React.FC<NavbarDropdownProps> = ({textDropdown, itemsArray
                               updateLoading(false)
                           }}
                     >
-                        <div tabIndex={0} role="button" className={`uppercase ${navbarBackgroundColor === "#04203b" ? 'text-white' : "#3f3f3f"} bg-transparent text-base font-normal`}>
+                        <div tabIndex={0} role="button" className={`uppercase ${navbarBackgroundColor === "#04203b" ? 'text-white' : "text-[#3f3f3f]"} bg-transparent text-base font-normal`}>
                             {textDropdown}
                             {hrVisibility && hrVisibility === textDropdown.toLowerCase() && <hr className={`w-full border ${navbarBackgroundColor === "#04203b" ? 'border-white' : "border-[#3f3f3f]"}`}/>}
                         </div>
                     </Link> :
-                    <div tabIndex={0} role="button" className={`uppercase ${navbarBackgroundColor === "#04203b" ? 'text-white' : "#3f3f3f"} bg-transparent text-base font-normal`}>
+                    <div tabIndex={0} role="button" className={`uppercase ${navbarBackgroundColor === "#04203b" ? 'text-white' : "text-[#3f3f3f]"} bg-transparent text-base font-normal`}>
                         {textDropdown}
                         {hrVisibility && hrVisibility === textDropdown.toLowerCase() && <hr className={`w-full border ${navbarBackgroundColor === "#04203b" ? 'border-white' : "border-[#3f3f3f]"}`}/>}
                     </div>

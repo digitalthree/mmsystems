@@ -5,7 +5,11 @@ import Image from "next/image";
 import icon1 from "../../../../../public/img/progettazione/elettrica/icon1.png";
 import icon2 from "../../../../../public/img/progettazione/elettrica/icon2.png";
 import icon3 from "../../../../../public/img/progettazione/elettrica/icon3.png";
-import backgroundLeft from "../../../../../public/img/progettazione/backgroundLeft.png"
+import backgroundLeft from "../../../../../public/img/backgroundLeft.png"
+import backgroundRight0 from "../../../../../public/img/backgroundRight0.png"
+import MyCarousel from "@/app/components/carousel/MyCarousel";
+import {MdKeyboardArrowRight} from "react-icons/md";
+import Link from "next/link";
 
 
 export default function Page() {
@@ -75,7 +79,20 @@ export default function Page() {
                     </p>
                 </div>
             </div>
-            {/*<Image src={backgroundLeft} alt={"background left"} className="absolute bottom-0 left-0 w-[1261px] h-[673px]"/>*/}
+
+            <MyCarousel/>
+
+
+            <div className="container flex flex-col py-20 mx-auto items-center">
+                <Link href="contattaci" className="py-1 xl:py-2 px-2 text-white rounded-[100px] bg-[#2A60E9] flex justify-between items-center xl:gap-1">
+                    <span className="px-5">Sfoglia la Gallery</span>
+                    <div className="p-2 rounded-3xl bg-white">
+                        <MdKeyboardArrowRight className="text-[#2A60E9] xl:w-7 xl:h-7 w-5 h-5"/>
+                    </div>
+                </Link>
+            </div>
+            <Image src={backgroundLeft} alt={"background left"} className="absolute bottom-0 left-0 w-1/2"/>
+            <Image src={backgroundRight0} alt={"background right"} className="absolute bottom-0 right-0 w-1/2"/>
         </div>
     )
 

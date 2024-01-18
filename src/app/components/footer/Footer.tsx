@@ -7,6 +7,7 @@ import {RiFacebookLine} from "react-icons/ri";
 import {RiLinkedinLine} from "react-icons/ri";
 import {RiYoutubeLine} from "react-icons/ri";
 import {globalStore} from "@/store/globalStore";
+import {useWindowInnerWidth} from "@/hook/useWindowInnerWidth";
 
 
 export interface FooterProps {
@@ -17,6 +18,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
 
     const showNavbarOrFooter = globalStore((state:any) => state.showNavbarOrFooter)
     const footerBackgroundColor = globalStore((state:any) => state.footerBackgroundColor)
+    const windowInnerWidth = useWindowInnerWidth()
 
     return (
         <>
@@ -25,11 +27,11 @@ const Footer: React.FC<FooterProps> = ({}) => {
                     style={{backgroundColor: footerBackgroundColor}}
                 >
                     <div className="container flex flex-col justify-center items-center gap-8 xl:flex-row xl:mx-auto xl:justify-between">
-                        {window.innerWidth < 1300 &&
+                        {windowInnerWidth < 1300 &&
                             <Image src={logo} alt={"logo"} className="w-[70px]"/>
                         }
                         <div className="flex gap-10">
-                            {window.innerWidth > 1300 &&
+                            {windowInnerWidth > 1300 &&
                                 <Image src={logo} alt={"logo"} className="w-[70px]"/>
                             }
                             <div className="flex flex-col text-center xl:text-start">
@@ -46,7 +48,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
                                                 setHrVisibility={undefined} footer={true}/>
                                 </div>
                                 <span className="text-white text-sm">© 2020 MM Systems, Inc. All Rights Reserved</span>
-                                <span className="text-white text-sm">Sito realizzato da <span className="text-sm text-primary">Digital Three</span></span>
+                                <span className="text-white text-sm">Sito realizzato da <span className="text-sm text-white underlinea<q">Digital Three</span></span>
                             </div>
                         </div>
                         <div className="flex gap-2">
