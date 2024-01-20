@@ -80,7 +80,7 @@ export default function Page() {
             </div>
             <MyCarousel/>
             <div className="container flex flex-col py-20 mx-auto items-center">
-                <Link href="contattaci" className="py-1 xl:py-2 px-2 text-white rounded-[100px] bg-[#7E2AE9] flex justify-between items-center xl:gap-1">
+                <Link href="/galleria" className="py-1 xl:py-2 px-2 text-white rounded-[100px] bg-[#7E2AE9] flex justify-between items-center xl:gap-1 relative z-50 hover:cursor-pointer">
                     <span className="px-5">Sfoglia la Gallery</span>
                     <div className="p-2 rounded-3xl bg-white">
                         <MdKeyboardArrowRight className="text-[#7E2AE9] xl:w-7 xl:h-7 w-5 h-5"/>

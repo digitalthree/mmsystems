@@ -47,17 +47,21 @@ const MyCarousel: React.FC<MyCarouselProps> = ({}) => {
                     )
                 }}
             >
-                <div>
-                    <Image src={image1} alt="assets/1.jpeg" className="w-full" />
+                <div className="relative mr-2">
+                    <Image src={image1} alt="assets/1.jpeg" className="w-full"/>
+                    <div className="w-full bg-[#2A60E9] h-[600px] opacity-40 absolute top-0 left-0 bottom-0 right-0 z-50"/>
                 </div>
-                <div>
-                    <Image src={image2} alt="assets/1.jpeg" />
+                <div className="relative mr-2">
+                    <Image src={image2} alt="assets/1.jpeg" className="w-full"/>
+                    <div className="w-full bg-[#2A60E9] h-[600px] opacity-40 absolute top-0 left-0 bottom-0 right-0 z-50"/>
                 </div>
-                <div>
-                    <Image src={image3} alt="assets/1.jpeg" />
+                <div className="relative mr-2">
+                    <Image src={image3} alt="assets/1.jpeg" className="w-full"/>
+                    <div className="w-full bg-[#2A60E9] h-[600px] opacity-40 absolute top-0 left-0 bottom-0 right-0 z-50"/>
                 </div>
-                <div>
-                    <Image src={image1} alt="assets/1.jpeg" className="w-full" />
+                <div className="relative mr-2">
+                    <Image src={image2} alt="assets/1.jpeg" className="w-full"/>
+                    <div className="w-full bg-[#2A60E9] h-[600px] opacity-40 absolute top-0 left-0 bottom-0 right-0 z-50"/>
                 </div>
             </Carousel>
         </>

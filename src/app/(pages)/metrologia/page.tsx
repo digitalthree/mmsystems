@@ -13,8 +13,6 @@ import backgroundRight from "../../../../public/img/backgroundRight.png";
 import Link from "next/link";
 import {MdKeyboardArrowRight} from "react-icons/md";
 
-;
-
 export default function Page() {
     const updateNavbarBackgroundColor = globalStore((state: any) => state.updateNavbarBackgroundColor)
     const navbarBackgroundColor = globalStore((state: any) => state.navbarBackgroundColor)
@@ -81,13 +79,13 @@ export default function Page() {
                             dispone di campo di misura di y2400, con una notevole flessibilità rispetto ad una macchina
                             di misura tradizione (CMM)
                         </p>
-                        <Link href="progettazione" className="py-2 mt-20 xl:py-2 px-2 text-white rounded-[100px] bg-[#3f3f3f] flex justify-between items-center xl:gap-1 w-full md:w-1/2 xl:w-1/2">
+                        <Link href="progettazione" className="py-2 mt-20 xl:py-2 px-2 text-white rounded-[100px] bg-[#3f3f3f] flex justify-between items-center xl:gap-1 w-full md:w-1/2 xl:w-1/2 relative z-50">
                             <span className="px-5">Progettazione</span>
                             <div className="p-1 rounded-3xl bg-white">
                                 <MdKeyboardArrowRight className="text-[#3f3f3f] xl:w-7 xl:h-7 w-5 h-5"/>
                             </div>
                         </Link>
-                        <Link href="contattaci" className="py-2 xl:py-2 px-2 text-white rounded-[100px] bg-[#3f3f3f] flex justify-between items-center xl:gap-1 w-full md:w-1/2 xl:w-1/2">
+                        <Link href="contattaci" className="py-2 xl:py-2 px-2 text-white rounded-[100px] bg-[#3f3f3f] flex justify-between items-center xl:gap-1 w-full md:w-1/2 xl:w-1/2 relative z-50">
                             <span className="px-5">Contattaci</span>
                             <div className="p-1 rounded-3xl bg-white">
                                 <MdKeyboardArrowRight className="text-[#3f3f3f] xl:w-7 xl:h-7 w-5 h-5"/>

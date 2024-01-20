@@ -54,13 +54,23 @@
 }
 
 .metrologia{
+  background-image: url("/img/attivita/metrologia/background.png");
+}
+
+.plc{
+  background-image: url("/img/attivita/plc/background.png");
+  height: 85vh;
+  background-size: cover;
+}
+
+.metrologia{
   position: relative;
   height: 85vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/img/attivita/metrologia/background.png");
+
   background-size: cover;
 }
 

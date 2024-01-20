@@ -11,6 +11,7 @@ import icon4 from "../../../../public/img/progettazione/icon4.png";
 import icon5 from "../../../../public/img/progettazione/icon5.png";
 import icon6 from "../../../../public/img/progettazione/icon6.png";
 import {motion} from "framer-motion";
+import {useWindowInnerWidth} from "@/hook/useWindowInnerWidth";
 
 
 export default function Page() {
@@ -23,6 +24,8 @@ export default function Page() {
     useEffect(() => {
         updateNavbarBackgroundColor("#f5f5f5")
     }, []);
+
+    const windowInnerWidth = useWindowInnerWidth()
 
     return (
         <div className="w-full" style={{backgroundColor: navbarBackgroundColor}}>
@@ -48,7 +51,7 @@ export default function Page() {
                 </div>
             </div>
             <div className="container flex py-20 mx-auto px-10 xl:px-0">
-                {window.innerWidth > 1300 &&
+                {windowInnerWidth > 1300 &&
                     <div className="flex flex-col w-1/5 gap-4 items-start">
                         <Image src={icon1} alt={"icon 1"} className="w-1/2"/>
                         <Image src={icon2} alt={"icon 2"} className="w-1/2"/>
@@ -87,7 +90,7 @@ export default function Page() {
                     </div>
                 </div>
             </div>
-            {window.innerWidth <= 1300 &&
+            {windowInnerWidth <= 1300 &&
                 <div className="flex gap-10 justify-evenly items-center pb-20">
                     <Image src={icon1} alt={"icon 1"} className="w-1/6"/>
                     <Image src={icon2} alt={"icon 2"} className="w-1/6"/>

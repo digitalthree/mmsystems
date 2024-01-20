@@ -4,6 +4,7 @@ import Link from "next/link";
 import {MdKeyboardArrowRight} from "react-icons/md";
 import {motion, useInView} from "framer-motion";
 import graphImage from "../../../../../public/img/graph.png";
+import {useWindowInnerWidth} from "@/hook/useWindowInnerWidth";
 
 export interface FirstSectionProps{
 
@@ -14,6 +15,8 @@ const FirstSection: React.FC<FirstSectionProps> = ({}) => {
     const isInView1 = useInView(ref1)
     const ref2 = useRef(null)
     const isInView2 = useInView(ref2)
+
+    const windowInnerWidth = useWindowInnerWidth()
 
     return(
         <>
@@ -52,7 +55,7 @@ const FirstSection: React.FC<FirstSectionProps> = ({}) => {
                         />
                     </div>
                     <div className="xl:col-span-2 grid xl:grid-cols-12 xl:pt-20 pt-10 xl:pb-20 pb-10">
-                        {window.innerWidth > 1300 &&
+                        {windowInnerWidth > 1300 &&
                             <div ref={ref2} className="flex justify-end items-end mr-10 xl:col-span-4">
                                 <Image src={graphImage} alt={"ai image"} className="xl:w-full w-1/2"/>
                             </div>
