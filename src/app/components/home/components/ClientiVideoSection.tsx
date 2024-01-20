@@ -27,11 +27,10 @@ const ClientiVideoSection: React.FC<ClientiVideoSectionProps> = ({}) => {
                 <div className="container flex flex-col py-20 mx-auto bg-white items-center">
                     <h1 className="font-light text-7xl md:text-[48px] text-[35px]">video e recensioni</h1>
                     <hr className="w-full border border-black my-10"/>
-                    <div className="flex justify-center">
-                        <YouTube videoId="yhdL4jz74WM"
-                                 opts={opts} iframeClassName=" "
-                        />
-                    </div>
+                    <YouTube videoId="yhdL4jz74WM"
+                             opts={opts}
+                             iframeClassName="w-[100%] h-[400px] md:w-[500px] md:h-[300px] xl:w-[1000px] xl:h-[500px]"
+                    />
                 </div>
             </div>
         </>

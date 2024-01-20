@@ -22,7 +22,7 @@ const NavbarLink: React.FC<NavbarLinkProps> = ({link, title, hrVisibility, setHr
             updateNavbarBackgroundColor("#04203b")
             updateFooterBackgroundColor("#04203b")
         }}>
-            <div className="flex flex-col">
+            <div className="flex flex-col sm:text-base text-[13px]">
                 {title}
                 {hrVisibility && hrVisibility === link && <hr className={`w-full border ${(navbarBackgroundColor === "#04203b" && !footer)  ? 'border-white' : "border-[#3f3f3f]"}`}/>}
             </div>
