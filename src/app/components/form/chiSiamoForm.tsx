@@ -14,7 +14,7 @@ const ChiSiamoForm: React.FC<chiSiamoFormProps> = ({}) => {
               SELEZIONA
             </span>
             <span className="text-gray-900 text-2xl font-normal mb-8">
-              l'ufficio
+              l`ufficio
             </span>
             <div className="w-full flex flex-row justify-center items-center">
               <div
@@ -110,7 +110,7 @@ const ChiSiamoForm: React.FC<chiSiamoFormProps> = ({}) => {
                   className="checkbox border-gray-900 mr-2"
                 />
                 <span className="label-text text-gray-900 font-normal">
-                  Ho letto e accetto l'informativa sulla
+                  Ho letto e accetto l`informativa sulla
                   <Link
                     href="/"
                     className=" font-bold hover:underline underline-offset-4"

@@ -32,11 +32,11 @@ export default function Page() {
             </h1>
             <div className=" flex flex-col lg:absolute mt-3">
               <span className=" text-[#3f3f3f] text-lg xl:text-xl font-normal xl:ml-10">
-                Da oltre 10 anni MM Systems Srl fornisce all'Industria Impianti
+                Da oltre 10 anni MM Systems Srl fornisce all`Industria Impianti
                 nel <br />
               </span>
               <span className=" text-[#3f3f3f] text-lg xl:text-xl font-normal xl:ml-10">
-                campo dell'automazione e dell'impiantistica generale.
+                campo dell`automazione e dell`impiantistica generale.
               </span>
             </div>
           </div>
@@ -95,12 +95,12 @@ export default function Page() {
           </h3>
           <div className="w-full flex flex-col md:pl-10">
             <span className=" text-primary text-lg font-semibold mb-3">
-              NULLA E' IMPOSSIBILE
+              NULLA E` IMPOSSIBILE
             </span>
             <span className=" text-[#3f3f3f] font-normal text-lg mb-12 w-5/6 md:w-4/6 ">
-              realta' abruzzese consolidata nel panorama europeo dell'industria
+              realtà abruzzese consolidata nel panorama europeo dell`industria
               di automazione robotica. La MM systems, dal 2007 ad oggi, grazie
-              al suo fondatore Miki Morleo, personalita' e professionista
+              al suo fondatore Miki Morleo, personalità e professionista
               particolarmente attivo nel settore della produzione di
               apparecchiature elettriche ed elettromeccaniche; si distingue sul
               territorio.
@@ -109,12 +109,12 @@ export default function Page() {
 
           <div className="w-full flex flex-col justify-end items-end md:pr-10">
             <span className=" text-primary text-lg font-semibold mb-3">
-              PERCHE'?
+              PERCHE`?
             </span>
             <span className=" text-[#3f3f3f] text-right text-lg font-normal mb-12 w-5/6 md:w-4/6">
               Il costante interesse nei confronti della ricerca scientifica e
               tecnologica. Infatti, MM Systems diviene portavoce e precursore di
-              concetti innovativi e al passo con i tempi, come l'industria 4.0.
+              concetti innovativi e al passo con i tempi, come l`industria 4.0.
             </span>
           </div>
 
@@ -125,7 +125,7 @@ export default function Page() {
             <span className=" text-[#3f3f3f] font-normal text-lg mb-12 w-5/6 md:w-4/6">
               Massima espressione della quarta rivoluzione industriale, e i
               cobot, robot collaborativi antropomorfi capaci di interagire con
-              l'uomo nello spazio di lavoro.
+              l`uomo nello spazio di lavoro.
             </span>
           </div>
         </div>

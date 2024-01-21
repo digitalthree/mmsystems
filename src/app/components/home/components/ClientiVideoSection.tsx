@@ -9,11 +9,7 @@ export interface ClientiVideoSectionProps{
 }
 
 const ClientiVideoSection: React.FC<ClientiVideoSectionProps> = ({}) => {
-    const opts = {
-        playerVars: {
-            autoplay: 1,
-        },
-    };
+
     return(
         <>
             <div className="w-full bg-white">
@@ -28,7 +24,6 @@ const ClientiVideoSection: React.FC<ClientiVideoSectionProps> = ({}) => {
                     <h1 className="font-light text-7xl md:text-[48px] text-[35px]">video e recensioni</h1>
                     <hr className="w-full border border-black my-10"/>
                     <YouTube videoId="yhdL4jz74WM"
-                             opts={opts}
                              iframeClassName="w-[100%] h-[400px] md:w-[500px] md:h-[300px] xl:w-[1000px] xl:h-[500px]"
                     />
                 </div>
