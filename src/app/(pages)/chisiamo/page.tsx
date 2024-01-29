@@ -15,6 +15,7 @@ export default function Page() {
       className="w-full min-h-[85vh] flex flex-col justify-center items-center"
       style={{ backgroundColor: navbarBackgroundColor }}
     >
+      <div className="h-[80vh] flex items-center"><h1 className=" text-white">AGGIUNGERE VIDEO</h1></div> {/* AGGIUNGERE VIDEO */}
       <div className="w-full bg-[#E4E4E4] flex justify-center">
         {" "}
         {/* chi siamo robot */}

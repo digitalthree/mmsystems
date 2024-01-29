@@ -63,6 +63,11 @@
   background-size: cover;
 }
 
+.robotica{
+  background-image: url("/img/attivita/robotica/isole-robotizzate.jpg");
+  min-height: 85vh;
+}
+
 .metrologia{
   position: relative;
   height: 85vh;
