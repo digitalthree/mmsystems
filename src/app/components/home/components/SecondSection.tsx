@@ -18,18 +18,28 @@ const SecondSection: React.FC<SecondSectionProps> = ({}) => {
             <div className="container flex px-5 py-20 mx-auto">
                 <div className="flex flex-col items-center xl:items-start text-center xl:text-start gap-10 xl:w-2/3">
                     <div className="xl:col-span-10 flex flex-col">
-                        <span className="text-white mb-5">Il nostro scopo è fornire eccellenza nel servizio e nell`esecuzione</span>
-                        <span className="text-primary">PROGETTAZIONE: <span className="text-primary">Elettrica, Meccanica, Simulazione dinamica</span></span>
-                        <span className="text-primary">ATTIVITA`: <span className="text-primary">Metrologia</span></span>
-                        <span className="text-primary">PROGRAMMAZIONE: <span className="text-primary">PLC</span></span>
-                        <span className="text-primary">ROBOTICA: <span className="text-primary">Isole robotizzate, Robot Collaborativi e Banchi semiautomatici</span></span>
+                        <span className="text-white uppercase font-semibold">eccellenza nel servizio e nell`esecuzione</span>
+                        <hr className="xl:w-2/3 w-full border border-white my-2"/>
+                        <span className="text-primary font-semibold">PROGETTAZIONE: <span className="text-primary">Elettrica, Meccanica, Simulazione dinamica</span></span>
+                        <span className="text-primary font-semibold">ATTIVITA`: <span className="text-primary">Metrologia</span></span>
+                        <span className="text-primary font-semibold">PROGRAMMAZIONE: <span className="text-primary">PLC</span></span>
+                        <span className="text-primary font-semibold">ROBOTICA: <span className="text-primary">Isole robotizzate, Robot Collaborativi e Banchi semiautomatici</span></span>
                         <hr className="xl:w-1/3 w-full border border-white mt-5"/>
                     </div>
                     <div className="flex flex-col">
-                        <h1 className="text-white text-7xl lg:text-[60px] md:text-[48px] text-[35px]"> perchè <span className="text-[#c7c7c7] text-7xl lg:text-[60px] md:text-[48px] text-[35px] ">sceglierci?</span></h1>
+                        <h1 className="text-[#c7c7c7] font-semibold text-7xl lg:text-[60px] md:text-[48px] text-[35px] uppercase"> perchè <span className="text-white font-semibold uppercase text-7xl lg:text-[60px] md:text-[48px] text-[35px] ">sceglierci?</span></h1>
                     </div>
                     <div className="flex flex-col">
-                        <span className="text-white">Perché siamo in grado di risolvere le più svariate problematiche nell`ambito dell`industria, individuando con voi la migliore soluzione. Gli uffici tecnici sono attrezzati con 5 postazioni per la progettazione meccanica (CAD CAD), hardware (Spac/Eplan) software PLC (Siemens, Allen Bradley, Omron, Schneider) e Software ROBOT (Kuka, ABB, Motoman, Comau, Fanuc). Il nostro stabilimento di Mozzagrogna si sviluppa su una superficie di 1550 metri quadrati - tutti coperti- ed è dotato di macchinari all`avanguardia per la realizzazione dei nostri prodotti.</span>
+                        <ul className="lg:list-disc text-white xl:text-lg text-base xl:pl-6">
+                            <li>Ascolto attivo;</li>
+                            <li>Analisi delle abilità tecniche e comportamentali;</li>
+                            <li>Equilibrio tra tempo, costi e contesto;</li>
+                            <li>Individuazione delle esigenze;</li>
+                            <li>Unicità del progetto;</li>
+                            <li>Pensiero elaborativo;</li>
+                            <li>Problem solving;</li>
+                            <li>Etica, fiducia, onestà.</li>
+                        </ul>
                     </div>
                     <Link href="chisiamo" className="lg:w-1/4 py-1 lg:py-2 px-2 text-white font-bold rounded-t-[100px] rounded-br-[100px] bg-gradient-to-r from-[#04203B] to-[#2A9DE9] flex justify-between items-center lg:gap-1">
                         <span className="px-3">Lo Stabilimento</span>

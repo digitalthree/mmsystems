@@ -13,15 +13,15 @@ const ClientiVideoSection: React.FC<ClientiVideoSectionProps> = ({}) => {
     return(
         <>
             <div className="w-full bg-white">
-                <div className="container flex flex-col py-20 mx-auto bg-white items-center">
-                    <h1 className="font-light text-7xl md:text-[48px] text-[35px]">I nostri clienti</h1>
+                <div className="container flex flex-col py-20 xl:px-0 px-10 mx-auto bg-white items-center">
+                    <h1 className="xl:text-7xl md:text-[48px] text-[35px] uppercase font-semibold">I nostri partners</h1>
                     <hr className="w-full border border-black my-5"/>
                     <Image src={clienti} alt={"clienti"}/>
                 </div>
             </div>
             <div className="w-full bg-white">
-                <div className="container flex flex-col py-20 mx-auto bg-white items-center">
-                    <h1 className="font-light text-7xl md:text-[48px] text-[35px]">video e recensioni</h1>
+                <div className="container flex flex-col py-20 xl:px-0 px-10 mx-auto bg-white items-center">
+                    <h1 className="font-semibold uppercase xl:text-7xl md:text-[48px] text-[35px]">video e recensioni</h1>
                     <hr className="w-full border border-black my-10"/>
                     <YouTube videoId="yhdL4jz74WM"
                              iframeClassName="w-[100%] h-[400px] md:w-[500px] md:h-[300px] xl:w-[1000px] xl:h-[500px]"

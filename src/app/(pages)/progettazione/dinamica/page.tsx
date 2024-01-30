@@ -29,9 +29,9 @@ export default function Page() {
             <div className="progettazione h-[70vh]">
                 <div
                     className="container my-auto gap-4 h-full flex flex-col mx-auto justify-center items-center xl:items-start text-center xl:text-start">
-                    <span className="text-[#CE2AE9] font-normal">simulazione dinamica</span>
+                    <span className="text-[#CE2AE9] font-semibold uppercase">simulazione dinamica</span>
                     <hr className="border border-white w-1/4"/>
-                    <h1 className="text-black font-normal text-7xl lg:text-[65px] md:text-[48px] text-[35px]">fattibilità e<br/> sviluppo <br/> delle tue idee</h1>
+                    <h1 className="text-black font-semibold uppercase text-7xl lg:text-[65px] md:text-[48px] text-[35px]">fattibilità e<br/> sviluppo <br/> delle tue idee</h1>
                 </div>
             </div>
 

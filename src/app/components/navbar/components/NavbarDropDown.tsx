@@ -14,6 +14,8 @@ export interface NavbarDropdownProps{
 const NavbarDropdown: React.FC<NavbarDropdownProps> = ({textDropdown, itemsArray, linkArray, setHrVisibility, hrVisibility, linkable}) => {
     const updateLoading = globalStore((state:any) => state.updateLoading)
     const navbarBackgroundColor = globalStore((state:any) => state.navbarBackgroundColor)
+    const footerBackgroundColor = globalStore((state:any) => state.footerBackgroundColor)
+    const updateFooterBackgroundColor = globalStore((state:any) => state.updateFooterBackgroundColor)
     return(
         <>
             <div className="dropdown dropdown-hover md:block hidden">
@@ -24,9 +26,12 @@ const NavbarDropdown: React.FC<NavbarDropdownProps> = ({textDropdown, itemsArray
                               updateLoading(false)
                           }}
                     >
-                        <div tabIndex={0} role="button" className={`uppercase ${navbarBackgroundColor === "#04203b" ? 'text-white' : "text-[#3f3f3f]"} bg-transparent text-base font-normal`}>
+                        <div tabIndex={0} role="button" className={`uppercase ${navbarBackgroundColor === "#04203b" ? 'text-white' : "text-[#3f3f3f]"} bg-transparent text-base font-normal`}
+                            style={{color: footerBackgroundColor !== '#04203b' && footerBackgroundColor }}
+                             onClick={() => updateFooterBackgroundColor("#04203b")}
+                        >
                             {textDropdown}
-                            {hrVisibility && hrVisibility === textDropdown.toLowerCase() && <hr className={`w-full border ${navbarBackgroundColor === "#04203b" ? 'border-white' : "border-[#3f3f3f]"}`}/>}
+                            {hrVisibility && hrVisibility === textDropdown.toLowerCase() && <hr className={`w-full border ${navbarBackgroundColor === "#04203b" ? 'border-white' : "border-[#3f3f3f]"}`} style={{borderColor: footerBackgroundColor !== '#04203b' && footerBackgroundColor }}/>}
                         </div>
                     </Link> :
                     <div tabIndex={0} role="button" className={`uppercase ${navbarBackgroundColor === "#04203b" ? 'text-white' : "text-[#3f3f3f]"} bg-transparent text-base font-normal`}>

@@ -4,6 +4,9 @@ import ChiSiamoForm from "@/app/components/form/chiSiamoForm";
 import Image from "next/image";
 import { URL } from "url";
 import clienti from "../../../../public/img/clienti/clienti.png";
+import {MdKeyboardArrowRight} from "react-icons/md";
+import Link from "next/link";
+import React from "react";
 
 export default function Page() {
   const navbarBackgroundColor = globalStore(
@@ -28,17 +31,16 @@ export default function Page() {
               width={636}
               height={636}
             />
-            <h1 className=" text-primary text-5xl mt-8 lg:mt-12 xl:mt-24 xl:ml-10">
+            <h1 className="uppercase font-semibold text-primary lg:text-start text-center md:text-6xl text-5xl mt-8 lg:mt-12 xl:mt-24">
               chi siamo
             </h1>
-            <div className=" flex flex-col lg:absolute mt-3">
-              <span className=" text-[#3f3f3f] text-lg xl:text-xl font-normal xl:ml-10">
-                Da oltre 10 anni MM Systems Srl fornisce all`Industria Impianti
-                nel <br />
-              </span>
-              <span className=" text-[#3f3f3f] text-lg xl:text-xl font-normal xl:ml-10">
-                campo dell`automazione e dell`impiantistica generale.
-              </span>
+            <div className=" flex flex-col lg:items-start items-center lg:absolute mt-6">
+              <Link href="/" className="py-1 xl:py-2 px-2 text-white z-10 lg:w-full w-1/2 rounded-t-[100px] rounded-br-[100px] bg-gradient-to-r from-[#04203B] to-[#2A9DE9] flex justify-between items-center xl:gap-1">
+                <span className="px-5 line-clamp-1">Scopri di più</span>
+                <div className="p-2 rounded-3xl bg-white">
+                  <MdKeyboardArrowRight className="text-primary xl:w-7 xl:h-7 w-5 h-5"/>
+                </div>
+              </Link>
             </div>
           </div>
           <div className=" hidden md:flex">
@@ -91,8 +93,8 @@ export default function Page() {
       {/* inizio sezione innovazione ed esperienza */}
       <div className=" w-full bg-[#e4e4e4] p-10 py-20">
         <div className=" container flex flex-col justify-center mx-auto bg-[url(/img/chisiamo/brain.webp)] bg-no-repeat bg-scroll bg-contain bg-right">
-          <h3 className="font-normal text-4xl md:text-6xl text-[#3f3f3f] mb-12 md:pl-10">
-            innovazione <br /> ed esperienza
+          <h3 className="text-4xl md:text-6xl text-[#3f3f3f] mb-12 md:pl-10 uppercase font-semibold">
+            innovazione ed<br /> esperienza
           </h3>
           <div className="w-full flex flex-col md:pl-10">
             <span className=" text-primary text-lg font-semibold mb-3">
@@ -134,9 +136,10 @@ export default function Page() {
           <h3 className="font-normal text-4xl md:text-6xl text-[#3f3f3f] mb-5 xl:mb-12"></h3>
         </div>
         <div className="full flex flex-col justify-center items-center md:p-10 xl:pb-0">
-          <h3 className="font-normal text-4xl md:text-6xl text-[#3f3f3f]">
+          <h3 className="font-semibold uppercase text-4xl md:text-6xl text-[#3f3f3f]">
             i nostri clienti
           </h3>
+          <hr className="w-full border border-black my-5"/>
           <div className="divider w-full divider-neutral mx-auto"></div>
           <Image
             className="w-full"

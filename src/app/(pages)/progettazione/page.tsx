@@ -32,15 +32,9 @@ export default function Page() {
             <div className="progettazione h-[70vh]">
                 <div
                     className="container my-auto gap-4 h-full flex flex-col mx-auto justify-center items-center xl:items-start text-center xl:text-start">
-                    <span className="text-primary font-bold">PROGETTAZIONE</span>
-                    <h1 className="text-black font-bold text-7xl lg:text-[60px] md:text-[48px] text-[35px]">COSTANTE
+                    <span className="text-primary font-semibold">PROGETTAZIONE</span>
+                    <h1 className="text-black font-semibold text-7xl lg:text-[60px] md:text-[48px] text-[35px]">COSTANTE
                         E <br/> NECESSARIO PROCESSO <br/> EVOLUTIVO</h1>
-                    <p className="text-[#3F3F3F]">
-                        Progressivo sviluppo dal 2D al 3D. <br/>
-                        Dopo diversi anni di esperienza nel settore, l`aumento della complessità dei prodotti, ha
-                        richiesto il
-                        passaggio da un processo di progettazione prevalentemente in 2D ad uno in 3D.
-                    </p>
                     <Link href="contattaci"
                           className="w-1/3 xl:w-1/6 py-1 xl:py-2 px-2 text-white rounded-t-[100px] rounded-br-[100px] bg-gradient-to-r from-gray-300 to-primary flex justify-between items-center xl:gap-1">
                         <span className="px-5">esplora</span>
@@ -60,16 +54,15 @@ export default function Page() {
                 }
                 <div className="flex flex-col items-center xl:items-start text-center xl:text-start gap-20 xl:w-4/5">
                     <div className="flex flex-col gap-3">
-                        <span className="text-primary">crescita del margine di competitività</span>
+                        <span className="text-primary font-semibold uppercase">crescita del margine di competitività</span>
                         <hr className="w-full border border-primary"/>
                         <p className="text-[#3F3F3F]">
-                            Progressivo sviluppo dal 2D al 3D. <br/>
                             Dopo diversi anni di esperienza nel settore, l`aumento della complessità dei prodotti, ha
                             richiesto il passaggio da un processo di progettazione prevalentemente in 2D ad uno in 3D.
                         </p>
                     </div>
                     <div className="xl:col-span-10 flex flex-col gap-3">
-                        <span className="text-primary">equilibrio tra tempi, costi e risorse</span>
+                        <span className="text-primary font-semibold uppercase">equilibrio tra tempi, costi e risorse</span>
                         <hr className="w-full border border-primary"/>
                         <p className="text-[#3F3F3F]">
                             Un’avanzata soluzione per lo sviluppo integrato del prodotto, sempre al passo con i tempi e
@@ -77,7 +70,7 @@ export default function Page() {
                         </p>
                     </div>
                     <div className="xl:col-span-10 flex flex-col gap-3">
-                        <span className="text-primary">studio e perfezionamento degli strumenti costante</span>
+                        <span className="text-primary font-semibold uppercase">studio e perfezionamento degli strumenti costante</span>
                         <hr className="w-full border border-primary"/>
                         <p className="text-[#3F3F3F]">
                             La MM Systems continua sempre ad alzare il livello delle prestazioni, perfezionando
