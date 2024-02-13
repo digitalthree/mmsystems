@@ -29,8 +29,8 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({itemsDropdownArray, linkD
                     </div>
                 </Link>
                 <Link href="/">
-                    <div className="rounded-full bg-gradient-to-b from-secondary to-primary border border-secondary p-3 relative top-[-25px]">
-                        <Image src={logo} width={40} height={40} alt="Fisioste Logo"/>
+                    <div className="rounded-2xl bg-gradient-to-b from-secondary to-primary border border-secondary p-3 relative top-[-25px]">
+                        <Image src={logo} width={80} height={80} alt="Fisioste Logo"/>
                     </div>
                 </Link>
                 <div className="dropdown dropdown-top">

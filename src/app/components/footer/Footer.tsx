@@ -28,11 +28,11 @@ const Footer: React.FC<FooterProps> = ({}) => {
                 >
                     <div className="container flex flex-col justify-center items-center gap-8 xl:flex-row xl:mx-auto xl:justify-between">
                         {windowInnerWidth < 1300 &&
-                            <Image src={logo} alt={"logo"} className="w-[70px]"/>
+                            <Image src={logo} alt={"logo"} className="w-[150px]"/>
                         }
                         <div className="flex gap-10">
                             {windowInnerWidth > 1300 &&
-                                <Image src={logo} alt={"logo"} className="w-[70px]"/>
+                                <Image src={logo} alt={"logo"} className="w-[180px]"/>
                             }
                             <div className="flex flex-col text-center xl:text-start">
                                 <div className="flex items-center">

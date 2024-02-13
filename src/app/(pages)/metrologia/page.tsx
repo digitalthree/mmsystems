@@ -3,7 +3,7 @@ import {globalStore} from "@/store/globalStore";
 import React, {useEffect, useState} from "react";
 import Image from "next/image";
 import image1 from "../../../../public/img/attivita/metrologia/image1.png";
-import image2 from "../../../../public/img/attivita/metrologia/image2.png";
+import image2 from "../../../../public/img/attivita/metrologia/mmsystems-1.png";
 import icon1 from "../../../../public/img/attivita/metrologia/icon1.png";
 import icon2 from "../../../../public/img/attivita/metrologia/icon2.png";
 import icon3 from "../../../../public/img/attivita/metrologia/icon3.png";
@@ -58,10 +58,10 @@ export default function Page() {
                     <div className="w-1/4 xl:block hidden"></div>
                 </div>
             </div>
-            <div className="w-full flex pb-20 flex-col items-center xl:items-start text-center xl:text-start">
+            <div className="w-full flex flex-col items-center xl:items-start text-center xl:text-start">
                 <div className="flex flex-row gap-10 items-center">
                     <div className="w-1/4 xl:block hidden"></div>
-                    <div className="flex flex-col items-center xl:items-start px-20 xl:px-0 xl:w-3/4 gap-4">
+                    <div className="flex xl:pb-12 pb-20 flex-col items-center xl:items-start px-20 xl:px-0 xl:w-3/4 gap-4">
                         <Image src={icon3} alt={"icon1"} className="w-[25%] md:w-[10%] xl:w-[13%]"/>
                         <span className="text-primary font-semibold">ANALISI STATICA - FEM</span>
                         <hr className="border border-primary w-1/3"/>
@@ -92,7 +92,7 @@ export default function Page() {
                             </div>
                         </Link>
                     </div>
-                    <Image src={image2} alt={"icon1"} className="w-[40%] right-0 z-50 xl:block hidden"/>
+                    <Image src={image2} alt={"icon1"} className="w-[40%] right-0 bottom-0 z-50 xl:block hidden"/>
                 </div>
             </div>
             <Image src={backgroundRight2} alt={"img"} className="absolute bottom-0 right-0 w-1/2"/>

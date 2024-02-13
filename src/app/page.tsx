@@ -1,12 +1,13 @@
 "use client"
 import FirstSection from "@/app/components/home/components/FirstSection";
 import React, {useEffect, useState} from "react";
-import SecondSection from "@/app/components/home/components/SecondSection";
+import ThirdSection from "@/app/components/home/components/ThirdSection";
 import ClientiVideoSection from "@/app/components/home/components/ClientiVideoSection";
 import ProjectsSection from "@/app/components/home/components/ProjectsSection";
 import {motion} from "framer-motion";
 import YouTube from 'react-youtube';
 import {globalStore} from "@/store/globalStore";
+import SecondSection from "@/app/components/home/components/SecondSection";
 export default function Home() {
 
     const loading = globalStore((state:any) => state.loading)
@@ -119,6 +120,7 @@ export default function Home() {
                       >
                           <FirstSection/>
                           <SecondSection/>
+                          <ThirdSection/>
                           <ClientiVideoSection/>
                           <ProjectsSection/>
                       </motion.div>

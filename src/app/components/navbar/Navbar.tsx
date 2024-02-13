@@ -32,7 +32,7 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
                             updateNavbarBackgroundColor("#04203b")
                             setHrVisibility("/")
                         }}>
-                            <Image src={navbarBackgroundColor === "#04203b" ? logo : logoDark} alt="logo MM Systems" className="w-20"/>
+                            <Image src={navbarBackgroundColor === "#04203b" ? logo : logoDark} alt="logo MM Systems" className="w-44"/>
                         </Link>
                         <div className={`flex justify-evenly gap-10 capitalize ${navbarBackgroundColor === "#04203b" ? 'text-white' : "#3f3f3f"}`}>
                             <NavbarLink link={'/'} title={"Home"} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility}/>

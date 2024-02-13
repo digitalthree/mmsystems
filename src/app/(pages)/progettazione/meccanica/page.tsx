@@ -26,7 +26,7 @@ export default function Page() {
 
     return (
         <div className="w-full relative" style={{backgroundColor: navbarBackgroundColor}}>
-            <div className="progettazione h-[70vh]">
+            <div className="meccanica h-[70vh]">
                 <div
                     className="container my-auto gap-4 h-full flex flex-col mx-auto justify-center items-center xl:items-start text-center xl:text-start">
                     <span className="text-[#7E2AE9] font-semibold uppercase">progettazione meccanica</span>
