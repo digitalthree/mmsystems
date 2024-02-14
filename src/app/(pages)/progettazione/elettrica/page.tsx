@@ -20,13 +20,13 @@ export default function Page() {
     const [hover, setHover] = useState("")
 
     useEffect(() => {
-        updateNavbarBackgroundColor("#f5f5f5")
+        updateNavbarBackgroundColor("#e4e4e4")
         updateFooterBackgroundColor("#2A5FE9")
     }, []);
 
     return (
         <div className="w-full relative" style={{backgroundColor: navbarBackgroundColor}}>
-            <div className="progettazione h-[70vh]">
+            <div className="elettrica h-[70vh]">
                 <div
                     className="container my-auto gap-4 h-full flex flex-col mx-auto justify-center items-center xl:items-start text-center xl:text-start">
                     <span className="text-[#2A5FE9] font-semibold uppercase">progettazione elettrica</span>
@@ -41,6 +41,7 @@ export default function Page() {
                 <div className="flex flex-col gap-3 items-center mx-auto">
                     <Image src={icon1} alt={"icon1"} className="lg:w-20 w-16"/>
                     <span className="text-[#2A5FE9]">progettazione</span>
+                    <hr className="w-1/6 border border-white"/>
                     <p className="text-[#3F3F3F] text-center">
                         La MM Systems progetta e realizza impianti elettrici industriali e quadri di distribuzione, di
                         comando e controllo con sviluppo software in grado di soddisfare svariate esigenze: regolazione,
@@ -54,6 +55,7 @@ export default function Page() {
                 <div className="flex flex-col gap-3 items-center mx-auto">
                     <Image src={icon2} alt={"icon1"} className="lg:w-20 w-16"/>
                     <span className="text-[#2A5FE9]">realizzazione</span>
+                    <hr className="w-1/6 border border-white"/>
                     <p className="text-[#3F3F3F] text-center">
                         I principali settori di attività dell’azienda, operativa in tutti i settori, sono:
                         progettazione, cablaggio bordo macchina, messa in servizio, quadri di distribuzione e
@@ -68,6 +70,7 @@ export default function Page() {
                 <div className="flex flex-col gap-3 items-center mx-auto">
                     <Image src={icon3} alt={"icon1"} className="lg:w-20 w-16"/>
                     <span className="text-[#2A5FE9]">certificazione</span>
+                    <hr className="w-2/3 border border-white"/>
                     <p className="list-disc w-fit mx-auto text-center text-[#3F3F3F]">
                         <li>Progettazione e realizzazione della rete</li>
                         <li>Conformità alle normative e agli standard</li>

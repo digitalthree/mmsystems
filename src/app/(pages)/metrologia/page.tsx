@@ -2,7 +2,7 @@
 import {globalStore} from "@/store/globalStore";
 import React, {useEffect, useState} from "react";
 import Image from "next/image";
-import image1 from "../../../../public/img/attivita/metrologia/image1.png";
+import image1 from "../../../../public/img/attivita/metrologia/mmsystems-14.png";
 import image2 from "../../../../public/img/attivita/metrologia/mmsystems-1.png";
 import icon1 from "../../../../public/img/attivita/metrologia/icon1.png";
 import icon2 from "../../../../public/img/attivita/metrologia/icon2.png";
@@ -10,6 +10,7 @@ import icon3 from "../../../../public/img/attivita/metrologia/icon3.png";
 import icon4 from "../../../../public/img/attivita/metrologia/icon4.png";
 import backgroundRight2 from "../../../../public/img/backgroundRight2.png";
 import backgroundRight from "../../../../public/img/backgroundRight.png";
+import backgroundLeft from "../../../../public/img/backgroundLeft2.png";
 import Link from "next/link";
 import {MdKeyboardArrowRight} from "react-icons/md";
 
@@ -19,7 +20,7 @@ export default function Page() {
     const updateFooterBackgroundColor = globalStore((state: any) => state.updateFooterBackgroundColor)
 
     useEffect(() => {
-        updateNavbarBackgroundColor("#f5f5f5")
+        updateNavbarBackgroundColor("#e4e4e4")
         updateFooterBackgroundColor("#04203b")
     }, []);
 
@@ -32,8 +33,9 @@ export default function Page() {
                 </div>
             </div>
 
-            <div className="w-full flex relative py-20 flex-col items-center xl:items-start text-center xl:text-start gap-20 px-10 lg:px-0">
+            <div className="w-full flex relative pt-64 pb-20  flex-col items-center xl:items-start text-center xl:text-start gap-20 px-10 lg:px-0">
                 <Image src={backgroundRight} alt={"img"} className="absolute top-0 right-0 w-1/2"/>
+                <Image src={backgroundLeft} alt={"img"} className="absolute top-0 left-0 w-1/2"/>
                 <div className="flex flex-row px-20 xl:px-0 gap-10 items-center relative">
                     <Image src={image1} alt={"icon1"} className="w-[43%] left-0 xl:block hidden"/>
                     <div className="flex flex-col items-center xl:items-start w-full xl:w-3/4 gap-4">
@@ -95,7 +97,7 @@ export default function Page() {
                     <Image src={image2} alt={"icon1"} className="w-[40%] right-0 bottom-0 z-50 xl:block hidden"/>
                 </div>
             </div>
-            <Image src={backgroundRight2} alt={"img"} className="absolute bottom-0 right-0 w-1/2"/>
+            {/*<Image src={backgroundRight2} alt={"img"} className="absolute bottom-0 right-0 w-1/2"/>*/}
         </div>
     )
 }
