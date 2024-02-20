@@ -1,11 +1,11 @@
 "use client"
 import FirstSection from "@/app/components/home/components/FirstSection";
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import ThirdSection from "@/app/components/home/components/ThirdSection";
 import ClientiVideoSection from "@/app/components/home/components/ClientiVideoSection";
 import ProjectsSection from "@/app/components/home/components/ProjectsSection";
 import {motion} from "framer-motion";
-import YouTube from 'react-youtube';
+import YouTube, {YouTubeEvent, YouTubeProps} from 'react-youtube';
 import {globalStore} from "@/store/globalStore";
 import SecondSection from "@/app/components/home/components/SecondSection";
 export default function Home() {
@@ -53,9 +53,13 @@ export default function Home() {
 
     const opts = {
         playerVars: {
-            // https://developers.google.com/youtube/player_parameters
             autoplay: 1,
-        },
+            controls: 1,
+            rel: 0,
+            showinfo: 1,
+            mute: 1,
+            loop: 0
+        }
     };
 
   return (
@@ -68,6 +72,7 @@ export default function Home() {
                 {showAnimation1 &&
                     <div className="flex flex-col items-center">
                         <motion.img src={"/img/logo.png"} alt={"logo"}
+                                    className="w-1/5"
                                     initial={{ scale: 0 }}
                                     animate={{ scale: 1 }}
                                     transition={{duration: 1}}
@@ -76,7 +81,7 @@ export default function Home() {
                 }
                 {(showAnimation2 && !showAnimation1) &&
                     <div className="flex flex-col items-center">
-                        <motion.span className="text-2xl text-white mt-5"
+                        <motion.span className="text-3xl text-white mt-5"
                                      initial={{ scale: 0 }}
                                      animate={{ scale: 1 }}
                                      transition={{duration: 1}}
@@ -90,7 +95,7 @@ export default function Home() {
             </div> :
               <>
                   {showVideo ? <div className="flex justify-center w-full h-[100vh]">
-                      <YouTube videoId="yhdL4jz74WM" className="absolute top-0" opts={opts} iframeClassName="w-[1920px] h-[100vh]"
+                      <YouTube videoId="yhdL4jz74WM" opts={opts} className="absolute top-0" iframeClassName="w-[1920px] h-[100vh]"
                         onEnd={() => {
                             updateShowVideo(false)
                             updateShowNavbarOrFooter(true)

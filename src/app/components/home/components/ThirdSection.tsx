@@ -15,7 +15,7 @@ const ThirdSection: React.FC<SecondSectionProps> = ({}) => {
     const windowInnerWidth = useWindowInnerWidth()
     return(
         <div className="w-full bg-[#e4e4e4] flex flex-col items-center">
-            <hr className="w-2/3 border border-white"/>
+            <hr className="w-3/4 border border-white"/>
             <div className="container flex px-5 py-5 xl:py-20 mx-auto ">
                 <div className="flex flex-col items-center w-full xl:items-start text-center gap-10 xl:w-2/3">
                     <div className="xl:col-span-10 flex flex-col xl:items-start items-center">

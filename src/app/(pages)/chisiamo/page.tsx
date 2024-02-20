@@ -136,7 +136,7 @@ export default function Page() {
                     <hr className="w-full border border-black my-5"/>
                     <div className="divider w-full divider-neutral mx-auto"></div>
                     <Image
-                        className="w-full"
+                        className="w-3/4"
                         src={clienti}
                         width={1000}
                         height={300}

@@ -36,9 +36,9 @@ export default function Page() {
             <div className="w-full flex relative pt-64 pb-20  flex-col items-center xl:items-start text-center xl:text-start gap-20 px-10 lg:px-0">
                 <Image src={backgroundRight} alt={"img"} className="absolute top-0 right-0 w-1/2"/>
                 <Image src={backgroundLeft} alt={"img"} className="absolute top-0 left-0 w-1/2"/>
-                <div className="flex flex-row px-20 xl:px-0 gap-10 items-center relative">
-                    <Image src={image1} alt={"icon1"} className="w-[43%] left-0 xl:block hidden"/>
-                    <div className="flex flex-col items-center xl:items-start w-full xl:w-3/4 gap-4">
+                <div className="container mx-auto flex flex-row px-20 xl:px-0 gap-10 relative">
+                    <Image src={image1} alt={"icon1"} className="w-1/2 left-0 xl:block hidden"/>
+                    <div className="flex flex-col items-center xl:items-start w-full xl:w-1/2 gap-4">
                         <Image src={icon1} alt={"icon1"} className="w-[25%] md:w-[10%] xl:w-[13%]"/>
                         <span className="text-primary font-semibold">ANALISI STATICA - FEM</span>
                         <hr className="border border-primary w-1/3"/>
@@ -57,7 +57,6 @@ export default function Page() {
                             di misura tradizione (CMM)
                         </p>
                     </div>
-                    <div className="w-1/4 xl:block hidden"></div>
                 </div>
             </div>
             <div className="w-full flex flex-col items-center xl:items-start text-center xl:text-start">

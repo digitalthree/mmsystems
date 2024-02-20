@@ -48,39 +48,32 @@ export default function Page() {
             <div
                 className="w-full flex relative py-20 flex-col items-center xl:items-start text-center xl:text-start gap-20 px-10 lg:px-0">
                 <Image src={backgroundRight} alt={"img"} className="absolute top-0 right-0 w-1/2"/>
-                <div className="mx-auto flex px-20 xl:px-0 gap-10">
-                    <Image src={image1} alt={"icon1"} className="w-[29%] left-0 xl:block hidden"/>
+                <div className="container mx-auto flex px-20 xl:px-0 gap-10">
+                    <Image src={image1} alt={"icon1"} className="w-1/2 left-0 xl:block hidden"/>
                     <div className="flex flex-col items-center xl:items-start gap-4">
                         <span className="text-primary font-semibold">I NOSTRI SERVIZI</span>
                         <hr className="border border-primary w-2/3"/>
-                        <p className="text-[#3F3F3F] text-center xl:text-left">
-                            Oltre ai programmi su PLC e PC per il controllo e la supervisione di singole unita’
-                            produttive, la MM Systems realizza software per l’automazione di fabbrica e comunicazione in
-                            rete locale tra le varie linee, fino alla gestione centralizzata della produzione.
-                        </p>
-                        <div className="grid md:grid-cols-2 gap-20">
+                        <div className="grid md:grid-cols-1 gap-20">
                             <div className="flex flex-col items-center xl:items-start gap-2">
-                                <Image src={icon1} alt={"icon1"} className="w-[15%] md:w-[10%] xl:w-[13%] mt-10"/>
+                                <Image src={icon1} alt={"icon1"} className="w-[15%] md:w-[10%] xl:w-[10%] mt-10"/>
                                 <span className="text-primary font-semibold">SU MISURA</span>
-                                <hr className="border border-primary w-full"/>
+                                <hr className="border border-primary w-1/3"/>
                                 <p className="text-[#3F3F3F] text-center xl:text-left">
                                     Il team si occupa di realizzare software ad-hoc per i PLC di macchine nuove, inclusi
                                     impianti già posseduti dalle aziende.
                                 </p>
                             </div>
                             <div className="flex flex-col items-center xl:items-start gap-2">
-                                <Image src={icon2} alt={"icon1"} className="w-[20%] md:w-[15%] xl:w-[17.75%] mt-10"/>
+                                <Image src={icon2} alt={"icon1"} className="w-[20%] md:w-[15%] xl:w-[13.75%] mt-10"/>
                                 <span className="text-primary font-semibold">ASSISTENZA</span>
-                                <hr className="border border-primary w-full"/>
+                                <hr className="border border-primary w-1/3"/>
                                 <p className="text-[#3F3F3F] text-center xl:text-left">
                                     Ricerca di guasti attraverso gli strumenti di diagnostica, messi a disposizione
                                     dagli ambienti di sviluppo
                                 </p>
                             </div>
                         </div>
-
                     </div>
-                    <div className="w-1/4 xl:block hidden"></div>
                 </div>
             </div>
 

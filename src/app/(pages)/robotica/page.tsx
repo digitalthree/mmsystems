@@ -7,8 +7,9 @@ import robotBlu from "../../../../public/img/attivita/robotica/mmsystems-12.png"
 import robotGrigio from "../../../../public/img/attivita/robotica/robot-grigio.webp";
 import backgroundTopRight from "../../../../public/img/backgroundRight.png";
 import backgroudBottomRight from "../../../../public/img/backgroundRight2.png";
-import cover2 from "../../../../public/img/attivita/robotica/banner2.jpg";
-import cover3 from "../../../../public/img/attivita/robotica/banner3.jpg";
+import cover1 from "../../../../public/img/attivita/robotica/mmsystems-23.jpg";
+import cover2 from "../../../../public/img/attivita/robotica/mmsystems-20.jpg";
+import cover3 from "../../../../public/img/attivita/robotica/mmsystems-21.jpg";
 import icona1 from "../../../../public/img/attivita/robotica/misura.png";
 import icona2 from "../../../../public/img/attivita/robotica/sicuri.png";
 import icona3 from "../../../../public/img/attivita/robotica/360.png";
@@ -73,7 +74,8 @@ export default function Page() {
                         }}
                         className="absolute top-[-30px] right-0 md:w-3/4 xl:w-3/5 z-0"
                     />
-                    <div className="container xl:h-[110vh] p-8 xl:p-0 mx-auto grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 items-center mt-8">
+                    <div
+                        className="container xl:h-[110vh] p-8 xl:p-0 mx-auto grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 items-center mt-8">
                         <div className="flex flex-col z-10 pb-48 sm:pb-96 xl:pb-0">
                             <div className="flex flex-col mb-8">
                                 <h4 className=" text-[#b7a095] text-2xl font-semibold">
@@ -134,6 +136,16 @@ export default function Page() {
                         }}
                         className="absolute bottom-0 right-0 md:w-3/4 lg:w-3/5 z-0"
                     />
+                    <section className="w-full h-[200px] sm:h-[250px] lg:h-[400px] 2xl:h-[500px] relative ">
+                        <Image
+                            src={cover1}
+                            fill
+                            alt="background section"
+                            style={{
+                                objectFit: "cover",
+                            }}
+                        />
+                    </section>
                     <div
                         className="container mx-auto p-8 xl:p-0 flex flex-col md:flex-row justify-center items-center text-[#3f3f3f] z-10">
                         <div className="flex flex-col md:w-3/5">
@@ -174,51 +186,40 @@ export default function Page() {
                 </section>
                 <section className="w-full h-[200px] sm:h-[250px] lg:h-[400px] 2xl:h-[500px] relative ">
                     <Image
-                        src={cover2}
+                        src={cover3}
                         fill
                         alt="background section"
                         style={{
                             objectFit: "cover",
-                            opacity: "0.3",
-                            filter: "grayscale(100%)",
                         }}
                     />
                 </section>
 
                 <section className="my-20 w-full relative">
                     <Image
-                        src={cover3}
+                        src={cover2}
                         fill
                         alt="background section"
                         style={{
                             objectFit: "cover",
-                            opacity: "0.1",
-                            filter: "grayscale(100%)",
                         }}
                     />
                     <div
                         className="container mx-auto p-8 xl:p-0 flex flex-col md:flex-row justify-center items-center text-[#3f3f3f] z-10">
                         <div className="flex flex-col text-right xl:w-4/5 xl:ml-auto xl:p-10">
-                            <h3 className="font-semibold  z-50 text-7xl lg:text-[65px] text-[40px]">
+                            <h3 className="font-semibold z-50 text-7xl lg:text-[65px] text-[40px]">
                                 BANCHI <br/>
                                 <span className="text-primary font-semibold text-7xl lg:text-[65px] text-[40px] ">
                   SEMIAUTOMATICI <br/>
                 </span>
                                 SU MISURA PER VOI
                             </h3>
-                            <p className="font-normal text-lg mt-8">
-                                M.M. Systems realizza sistemi integrati di assemblaggio,
-                                handling e collaudo, trasformando l’innovazione e la tecnologia
-                                in qualità, sicurezza ed efficienza dei processi industriali.I
-                                prodotti sviluppati dalla M.M. Systems, sono progettati,
-                                realizzati e messi a punto “su misura”: Siamo pronti a trovare
-                                soluzioni speciali per le specifiche esigenze dei propri
-                                clienti. La M.M. Systems è specializzata nella progettazione,
-                                realizzazione ed installazione di macchine speciali per
-                                l’automazione dei processi industriali di assemblaggio,
-                                movimentazione, logistica, handling, collaudo, controllo di
-                                processo, marcatura e data tracking, in diversi settori
-                                produttivi.
+                            <p className="font-normal z-50 text-lg mt-8">
+                                Sistemi integrati di assemblaggio, handling e collaudo, trasformando l’innovazione e la
+                                tecnologia in qualità, sicurezza ed efficienza dei processi industriali. I prodotti
+                                sviluppati dalla M.M. Systems, sono progettati realizzati e messi a punto su misura.
+                                Sempre pronti a trovare soluzioni speciali per le specifiche esigenze dei propri
+                                clienti.
                             </p>
                         </div>
                     </div>

@@ -47,7 +47,7 @@ const FirstSection: React.FC<FirstSectionProps> = ({}) => {
 
                         {/*<video src={require('../../public/video/videoHome.mov')} autoPlay muted loop className="mt-[-150px] -z-10"/>*/}
                     </div>
-                    <Image src={mmsystems2} alt={""} className="xl:absolute xl:w-2/3 xl:right-[-50px] xl:bottom-0"/>
+                    <Image src={mmsystems2} alt={""} className="xl:absolute xl:w-2/3 xl:right-0 xl:bottom-0"/>
                     {/*<motion.img src={"/img/mmsystems-2.png"} alt={"banner"}
                                 className="xl:w-5/5 w-1/2"
                         initial={{ opacity: 0, x: -100 }}
