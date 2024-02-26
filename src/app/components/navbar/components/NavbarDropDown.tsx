@@ -40,7 +40,7 @@ const NavbarDropdown: React.FC<NavbarDropdownProps> = ({textDropdown, itemsArray
                     </div>
                 }
 
-                <ul tabIndex={0} className={`p-2 shadow menu dropdown-content z-[1] ${navbarBackgroundColor === "#04203b" ? 'bg-primary text-white' : "bg-gray-300 text-[#3f3f3f]"} uppercase text-base rounded-box w-52`}>
+                <ul tabIndex={0} className={`p-2 shadow menu dropdown-content z-[1] ${navbarBackgroundColor === "#04203b" ? 'bg-primary text-white' : "bg-gray-300 text-[#3f3f3f]"} uppercase text-base rounded-box ${textDropdown === "Attività" ? 'w-[400px]' : 'w-64'}`}>
                     {itemsArray.map((i, index) => {
                         return(
                             <Link key={index} href={linkable ? "/"+textDropdown.toLowerCase()+"/"+linkArray[index] : "/"+linkArray[index]} onClick={() => {

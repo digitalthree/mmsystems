@@ -37,8 +37,9 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
                         <div className={`flex justify-evenly gap-10 capitalize ${navbarBackgroundColor === "#04203b" ? 'text-white' : "#3f3f3f"}`}>
                             <NavbarLink link={'/'} title={"Home"} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility}/>
                             <NavbarLink link={'chisiamo'} title={"Chi Siamo"} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility}/>
-                            <NavbarDropdown textDropdown={"Progettazione"} itemsArray={["elettrica", "meccanica", "dinamica"]} linkArray={["elettrica", "meccanica", "dinamica"]} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility} linkable={true}/>
-                            <NavbarDropdown textDropdown={"Attività"} itemsArray={["Metrologia", "Programmazione", "Robotica"]} linkArray={["metrologia", "programmazione", "robotica"]} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility} linkable={false}/>
+                            <NavbarDropdown textDropdown={"Progettazione"} itemsArray={["elettrica", "meccanica", "dinamica", "progettazione software"]} linkArray={["elettrica", "meccanica", "dinamica", "progettazioneSoftware"]} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility} linkable={true}/>
+                            <NavbarDropdown textDropdown={"Attività"} itemsArray={["Metrologia", "Programmazione", "Robotica", "Robot Collaborativi", "Banchi Semiautomatici", "Linee assemblaggio automatizzate", "Sistemi di visione rd intelligenza artificiale"]} linkArray={["metrologia", "programmazione", "robotica", "robotCollaborativi", "banchiSemiautomatici", "lineeAssemblaggio", "intelligenzaArtificiale"]} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility} linkable={false}/>
+                            <NavbarDropdown textDropdown={"Certificazioni"} itemsArray={["Qualità", "Sicurezza e Ambiente"]} linkArray={["qualita", "sicurezzaAmbiente"]} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility} linkable={false}/>
                             <NavbarLink link={'contattaci'} title={"Contattaci"} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility}/>
                         </div>
 

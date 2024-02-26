@@ -1,5 +1,5 @@
 "use client"
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {RiArrowLeftSLine, RiArrowRightSLine} from "react-icons/ri";
 import Image from "next/image";
 import image1 from "@public/img/carousel/image1.jpg";
@@ -9,11 +9,19 @@ import image4 from "@public/img/carousel/image4.jpg";
 
 import { Carousel } from 'react-responsive-carousel';
 import {useWindowInnerWidth} from "@/hook/useWindowInnerWidth";
+import {Img} from "@/data/images";
+import {fetchImages} from "@/pages/api/gallery";
 
 export interface RoboticaCarouselProps{}
 
 const RoboticaCarousel: React.FC<RoboticaCarouselProps> = ({}) => {
     const windowInnerWidth = useWindowInnerWidth()
+    const [images, setImages] = useState<Img[]>([])
+    useEffect(() => {
+        fetchImages().then(res => {
+            setImages(res)
+        })
+    }, []);
     return(
         <>
             <Carousel
@@ -46,22 +54,14 @@ const RoboticaCarousel: React.FC<RoboticaCarouselProps> = ({}) => {
                     )
                 }}
             >
-                <div className="relative sm:mr-2 grayscale transition duration-700 hover:grayscale-0">
-                    <Image src={image1} alt="assets/1.jpeg" className="w-full"/>
-                   
-                </div>
-                <div className="relative sm:mr-2 grayscale transition duration-700 hover:grayscale-0">
-                    <Image src={image2} alt="assets/2.jpeg" className="w-full"/>
-                   
-                </div>
-                <div className="relative sm:mr-2 grayscale transition duration-700 hover:grayscale-0">
-                    <Image src={image3} alt="assets/3.jpeg" className="w-full"/>
-                   
-                </div>
-                <div className="relative sm:mr-2 grayscale transition duration-700 hover:grayscale-0">
-                    <Image src={image4} alt="assets/4.jpeg" className="w-full"/>
-                   
-                </div>
+                {images.map((img) => {
+                    return(
+                        <div key={img.id} className="relative sm:mr-2 grayscale transition duration-700 hover:grayscale-0">
+                            <Image src={img.staticImage} alt="assets/1.jpeg" className="w-full"/>
+                        </div>
+                    )
+                })}
+
                 
             </Carousel>
         </>

@@ -96,4 +96,8 @@
   background-position: center;
 }
 
+.slide{
+  display: flex;
+  justify-content: center;
+}
 
