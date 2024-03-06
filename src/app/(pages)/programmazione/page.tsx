@@ -29,10 +29,10 @@ export default function Page() {
             <div className="plc" style={{backgroundColor: navbarBackgroundColor}}>
                 <div
                     className="container my-auto gap-4 h-full flex flex-col mx-auto justify-center items-start px-20 xl:px-0">
-                    <h1 className="text-[#3f3f3f] font-semibold z-50 text-7xl lg:text-[65px] md:text-[48px] text-[35px]">
+                    <h1 className="text-[#3f3f3f] font-bold">
                         PROGRAMMAZIONE <br/>
-                        <span
-                            className="text-primary font-semibold text-7xl lg:text-[65px] md:text-[48px] text-[35px]">PLC</span>
+                        <h1
+                            className="text-primary font-bold">PLC</h1>
                     </h1>
                     <p>
                         Oltre ai programmi su PLC e PC per il controllo e la supervisione di singole unita’ produttive,
@@ -51,12 +51,12 @@ export default function Page() {
                 <div className="container mx-auto flex px-20 xl:px-0 gap-10">
                     <Image src={image1} alt={"icon1"} className="w-1/2 left-0 xl:block hidden"/>
                     <div className="flex flex-col items-center xl:items-start gap-4">
-                        <span className="text-primary font-semibold">I NOSTRI SERVIZI</span>
+                        <span className="text-primary xl:text-2xl lg:text-xl">I NOSTRI SERVIZI</span>
                         <hr className="border border-primary w-2/3"/>
                         <div className="grid md:grid-cols-1 gap-20">
                             <div className="flex flex-col items-center xl:items-start gap-2">
                                 <Image src={icon1} alt={"icon1"} className="w-[15%] md:w-[10%] xl:w-[10%] mt-10"/>
-                                <span className="text-primary font-semibold">SU MISURA</span>
+                                <span className="text-primary xl:text-2xl lg:text-xl">SU MISURA</span>
                                 <hr className="border border-primary w-1/3"/>
                                 <p className="text-[#3F3F3F] text-center xl:text-left">
                                     Il team si occupa di realizzare software ad-hoc per i PLC di macchine nuove, inclusi
@@ -65,7 +65,7 @@ export default function Page() {
                             </div>
                             <div className="flex flex-col items-center xl:items-start gap-2">
                                 <Image src={icon2} alt={"icon1"} className="w-[20%] md:w-[15%] xl:w-[13.75%] mt-10"/>
-                                <span className="text-primary font-semibold">ASSISTENZA</span>
+                                <span className="text-primary xl:text-2xl lg:text-xl">ASSISTENZA</span>
                                 <hr className="border border-primary w-1/3"/>
                                 <p className="text-[#3F3F3F] text-center xl:text-left">
                                     Ricerca di guasti attraverso gli strumenti di diagnostica, messi a disposizione
@@ -78,10 +78,9 @@ export default function Page() {
             </div>
 
             <div className="w-full flex relative py-20 gap-32 flex-col items-center text-center px-10 lg:px-0">
-                <h1 className="text-[#3f3f3f] font-semibold z-50 text-7xl lg:text-[65px] md:text-[48px] text-[35px]">
+                <h1 className="text-[#3f3f3f] font-bold">
                     PROGRAMMIAMO I <br/>SEGUENTI
-                    <span
-                        className="text-primary font-semibold text-7xl lg:text-[65px] md:text-[48px] text-[35px]"> SOFTWARE</span>
+                    <h1 className="text-primary font-bold"> SOFTWARE</h1>
                 </h1>
                 <div className="flex flex-col items-center mb-20">
                     <hr className="w-full lg:w-1/5 border border-primary"/>

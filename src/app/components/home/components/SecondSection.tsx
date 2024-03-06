@@ -21,9 +21,9 @@ const SecondSection: React.FC<SecondSectionProps> = ({}) => {
         <div className="w-full bg-[#e4e4e4] relative">
             <div className="container mx-auto flex lg:h-[90vh] md:h-[60vh] h-[40vh] items-center">
                 <div className="xl:w-1/4 w-2/3 flex flex-col xl:pl-0 pl-2">
-                    <h1 className="text-black z-50 uppercase text-center xl:text-left xl:text-[90px] font-semibold md:text-[48px] text-[35px] xl:leading-[80px]">Da
+                    <h1 className="text-black z-50 uppercase text-center xl:text-left xl:text-[90px] font-bold md:text-[48px] text-[35px] xl:leading-[80px]">Da
                         Oltre <span
-                            className="text-primary uppercase text-7xl xl:text-[90px] font-semibold md:text-[48px] text-[35px]">10 Anni</span>
+                            className="text-primary uppercase text-7xl xl:text-[90px] font-bold md:text-[48px] text-[35px]">10 Anni</span>
                     </h1>
                     <span className="mt-3 z-50 text-black mb-3 xl:text-left text-center">MM Systems Srl fornisce all’Industria impianti nel campo
                                   dell’automazione e dell’impiantistica generale.</span>

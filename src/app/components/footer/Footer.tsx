@@ -50,7 +50,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
                             </div>
                         </div>
                         <div className="flex flex-col items-center gap-2">
-                            <Image src={logo} alt={"logo"} className="w-[150px] mb-2"/>
+                            <Image src={logo} alt={"logo"} className="w-[120px] mb-2"/>
                             <div className="flex gap-4">
                                 <div className="p-1 bg-white">
                                     <RiFacebookLine className="text-secondary" size={20}/>

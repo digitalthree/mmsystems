@@ -37,9 +37,9 @@ export default function Page() {
         <div className="h-[80vh] flex justify-center items-center relative w-full">
           <div className="absolute right-48">
             <div className="flex flex-col items-end">
-              <span className="text-primary text-lg">MM SYSTEMS</span>
+              <span className="text-primary xl:text-2xl lg:text-xl">MM SYSTEMS</span>
               <hr className="w-full border border-white mb-4" />
-              <h1 className="uppercase font-semibold text-white lg:text-start text-center md:text-6xl text-5xl mb-10">
+              <h1 className="uppercase font-bold text-white lg:text-start text-center mb-10">
                 chi siamo
               </h1>
               <Link
@@ -57,34 +57,34 @@ export default function Page() {
         {/* Inizio sezione stats */}
         <div className="container grid grid-cols-1 md:grid-cols-2 gap-7 p-10 my-10 text-center">
           <div className="flex flex-col mb-5 md:text-left">
-            <span className=" xl:text-7xl text-5xl font-normal text-white">
+            <h1 className="font-bold text-white">
               + 1550 MQ
-            </span>
-            <span className=" text-primary text-2xl xl:text-3xl font-normal">
+            </h1>
+            <span className=" text-primary xl:text-2xl lg:text-xl">
               PRODUCTION AREA
             </span>
           </div>
           <div className="flex flex-col mb-5  md:text-right">
-            <span className=" xl:text-7xl text-5xl font-normal text-white">
+            <h1 className="font-bold text-white">
               + 30%
-            </span>
-            <span className=" text-primary text-2xl xl:text-3xl font-normal">
+            </h1>
+            <span className="text-primary xl:text-2xl lg:text-xl">
               DI FATTURATO ANNUO
             </span>
           </div>
           <div className="flex flex-col mb-5 md:text-left">
-            <span className=" xl:text-7xl text-5xl font-normal text-white">
+            <h1 className="font-bold text-white">
               146 PROGETTI
-            </span>
-            <span className=" text-primary text-2xl xl:text-3xl font-normal">
+            </h1>
+            <span className=" text-primary xl:text-2xl lg:text-xl">
               COMPLETATI
             </span>
           </div>
           <div className="flex flex-col mb-5 md:text-right justify-center">
-            <span className=" xl:text-7xl text-5xl font-normal text-white">
+            <h1 className="font-bold text-white">
               16 TOP
-            </span>
-            <span className=" text-primary text-2xl xl:text-3xl font-normal">
+            </h1>
+            <span className=" text-primary xl:text-2xl lg:text-xl">
               CLIENTS
             </span>
           </div>
@@ -103,48 +103,48 @@ export default function Page() {
                 height={636}
               />
               <div className="flex flex-col items-center mt-5 xl:mt-0">
-                <span className=" text-primary text-lg font-semibold mb-3">
+                <span className="text-primary xl:text-2xl lg:text-xl mb-3">
                   NULLA E` IMPOSSIBILE
                 </span>
-                <span className=" text-[#3f3f3f] text-center xl:text-left font-normal text-lg mb-12 w-5/6 md:w-full">
+                <p className=" text-[#3f3f3f] text-center xl:text-left mb-12 w-5/6 md:w-full">
                   Realtà abruzzese consolidata nel panorama europeo
                   dell`industria di automazione robotica. La MM systems, dal
                   2007 ad oggi, grazie al suo fondatore Miki Morleo, personalità
                   e professionista particolarmente attivo nel settore della
                   produzione di apparecchiature elettriche ed elettromeccaniche;
                   si distingue sul territorio.
-                </span>
-                <span className=" text-primary text-center xl:text-right text-lg font-semibold mb-3">
+                </p>
+                <span className=" text-primary text-center xl:text-right xl:text-2xl lg:text-xl mb-3">
                   PERCHE`?
                 </span>
-                <span className=" text-[#3f3f3f] text-center xl:text-right text-lg font-normal mb-12 w-5/6 md:w-full">
+                <p className="text-[#3f3f3f] text-center xl:text-right mb-12 w-5/6 md:w-full">
                   Il costante interesse nei confronti della ricerca scientifica
                   e tecnologica. <br /> Infatti, MM Systems diviene portavoce e
                   precursore di concetti innovativi e al passo con i tempi, come
                   l`industria 4.0.
-                </span>
+                </p>
               </div>
             </div>
 
             <div className="w-full flex flex-col items-center xl:items-start md:pl-10">
-              <span className=" text-primary text-lg font-semibold mb-3">
+              <span className=" text-primary xl:text-2xl lg:text-xl mb-3">
                 COSA SI INTENDE PER INDUSTRIA 4.0?
               </span>
-              <span className=" text-[#3f3f3f] font-normal xl:text-left text-center text-lg mb-12 w-5/6 md:w-full">
+              <p className=" text-[#3f3f3f] xl:text-left text-center mb-12 w-5/6 md:w-full">
                 Massima espressione della quarta rivoluzione industriale, e i
                 cobot, robot collaborativi antropomorfi capaci di interagire con
                 l`uomo nello spazio di lavoro.
-              </span>
+              </p>
             </div>
           </div>
           <div className="w-full">
             <h3 className="font-normal text-4xl md:text-6xl text-[#3f3f3f] mb-5 xl:mb-12"></h3>
           </div>
           <div className="full flex flex-col justify-center items-center md:p-10 xl:pb-0">
-            <h3 className="font-semibold uppercase text-4xl md:text-6xl text-[#3f3f3f]">
+            <h1 className="font-bold uppercase text-[#3f3f3f]">
               i nostri clienti
-            </h3>
-            <hr className="w-full border border-black my-5" />
+            </h1>
+            <hr className="w-1/2 border border-black my-5"/>
             <div className="divider w-full divider-neutral mx-auto"></div>
             <Image
               className="w-3/4"

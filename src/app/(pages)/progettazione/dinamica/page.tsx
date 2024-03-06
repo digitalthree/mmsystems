@@ -10,6 +10,13 @@ import Link from "next/link";
 import {MdKeyboardArrowRight} from "react-icons/md";
 import backgroundLeft from "../../../../../public/img/backgroundLeft.png";
 import backgroundRight0 from "../../../../../public/img/backgroundRight0.png";
+import bilanciare from "@public/img/progettazione/dinamica/Bilanciare.png";
+import progettare1 from "@public/img/progettazione/dinamica/progettare-1.png";
+import dimCome2 from "@public/img/progettazione/dinamica/dim-come-2.png";
+import ridurre4 from "@public/img/progettazione/dinamica/ridurre-4.png";
+import ottimizzare5 from "@public/img/progettazione/dinamica/ottimizzare5.png";
+import dimostrare6 from "@public/img/progettazione/dinamica/dimostrare6.png";
+
 
 
 export default function Page() {
@@ -29,9 +36,9 @@ export default function Page() {
             <div className="dinamica h-[70vh]">
                 <div
                     className="container my-auto gap-4 h-full flex flex-col mx-auto justify-center items-center xl:items-start text-center xl:text-start">
-                    <span className="text-[#CE2AE9] font-semibold uppercase">simulazione dinamica</span>
-                    <hr className="border border-white w-1/4"/>
-                    <h1 className="text-black font-semibold uppercase text-7xl lg:text-[65px] md:text-[48px] text-[35px]">fattibilità e<br/> sviluppo <br/> delle tue idee</h1>
+                    <span className="text-[#CE2AE9] xl:text-2xl lg:text-xl uppercase">simulazione dinamica</span>
+                    <hr className="border border-[#3f3f3f] w-1/6"/>
+                    <h1 className="text-[#3f3f3f] font-bold uppercase">fattibilità e<br/> sviluppo <br/> delle tue idee</h1>
                 </div>
             </div>
 
@@ -40,6 +47,32 @@ export default function Page() {
                     <p className="text-[#3F3F3F] text-center">
                         Grazie alla Simulazione Dinamica MM Systems ti aiuterà a sviluppare e studiare la fattibilità delle tue idee
                     </p>
+                </div>
+            </div>
+            <div className="grid grid-cols-3 gap-20 w-3/5 mx-auto pb-20">
+                <div className="flex flex-col items-center gap-4">
+                    <Image src={progettare1} alt={"banchi assemblaggio"} className="w-1/2"/>
+                    <p className="text-center">Progettare e certificare le prestazioni di un nuovo impianto</p>
+                </div>
+                <div className="flex flex-col items-center gap-4">
+                    <Image src={dimCome2} alt={"banchi assemblaggio"} className="w-1/2"/>
+                    <p className="text-center">Dimostrare come opera una tecnologia o un nuovo processo produttivo</p>
+                </div>
+                <div className="flex flex-col items-center gap-4">
+                    <Image src={bilanciare} alt={"banchi assemblaggio"} className="w-1/2"/>
+                    <p className="text-center">Bilanciare costi da sostenere e prestazioni ottenibili</p>
+                </div>
+                <div className="flex flex-col items-center gap-4">
+                    <Image src={ridurre4} alt={"banchi assemblaggio"} className="w-1/2"/>
+                    <p className="text-center">Ridurre i tempi di avviamento</p>
+                </div>
+                <div className="flex flex-col items-center gap-4">
+                    <Image src={ottimizzare5} alt={"banchi assemblaggio"} className="w-1/2"/>
+                    <p className="text-center">Ottimizzare l’utilizzo delle risorse produttive ed energetiche</p>
+                </div>
+                <div className="flex flex-col items-center gap-4">
+                    <Image src={dimostrare6} alt={"banchi assemblaggio"} className="w-1/2"/>
+                    <p className="text-center">Dimostrare la validità delle proprie idee</p>
                 </div>
             </div>
             <MyCarousel/>

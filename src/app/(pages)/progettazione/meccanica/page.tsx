@@ -2,9 +2,12 @@
 import {globalStore} from "@/store/globalStore";
 import React, {useEffect, useState} from "react";
 import Image from "next/image";
-import icon1 from "../../../../../public/img/progettazione/meccanica/icon1.png";
-import icon2 from "../../../../../public/img/progettazione/meccanica/icon2.png";
-import icon3 from "../../../../../public/img/progettazione/meccanica/icon3.png";
+import banchiAssemblaggio from "../../../../../public/img/progettazione/meccanica/banchiAssemblaggio.png";
+import isole from "../../../../../public/img/progettazione/meccanica/isole.png";
+import attrezzature from "../../../../../public/img/progettazione/meccanica/attrezzature.png";
+import carpenteria from "../../../../../public/img/progettazione/meccanica/carpenteria.png";
+import lavorazioni from "../../../../../public/img/progettazione/meccanica/lavorazioni.png";
+import maschere from "../../../../../public/img/progettazione/meccanica/maschere.png";
 import MyCarousel from "@/app/components/carousel/MyCarousel";
 import Link from "next/link";
 import {MdKeyboardArrowRight} from "react-icons/md";
@@ -29,9 +32,9 @@ export default function Page() {
             <div className="meccanica h-[70vh]">
                 <div
                     className="container my-auto gap-4 h-full flex flex-col mx-auto justify-center items-center xl:items-start text-center xl:text-start">
-                    <span className="text-[#7E2AE9] font-semibold uppercase">progettazione meccanica</span>
-                    <hr className="border border-white w-1/4"/>
-                    <h1 className="text-black font-semibold uppercase text-7xl lg:text-[65px] md:text-[48px] text-[35px]">soluzioni
+                    <span className="text-[#7E2AE9] xl:text-2xl lg:text-xl uppercase">progettazione meccanica</span>
+                    <hr className="border border-[#3f3f3f] w-1/6"/>
+                    <h1 className="text-[#3f3f3f] font-bold uppercase">soluzioni
                         mirate<br/> all`esigenza <br/> del cliente</h1>
                 </div>
             </div>
@@ -58,6 +61,32 @@ export default function Page() {
 
                 </div>
             </div>
+            <div className="grid xl:grid-cols-3 xl:gap-20 w-3/5 mx-auto xl:py-20">
+                <div className="flex flex-col items-center gap-4">
+                    <Image src={banchiAssemblaggio} alt={"banchi assemblaggio"} className="w-1/2"/>
+                    <p className="text-center">Banchi di assemblaggio di tipo manuali o automatici</p>
+                </div>
+                <div className="flex flex-col items-center gap-4">
+                    <Image src={isole} alt={"banchi assemblaggio"} className="w-1/2"/>
+                    <p className="text-center">Isole robotizzate per operazioni di saldatura, manipolazione e dispensazione</p>
+                </div>
+                <div className="flex flex-col items-center gap-4">
+                    <Image src={attrezzature} alt={"banchi assemblaggio"} className="w-1/2"/>
+                    <p className="text-center">Attrezzature per asservimento presse di stampaggio a freddo, ad iniezione e pressofusione</p>
+                </div>
+                <div className="flex flex-col items-center gap-4">
+                    <Image src={carpenteria} alt={"banchi assemblaggio"} className="w-1/2"/>
+                    <p className="text-center">Carpenteria metallica medio/piccola e di precisione</p>
+                </div>
+                <div className="flex flex-col items-center gap-4">
+                    <Image src={lavorazioni} alt={"banchi assemblaggio"} className="w-1/2"/>
+                    <p className="text-center">Lavorazioni Cad Cam</p>
+                </div>
+                <div className="flex flex-col items-center gap-4">
+                    <Image src={maschere} alt={"banchi assemblaggio"} className="w-1/2"/>
+                    <p className="text-center">Maschere e calibri di controllo per componenti saldati o stampati</p>
+                </div>
+            </div>
             <MyCarousel/>
             <div className="container flex flex-col py-20 mx-auto items-center">
                 <Link href="/galleria"
@@ -68,7 +97,7 @@ export default function Page() {
                     </div>
                 </Link>
             </div>
-            <Image src={backgroundLeft} alt={"background left"} className="absolute bottom-0 left-0 w-1/2"/>
+            <Image src={backgroundLeft} alt={"background left"} className="absolute bottom-0 left-0 w-1/2 z-10"/>
             <Image src={backgroundRight0} alt={"background right"} className="absolute bottom-0 right-0 w-1/2"/>
         </div>
     )

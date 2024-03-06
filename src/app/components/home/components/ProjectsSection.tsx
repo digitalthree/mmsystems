@@ -14,11 +14,7 @@ export interface ProjectsSectionProps{
 const ProjectsSection: React.FC<ProjectsSectionProps> = ({}) => {
     return(
         <>
-            <div className="w-full bg-white">
-                <div className="container flex flex-col py-20 mx-auto xl:px-0 px-10 bg-white items-center">
-                    <h1 className="font-semibold uppercase xl:text-7xl md:text-[48px] text-[35px]">I nostri progetti</h1>
-                    <hr className="w-full border border-black my-5"/>
-                </div>
+            <div className="w-full bg-white pt-20">
                 <MyCarousel/>
                 <div className="container flex flex-col py-20 mx-auto bg-white items-center">
                     <Link href="galleria" className="py-1 xl:py-2 px-2 text-white rounded-[100px] bg-primary flex justify-between items-center xl:gap-1">

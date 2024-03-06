@@ -2,7 +2,7 @@ import React from 'react';
 import Link from "next/link";
 import {globalStore} from "@/store/globalStore";
 
-export interface NavbarDropdownProps{
+export interface NavbarDropdownProps {
     textDropdown: string,
     itemsArray: string[],
     linkArray: string[],
@@ -11,42 +11,54 @@ export interface NavbarDropdownProps{
     linkable: boolean
 }
 
-const NavbarDropdown: React.FC<NavbarDropdownProps> = ({textDropdown, itemsArray, linkArray, setHrVisibility, hrVisibility, linkable}) => {
-    const updateLoading = globalStore((state:any) => state.updateLoading)
-    const navbarBackgroundColor = globalStore((state:any) => state.navbarBackgroundColor)
-    const footerBackgroundColor = globalStore((state:any) => state.footerBackgroundColor)
-    const updateFooterBackgroundColor = globalStore((state:any) => state.updateFooterBackgroundColor)
-    return(
+const NavbarDropdown: React.FC<NavbarDropdownProps> = ({
+                                                           textDropdown,
+                                                           itemsArray,
+                                                           linkArray,
+                                                           setHrVisibility,
+                                                           hrVisibility,
+                                                           linkable
+                                                       }) => {
+    const updateLoading = globalStore((state: any) => state.updateLoading)
+    const navbarBackgroundColor = globalStore((state: any) => state.navbarBackgroundColor)
+    const footerBackgroundColor = globalStore((state: any) => state.footerBackgroundColor)
+    const updateFooterBackgroundColor = globalStore((state: any) => state.updateFooterBackgroundColor)
+    return (
         <>
             <div className="dropdown dropdown-hover md:block hidden">
                 {linkable ?
-                    <Link href={"/"+textDropdown.toLowerCase()}
+                    <Link href={"/" + textDropdown.toLowerCase()}
                           onClick={() => {
                               setHrVisibility(textDropdown.toLowerCase() as ("progettazione" | "attivita"))
                               updateLoading(false)
                           }}
                     >
-                        <div tabIndex={0} role="button" className={`uppercase ${navbarBackgroundColor === "#04203b" ? 'text-white' : "text-[#3f3f3f]"} bg-transparent text-base font-normal`}
-                            style={{color: footerBackgroundColor !== '#04203b' && footerBackgroundColor }}
+                        <div tabIndex={0} role="button"
+                             className={`uppercase ${navbarBackgroundColor === "#04203b" ? 'text-white' : "text-[#3f3f3f]"} bg-transparent text-base ${hrVisibility && hrVisibility === textDropdown.toLowerCase() ? 'font-bold text-xl' : 'font-normal'}`}
+                             style={{color: footerBackgroundColor !== '#04203b' && footerBackgroundColor}}
                              onClick={() => updateFooterBackgroundColor("#04203b")}
                         >
                             {textDropdown}
-                            {hrVisibility && hrVisibility === textDropdown.toLowerCase() && <hr className={`w-full border ${navbarBackgroundColor === "#04203b" ? 'border-white' : "border-[#3f3f3f]"}`} style={{borderColor: footerBackgroundColor !== '#04203b' && footerBackgroundColor }}/>}
+
                         </div>
                     </Link> :
-                    <div tabIndex={0} role="button" className={`uppercase ${navbarBackgroundColor === "#04203b" ? 'text-white' : "text-[#3f3f3f]"} bg-transparent text-base font-normal`}>
+                    <div tabIndex={0} role="button"
+                         className={`uppercase ${navbarBackgroundColor === "#04203b" ? 'text-white' : "text-[#3f3f3f]"} bg-transparent text-base ${hrVisibility && hrVisibility === textDropdown.toLowerCase() ? 'font-bold text-xl' : 'font-normal'}`}>
                         {textDropdown}
-                        {hrVisibility && hrVisibility === textDropdown.toLowerCase() && <hr className={`w-full border ${navbarBackgroundColor === "#04203b" ? 'border-white' : "border-[#3f3f3f]"}`}/>}
                     </div>
                 }
 
-                <ul tabIndex={0} className={`p-2 shadow menu dropdown-content z-[1] ${navbarBackgroundColor === "#04203b" ? 'bg-primary text-white' : "bg-gray-300 text-[#3f3f3f]"} uppercase text-base rounded-box ${textDropdown === "Attività" ? 'w-[400px]' : 'w-64'}`}>
+                <ul tabIndex={0}
+                    className={`p-0 pt-6 menu dropdown-content z-[1] ${navbarBackgroundColor === "#04203b" ? 'text-white' : "text-[#3f3f3f]"} bg-transparent uppercase text-base rounded-box ${textDropdown === "Attività" ? 'w-[400px]' : 'w-64'}`}>
                     {itemsArray.map((i, index) => {
-                        return(
-                            <Link key={index} href={linkable ? "/"+textDropdown.toLowerCase()+"/"+linkArray[index] : "/"+linkArray[index]} onClick={() => {
-                                setHrVisibility(textDropdown.toLowerCase() as ("progettazione" | "attivita"))
-                                updateLoading(false)
-                            }}>
+                        return (
+                            <Link key={index} className={`text-sm ${navbarBackgroundColor === "#04203b" ? 'text-primary' : "text-[#3f3f3f]"}`}
+                                  href={linkable ? "/" + textDropdown.toLowerCase() + "/" + linkArray[index] : "/" + linkArray[index]}
+                                  style={{color: (footerBackgroundColor !== '#04203b' && linkable) && footerBackgroundColor }}
+                                  onClick={() => {
+                                      setHrVisibility(textDropdown.toLowerCase() as ("progettazione" | "attivita"))
+                                      updateLoading(false)
+                                  }}>
                                 {i}
                             </Link>
                         )

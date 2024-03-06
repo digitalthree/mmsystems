@@ -4,7 +4,7 @@ import React, {useEffect} from "react";
 
 import Image from "next/image";
 import robotBlu from "../../../../public/img/attivita/robotica/mmsystems-12.png";
-import robotGrigio from "../../../../public/img/attivita/robotica/robot-grigio.webp";
+import robotGrigio from "../../../../public/img/attivita/robotica/braccio-robotico.png";
 import backgroundTopRight from "../../../../public/img/backgroundRight.png";
 import backgroudBottomRight from "../../../../public/img/backgroundRight2.png";
 import cover1 from "../../../../public/img/attivita/robotica/mmsystems-23.jpg";
@@ -40,13 +40,13 @@ export default function Page() {
             <div className="w-full robotica flex justify-center">
                 <div className="w-full min-h-[85vh] flex flex-col justify-center items-center">
                     <div className=" container p-8 gap-4 h-full flex flex-col justify-center">
-                        <h1 className="text-[#3f3f3f] font-semibold z-50 text-7xl lg:text-[65px] text-[40px]">
+                        <h1 className="text-[#3f3f3f] font-bold">
                             ROBOTICA <br/>
-                            <span className="text-primary font-semibold text-7xl lg:text-[65px] text-[40px]">
+                            <h1 className="text-primary font-bold">
                 ISOLE ROBOTIZZATE
-              </span>
+              </h1>
                         </h1>
-                        <p className="text-[#3f3f3f] font-normal text-lg md:w-4/5">
+                        <p className="text-[#3f3f3f] font-normal md:w-4/5">
                             Le nostre soluzioni. La M.M. Systems offre soluzioni robotizzate
                             di automazione su misura per il vostro settore utilizzando tutti i
                             marchi dei brand di robotica presenti sul mercato. I nostri
@@ -78,33 +78,33 @@ export default function Page() {
                         className="container xl:h-[110vh] p-8 xl:p-0 mx-auto grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 items-center mt-8">
                         <div className="flex flex-col z-10 pb-48 sm:pb-96 xl:pb-0">
                             <div className="flex flex-col mb-8">
-                                <h4 className=" text-[#b7a095] text-2xl font-semibold">
+                                <span className=" text-[#b7a095] xl:text-2xl lg:text-xl">
                                     INVENTIAMO
-                                </h4>
+                                </span>
                                 <hr className="w-full border border-[#B7A095]"/>
-                                <p className="text-[#3f3f3f] font-normal text-lg">
+                                <p className="text-[#3f3f3f]">
                                     Grazie all’esperienza decennale, ai trascorsi in vari ambiti e
                                     alla continua innovazione del settore il nostro staff tecnico
                                     è capace di INVENTARE soluzioni sempre al passo con i tempi.
                                 </p>
                             </div>
                             <div className="flex flex-col mb-8">
-                                <h4 className=" text-[#b7a095] text-2xl font-semibold">
+                                <span className=" text-[#b7a095] xl:text-2xl lg:text-xl">
                                     PROGETTIAMO
-                                </h4>
+                                </span>
                                 <hr className="w-full border border-[#B7A095]"/>
-                                <p className="text-[#3f3f3f] font-normal text-lg">
+                                <p className="text-[#3f3f3f]">
                                     Date le tante conoscenze nel settore automotive e non solo, e
                                     la continua innovazione richiesta dal cliente l’inventiva si
                                     tramuta in PROGETTO meccanico, elettrico e software.
                                 </p>
                             </div>
                             <div className="flex flex-col mb-8">
-                                <h4 className=" text-[#b7a095] text-2xl font-semibold">
+                                <h4 className=" text-[#b7a095] xl:text-2xl lg:text-xl">
                                     REALIZZIAMO
                                 </h4>
                                 <hr className="w-full border border-[#B7A095]"/>
-                                <p className="text-[#3f3f3f] font-normal text-lg">
+                                <p className="text-[#3f3f3f]">
                                     La Progettazione si tramuta in REALIZZAZIONE grazie ad
                                     un’officina meccanica organizzata ed attrezzata, ad un
                                     comparto elettrico preparato e a programmatori efficienti.
@@ -136,29 +136,19 @@ export default function Page() {
                         }}
                         className="absolute bottom-0 right-0 md:w-3/4 lg:w-3/5 z-0"
                     />
-                    <section className="w-full h-[200px] sm:h-[250px] lg:h-[400px] 2xl:h-[500px] relative ">
-                        <Image
-                            src={cover1}
-                            fill
-                            alt="background section"
-                            style={{
-                                objectFit: "cover",
-                            }}
-                        />
-                    </section>
                     <div
                         className="container mx-auto p-8 xl:p-0 flex flex-col md:flex-row justify-center items-center text-[#3f3f3f] z-10">
                         <div className="flex flex-col md:w-3/5">
-                            <h3 className="font-semibold z-50 text-7xl lg:text-[65px] text-[40px]">
+                            <h1 className="font-bold">
                                 ROBOT <br/>
-                                <span className="text-primary font-semibold text-7xl lg:text-[65px] text-[40px] ">
+                                <h1 className="text-primary font-bold">
                   COLLABORATIVI
-                </span>
-                            </h3>
-                            <h3 className=" font-semibold text-2xl mt-2 mb-8">
+                </h1>
+                            </h1>
+                            <span className="xl:text-2xl lg:text-xl mt-2 mb-8">
                                 INNOVATIVI - SICURI - INTELLIGENTI
-                            </h3>
-                            <p className="font-normal text-lg xl:w-4/5">
+                            </span>
+                            <p className="xl:w-4/5">
                                 M.M. Systems propone soluzioni complete di robotica
                                 collaborativa utilizzando tutte le possibilità offerte da questa
                                 nuova tecnologia inoltre a partire dal 2018 è diventata
@@ -184,18 +174,9 @@ export default function Page() {
                         </div>
                     </div>
                 </section>
-                <section className="w-full h-[200px] sm:h-[250px] lg:h-[400px] 2xl:h-[500px] relative ">
-                    <Image
-                        src={cover3}
-                        fill
-                        alt="background section"
-                        style={{
-                            objectFit: "cover",
-                        }}
-                    />
-                </section>
 
-                <section className="my-20 w-full relative">
+
+                <section className="w-full relative h-[70vh] flex">
                     <Image
                         src={cover2}
                         fill
@@ -207,14 +188,14 @@ export default function Page() {
                     <div
                         className="container mx-auto p-8 xl:p-0 flex flex-col md:flex-row justify-center items-center text-[#3f3f3f] z-10">
                         <div className="flex flex-col text-right xl:w-4/5 xl:ml-auto xl:p-10">
-                            <h3 className="font-semibold z-50 text-7xl lg:text-[65px] text-[40px]">
+                            <h1 className="font-bold z-50">
                                 BANCHI <br/>
-                                <span className="text-primary font-semibold text-7xl lg:text-[65px] text-[40px] ">
+                                <h1 className="text-primary font-bold">
                   SEMIAUTOMATICI <br/>
-                </span>
+                </h1>
                                 SU MISURA PER VOI
-                            </h3>
-                            <p className="font-normal z-50 text-lg mt-8">
+                            </h1>
+                            <p className="z-50 mt-8">
                                 Sistemi integrati di assemblaggio, handling e collaudo, trasformando l’innovazione e la
                                 tecnologia in qualità, sicurezza ed efficienza dei processi industriali. I prodotti
                                 sviluppati dalla M.M. Systems, sono progettati realizzati e messi a punto su misura.
@@ -224,7 +205,7 @@ export default function Page() {
                         </div>
                     </div>
                 </section>
-                <section className="mb-20 container grid grid-cols-2 md:grid-cols-4 md:gap-3 text-center mx-auto">
+                <section className="my-20 container grid grid-cols-2 md:grid-cols-4 md:gap-3 text-center mx-auto">
                     <div className="flex flex-col p-3 items-center ">
                         <Image
                             src={icona1}
@@ -234,10 +215,10 @@ export default function Page() {
                                 width: "auto",
                             }}
                         />
-                        <h4 className=" text-primary font-bold text-lg md:text-xl mt-6 ">
+                        <span className="text-primary xl:text-2xl lg:text-xl mt-6 ">
                             PROGETTA E<br/>
                             REALIZZA SU MISURA
-                        </h4>
+                        </span>
                     </div>
                     <div className="flex flex-col p-3 items-center">
                         <Image
@@ -248,10 +229,10 @@ export default function Page() {
                                 width: "auto",
                             }}
                         />
-                        <h4 className=" text-primary font-bold text-lg md:text-xl mt-6 ">
+                        <span className=" text-primary xl:text-2xl lg:text-xl mt-6 ">
                             SICURI E<br/>
                             SEMPLICI
-                        </h4>
+                        </span>
                     </div>
                     <div className="flex flex-col p-3 items-center">
                         <Image
@@ -262,10 +243,10 @@ export default function Page() {
                                 width: "auto",
                             }}
                         />
-                        <h4 className=" text-primary font-bold text-lg md:text-xl mt-6 ">
+                        <span className=" text-primary xl:text-2xl lg:text-xl mt-6 ">
                             IMPLEMENTAZIONE
                             <br/>A 360°
-                        </h4>
+                        </span>
                     </div>
                     <div className="flex flex-col p-3 items-center">
                         <Image
@@ -276,23 +257,23 @@ export default function Page() {
                                 width: "auto",
                             }}
                         />
-                        <h4 className=" text-primary font-bold text-lg md:text-xl mt-6 ">
+                        <span className=" text-primary xl:text-2xl lg:text-xl mt-6 ">
                             GESTIONE
                             <br/>
                             CONTROLLO QUALITÀ
-                        </h4>
+                        </span>
                     </div>
                 </section>
                 <div className="container p-8 text-center mx-auto text-[#3f3f3f]">
-                    <h3 className="font-semibold z-50 text-7xl lg:text-[65px] text-[40px]">
+                    <h1 className="font-bold z-50">
                         SCOPRI
-                        <span className="text-primary ml-3 font-semibold text-7xl lg:text-[65px] text-[40px] ">
+                        <h1 className="text-primary ml-3 font-bold">
               DI PIÙ
-            </span>
-                    </h3>
-                    <h3 className=" font-semibold text-2xl mt-3">
+            </h1>
+                    </h1>
+                    <span className=" xl:text-2xl lg:text-xl mt-3">
                         SUI BANCHI SEMIAUTOMATICI
-                    </h3>
+                    </span>
                 </div>
                 <section className="py-10 pb-20">
                     <RoboticaCarousel/>

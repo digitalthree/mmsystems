@@ -17,8 +17,6 @@ export default function Page() {
     const updateFooterBackgroundColor = globalStore((state: any) => state.updateFooterBackgroundColor)
     const navbarBackgroundColor = globalStore((state: any) => state.navbarBackgroundColor)
 
-    const [hover, setHover] = useState("")
-
     useEffect(() => {
         updateNavbarBackgroundColor("#e4e4e4")
         updateFooterBackgroundColor("#2A5FE9")
@@ -29,9 +27,9 @@ export default function Page() {
             <div className="elettrica h-[70vh]">
                 <div
                     className="container my-auto gap-4 h-full flex flex-col mx-auto justify-center items-center xl:items-start text-center xl:text-start">
-                    <span className="text-[#2A5FE9] font-semibold uppercase">progettazione elettrica</span>
-                    <hr className="border border-white w-1/4"/>
-                    <h1 className="text-black font-semibold uppercase text-7xl lg:text-[65px] md:text-[48px] text-[35px]">progettazione<br/> realizzazione
+                    <span className="text-[#2A5FE9] xl:text-2xl lg:text-xl uppercase">progettazione elettrica</span>
+                    <hr className="border border-[#3f3f3f] w-1/6"/>
+                    <h1 className="text-[#3f3f3f] font-bold uppercase">progettazione<br/> realizzazione
                         e <br/> certificazione</h1>
                 </div>
             </div>
@@ -40,7 +38,7 @@ export default function Page() {
                 className="flex mx-auto py-20 flex-col items-center xl:items-start text-center xl:text-start gap-20 xl:w-4/5 px-10 lg:px-0">
                 <div className="flex flex-col gap-3 items-center mx-auto">
                     <Image src={icon1} alt={"icon1"} className="lg:w-20 w-16"/>
-                    <span className="text-[#2A5FE9]">progettazione</span>
+                    <span className="text-[#2A5FE9] xl:text-2xl lg:text-xl uppercase">progettazione</span>
                     <hr className="w-1/6 border border-white"/>
                     <p className="text-[#3F3F3F] text-center">
                         La MM Systems progetta e realizza impianti elettrici industriali e quadri di distribuzione, di
@@ -54,7 +52,7 @@ export default function Page() {
                 </div>
                 <div className="flex flex-col gap-3 items-center mx-auto">
                     <Image src={icon2} alt={"icon1"} className="lg:w-20 w-16"/>
-                    <span className="text-[#2A5FE9]">realizzazione</span>
+                    <span className="text-[#2A5FE9] xl:text-2xl lg:text-xl uppercase">realizzazione</span>
                     <hr className="w-1/6 border border-white"/>
                     <p className="text-[#3F3F3F] text-center">
                         I principali settori di attività dell’azienda, operativa in tutti i settori, sono:
@@ -69,7 +67,7 @@ export default function Page() {
                 </div>
                 <div className="flex flex-col gap-3 items-center mx-auto">
                     <Image src={icon3} alt={"icon1"} className="lg:w-20 w-16"/>
-                    <span className="text-[#2A5FE9]">certificazione</span>
+                    <span className="text-[#2A5FE9] xl:text-2xl lg:text-xl uppercase">certificazione</span>
                     <hr className="w-2/3 border border-white"/>
                     <p className="list-disc w-fit mx-auto text-center text-[#3F3F3F]">
                         <li>Progettazione e realizzazione della rete</li>

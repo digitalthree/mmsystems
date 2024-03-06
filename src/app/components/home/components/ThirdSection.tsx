@@ -19,16 +19,16 @@ const ThirdSection: React.FC<SecondSectionProps> = ({}) => {
             <div className="container flex px-5 py-5 xl:py-20 mx-auto ">
                 <div className="flex flex-col items-center w-full xl:items-start text-center gap-10 xl:w-2/3">
                     <div className="xl:col-span-10 flex flex-col xl:items-start items-center">
-                        <span className="text-[#04203B] uppercase font-semibold">eccellenza nel servizio e nell`esecuzione</span>
+                        <span className="text-[#04203B] xl:text-2xl lg:text-xl text-lg uppercase xl:mb-10 mb-0">eccellenza nel servizio e nell`esecuzione</span>
                         <hr className="xl:w-2/3 w-1/2 border border-white my-2"/>
-                        <span className="text-primary font-semibold">PROGETTAZIONE: <span className="text-primary">Elettrica, Meccanica, Simulazione dinamica</span></span>
-                        <span className="text-primary font-semibold">ATTIVITA`: <span className="text-primary">Metrologia</span></span>
-                        <span className="text-primary font-semibold">PROGRAMMAZIONE: <span className="text-primary">PLC</span></span>
-                        <span className="text-primary font-semibold">ROBOTICA: <span className="text-primary">Isole robotizzate, Robot Collaborativi e Banchi semiautomatici</span></span>
-                        <hr className="xl:w-1/3 w-1/2 border border-white mt-5"/>
+                        <span className="text-primary">PROGETTAZIONE: <span className="text-primary">Elettrica, Meccanica, Simulazione dinamica</span></span>
+                        <span className="text-primary">ATTIVITA`: <span className="text-primary">Metrologia</span></span>
+                        <span className="text-primary">PROGRAMMAZIONE: <span className="text-primary">PLC</span></span>
+                        <span className="text-primary">ROBOTICA: <span className="text-primary">Isole robotizzate, Robot Collaborativi e Banchi semiautomatici</span></span>
+                        <hr className="xl:w-1/3 w-1/2 border border-white my-2"/>
                     </div>
                     <div className="flex flex-col items-start">
-                        <h1 className="text-[#04203B] font-semibold text-7xl lg:text-[60px] md:text-[48px] text-[35px] uppercase">perchè <span className="text-primary font-semibold uppercase text-7xl lg:text-[60px] md:text-[48px] text-[35px] ">sceglierci?</span></h1>
+                        <h1 className="text-[#04203B] font-bold uppercase">perchè <span className="text-primary xl:text-[90px] lg:text-[60px] md:text-[48px] text-[35px] font-bold uppercase">sceglierci?</span></h1>
                     </div>
                     <div className="flex flex-col xl:items-start">
                         <ul className="lg:list-disc lg:text-start text-[#04203B] xl:text-lg text-base xl:pl-6">

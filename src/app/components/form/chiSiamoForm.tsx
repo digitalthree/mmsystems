@@ -57,7 +57,7 @@ const ChiSiamoForm: React.FC<chiSiamoFormProps> = ({}) => {
               >
                 <div className="join join-horizontal gap-1 md:gap-6 md:join-vertical rounded-none justify-center mx-auto">
                   <input
-                    className="join-item btn bg-transparent btn-xs md:btn-lg font-normal max-w-52 text-stone-800 checked:bg-primary hover:bg-primary  "
+                    className="join-item btn bg-transparent btn-xs md:btn-lg font-normal max-w-52 text-stone-800 checked:bg-primary hover:bg-primary border-0 shadow-[0]"
                     type="radio"
                     name="ufficio"
                     value={"assistenza@asd.it"}
@@ -66,21 +66,21 @@ const ChiSiamoForm: React.FC<chiSiamoFormProps> = ({}) => {
                     required
                   />
                   <input
-                    className="join-item btn bg-transparent btn-xs md:btn-lg font-normal max-w-52 text-stone-800 checked:bg-primary hover:bg-primary "
+                    className="join-item btn bg-transparent btn-xs md:btn-lg font-normal max-w-52 text-stone-800 checked:bg-primary hover:bg-primary border-0 shadow-[0]"
                     type="radio"
                     name="ufficio"
                     value={"progettazione@asd.it"}
                     aria-label="Progettazione"
                   />
                   <input
-                    className="join-item btn bg-transparent btn-xs md:btn-lg font-normal max-w-52 text-stone-800 checked:bg-primary hover:bg-primary"
+                    className="join-item btn bg-transparent btn-xs md:btn-lg font-normal max-w-52 text-stone-800 checked:bg-primary hover:bg-primary border-0 shadow-[0]"
                     type="radio"
                     name="ufficio"
                     value={"vendita@asd.it"}
                     aria-label="Vendita"
                   />
                   <input
-                    className="join-item btn bg-transparent btn-xs md:btn-lg font-normal max-w-52 text-stone-800 checked:bg-primary hover:bg-primary  "
+                    className="join-item btn bg-transparent btn-xs md:btn-lg font-normal max-w-52 text-stone-800 checked:bg-primary hover:bg-primary border-0 shadow-[0]"
                     type="radio"
                     name="ufficio"
                     value={"marketing@asd.it"}

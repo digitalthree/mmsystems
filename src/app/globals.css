@@ -4,12 +4,12 @@
 
 @layer base {
   h1 {
-    @apply xl:text-[90px] lg:text-[60px] md:text-[48px] text-[35px] font-normal leading-tight;
+    @apply xl:text-[90px] lg:text-[60px] md:text-[48px] text-[35px] font-normal leading-[1];
   }
   h2{
     @apply lg:text-[20px] md:text-[17px] text-[14px];
   }
-  p, span{
+  p, span, li{
     @apply lg:text-[20px] text-[14px] font-light;
   }
   button{

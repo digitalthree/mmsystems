@@ -29,7 +29,7 @@ export default function Page() {
             <div className="metrologia" style={{backgroundColor: navbarBackgroundColor}}>
                 <div
                     className="container my-auto gap-4 h-full flex flex-col mx-auto justify-center items-center text-center">
-                    <h1 className="text-[#3f3f3f] font-semibold z-50 text-7xl lg:text-[65px] md:text-[48px] text-[35px]">METROLOGIA</h1>
+                    <h1 className="text-[#3f3f3f] font-bold">METROLOGIA</h1>
                 </div>
             </div>
 
@@ -40,7 +40,7 @@ export default function Page() {
                     <Image src={image1} alt={"icon1"} className="w-1/2 left-0 xl:block hidden"/>
                     <div className="flex flex-col items-center xl:items-start w-full xl:w-1/2 gap-4">
                         <Image src={icon1} alt={"icon1"} className="w-[25%] md:w-[10%] xl:w-[13%]"/>
-                        <span className="text-primary font-semibold">ANALISI STATICA - FEM</span>
+                        <span className="text-primary xl:text-2xl lg:text-xl">ANALISI STATICA - FEM</span>
                         <hr className="border border-primary w-1/3"/>
                         <p className="text-[#3F3F3F] text-center xl:text-left">
                             Attraverso il controllo di un numero adeguato di campioni (SPC - controllo statistico di
@@ -48,7 +48,7 @@ export default function Page() {
                             le tendenze attraverso grafici ed indici di capacità
                         </p>
                         <Image src={icon2} alt={"icon1"} className="w-[25%] md:w-[10%] xl:w-[13%] mt-10"/>
-                        <span className="text-primary font-semibold">RILIEVO CON BRACCI ANTROPOMORFI</span>
+                        <span className="text-primary xl:text-2xl lg:text-xl">RILIEVO CON BRACCI ANTROPOMORFI</span>
                         <hr className="border border-primary w-1/3"/>
                         <p className="text-[#3F3F3F] text-center xl:text-left">
                             La nuova tecnologia del braccio di misura consente di effettuare controlli, attraverso il
@@ -64,7 +64,7 @@ export default function Page() {
                     <div className="w-1/4 xl:block hidden"></div>
                     <div className="flex xl:pb-12 pb-20 flex-col items-center xl:items-start px-20 xl:px-0 xl:w-3/4 gap-4">
                         <Image src={icon3} alt={"icon1"} className="w-[25%] md:w-[10%] xl:w-[13%]"/>
-                        <span className="text-primary font-semibold">ANALISI STATICA - FEM</span>
+                        <span className="text-primary xl:text-2xl lg:text-xl">ANALISI STATICA - FEM</span>
                         <hr className="border border-primary w-1/3"/>
                         <p className="text-[#3F3F3F] text-center xl:text-left">
                             Attraverso il controllo di un numero adeguato di campioni (SPC - controllo statistico di

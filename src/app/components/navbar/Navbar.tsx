@@ -24,23 +24,22 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
     return(
         <>
             {showNavbarOrFooter &&
-                <div className="w-full sticky top-0 z-[100]" style={{backgroundColor: navbarBackgroundColor}}>
-                    <div className="xl:flex hidden xl:justify-between xl:md:container xl:mx-auto py-3 xl:items-center xl:h-[12vh]"
+                <div className="w-full sticky top-0 z-[100] shadow-xl" style={{backgroundColor: navbarBackgroundColor}}>
+                    <div className="xl:flex hidden xl:justify-between xl:md:container xl:mx-auto py-3 xl:items-center xl:h-[7vh]"
                         style={{backgroundColor: navbarBackgroundColor}}
                     >
                         <Link href={"/"} className="w-1/2 md:w-1/4" onClick={() => {
                             updateNavbarBackgroundColor("#04203b")
                             setHrVisibility("/")
                         }}>
-                            <Image src={navbarBackgroundColor === "#04203b" ? logo : logoDark} alt="logo MM Systems" className="w-44"/>
+                            <Image src={navbarBackgroundColor === "#04203b" ? logo : logoDark} alt="logo MM Systems" className="w-28"/>
                         </Link>
-                        <div className={`flex justify-evenly gap-10 capitalize ${navbarBackgroundColor === "#04203b" ? 'text-white' : "#3f3f3f"}`}>
+                        <div className={`flex justify-evenly items-baseline gap-10 capitalize ${navbarBackgroundColor === "#04203b" ? 'text-white' : "#3f3f3f"}`}>
                             <NavbarLink link={'/'} title={"Home"} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility}/>
                             <NavbarLink link={'chisiamo'} title={"Chi Siamo"} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility}/>
                             <NavbarDropdown textDropdown={"Progettazione"} itemsArray={["elettrica", "meccanica", "dinamica", "progettazione software"]} linkArray={["elettrica", "meccanica", "dinamica", "progettazioneSoftware"]} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility} linkable={true}/>
-                            <NavbarDropdown textDropdown={"Attività"} itemsArray={["Metrologia", "Programmazione", "Robotica", "Robot Collaborativi", "Banchi Semiautomatici", "Linee assemblaggio automatizzate", "Sistemi di visione rd intelligenza artificiale"]} linkArray={["metrologia", "programmazione", "robotica", "robotCollaborativi", "banchiSemiautomatici", "lineeAssemblaggio", "intelligenzaArtificiale"]} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility} linkable={false}/>
+                            <NavbarDropdown textDropdown={"Attività"} itemsArray={["Metrologia", "Programmazione", "Robotica", "Robot Collaborativi", "Banchi Semiautomatici", "Linee assemblaggio automatizzate", "Sistemi di visione ed intelligenza artificiale"]} linkArray={["metrologia", "programmazione", "robotica", "robotCollaborativi", "banchiSemiautomatici", "lineeAssemblaggio", "intelligenzaArtificiale"]} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility} linkable={false}/>
                             <NavbarDropdown textDropdown={"Certificazioni"} itemsArray={["Qualità", "Sicurezza e Ambiente"]} linkArray={["qualita", "sicurezzaAmbiente"]} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility} linkable={false}/>
-                            <NavbarLink link={'contattaci'} title={"Contattaci"} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility}/>
                         </div>
 
                     </div>

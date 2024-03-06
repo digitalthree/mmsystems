@@ -2,9 +2,8 @@ import React, {useRef} from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import {MdKeyboardArrowRight} from "react-icons/md";
-import {motion, useInView} from "framer-motion";
-import graphImage from "../../../../../public/img/graph.png";
-import mmsystems2 from "../../../../../public/img/mmsystems-2.png";
+import {useInView} from "framer-motion";
+import mmsystems2 from "../../../../../public/img/mmsystems-2b.png";
 import {useWindowInnerWidth} from "@/hook/useWindowInnerWidth";
 
 export interface FirstSectionProps{
@@ -47,8 +46,8 @@ const FirstSection: React.FC<FirstSectionProps> = ({}) => {
 
                         {/*<video src={require('../../public/video/videoHome.mov')} autoPlay muted loop className="mt-[-150px] -z-10"/>*/}
                     </div>
-                    <Image src={mmsystems2} alt={""} className="xl:absolute xl:w-2/3 xl:right-0 xl:bottom-0"/>
-                    {/*<motion.img src={"/img/mmsystems-2.png"} alt={"banner"}
+                    <Image src={mmsystems2} alt={""} className="xl:absolute xl:w-2/3 xl:right-0 xl:bottom-12"/>
+                    {/*<motion.img src={"/img/mmsystems-isole.png"} alt={"banner"}
                                 className="xl:w-5/5 w-1/2"
                         initial={{ opacity: 0, x: -100 }}
                         animate={{ opacity: 1, x: 0 }}
