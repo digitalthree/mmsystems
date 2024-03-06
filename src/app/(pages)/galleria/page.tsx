@@ -7,7 +7,7 @@ export default async function Page() {
     const photos = await fetchImages()
     return (
         <div className="w-full relative ">
-            <div className="container bg-[#e4e4e4] py-20 mx-auto columns-1 gap-5 sm:columns-2 sm:gap-4 md:columns-3 lg:columns-3">
+            <div className="container bg-[#e4e4e4] gap-4 py-20 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                 <ImageLightBox data={photos}/>
             </div>
         </div>

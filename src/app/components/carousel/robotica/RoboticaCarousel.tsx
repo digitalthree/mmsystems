@@ -57,7 +57,7 @@ const RoboticaCarousel: React.FC<RoboticaCarouselProps> = ({}) => {
                 {images.map((img) => {
                     return(
                         <div key={img.id} className="relative sm:mr-2 grayscale transition duration-700 hover:grayscale-0">
-                            <Image src={img.staticImage} alt="assets/1.jpeg" className="w-full"/>
+                            <Image src={img.src} width={img.width} height={img.height} alt={img.alt} className="w-full"/>
                         </div>
                     )
                 })}

@@ -2,10 +2,6 @@
 import React, {useEffect, useState} from 'react';
 import {RiArrowLeftSLine, RiArrowRightSLine} from "react-icons/ri";
 import Image from "next/image";
-import image1 from "../../../../public/img/carousel/image1.jpg";
-import image2 from "../../../../public/img/carousel/image2.jpg";
-import image3 from "../../../../public/img/carousel/image3.jpg";
-import image4 from "../../../../public/img/carousel/image4.jpg";
 import { Carousel } from 'react-responsive-carousel';
 import {useWindowInnerWidth} from "@/hook/useWindowInnerWidth";
 import {fetchImages} from "@/pages/api/gallery";
@@ -57,7 +53,7 @@ const MyCarousel: React.FC<MyCarouselProps> = ({}) => {
                 {images.map((img) => {
                     return(
                         <div className="relative sm:mr-2" key={img.id}>
-                            <Image src={img.src} width={400} height={400} alt={img.alt} className="w-full"/>
+                            <Image src={img.src} width={img.width} height={img.height} alt={img.alt} className="w-full"/>
                         </div>
                     )
                 })}

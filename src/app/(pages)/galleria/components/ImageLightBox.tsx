@@ -22,7 +22,7 @@ const ImageLightBox: React.FC<ImageLightBoxProps> = ({data}) => {
         <>
             {data.map((d:any, index:number)  => {
                 return(
-                    <Image key={d.id} src={d.staticImage} width={600} height={300} className="py-2 rounded-xl hover:scale-105 duration-500"  alt={d.alt}
+                    <Image key={d.id} src={d.src} width={d.width} height={d.height} className="hover:scale-105 duration-500"  alt={d.alt}
                            onClick={() => {
                                setOpen(true)
                                setIndex(index)

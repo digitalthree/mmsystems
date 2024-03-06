@@ -1,9 +1,4 @@
 import React from 'react';
-import Image from "next/image";
-import clienti from "../../../../../public/img/clienti/clienti.png";
-import { Carousel } from 'react-responsive-carousel';
-import image from "../../../../../public/img/img1.png"
-import {RiArrowLeftSLine, RiArrowRightSLine} from "react-icons/ri";
 import MyCarousel from "@/app/components/carousel/MyCarousel";
 import {MdKeyboardArrowRight} from "react-icons/md";
 import Link from "next/link";
