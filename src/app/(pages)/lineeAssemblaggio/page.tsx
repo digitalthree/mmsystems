@@ -36,7 +36,7 @@ export default function Page() {
                     </h1>
                 </div>
             </div>
-            <div className="container mx-auto flex flex-col gap-5 pt-10">
+            <div className="container mx-auto flex flex-col gap-5 pt-10 px-10 xl:px-0">
                 <p>
                     Le nostre soluzioni personalizzate rappresentano l&apos;apice dell&apos;automazione industriale,
                     mirate a

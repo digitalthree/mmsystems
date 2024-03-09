@@ -83,7 +83,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({}) => {
                     >
                         <div className="flex flex-col items-center">
                             <RiShieldStarLine size="25px" className="text-white"/>
-                            <span className="text-white text-[12px]">Certificazioni</span>
+                            <span className="text-white text-[12px]">Cert.</span>
                         </div>
                     </Link>
                 </div>
