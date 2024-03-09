@@ -1,9 +1,9 @@
-import PageStructure from "@/app/components/PageStructure";
+import ChildComponent from "@/app/components/ChildComponent";
 
 export default function Page() {
     return(
-        <PageStructure>
+        <ChildComponent>
             <h1>Attività</h1>
-        </PageStructure>
+        </ChildComponent>
     )
 }

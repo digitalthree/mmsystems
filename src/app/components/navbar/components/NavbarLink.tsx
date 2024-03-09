@@ -3,10 +3,10 @@ import Link from "next/link";
 import {globalStore} from "@/store/globalStore";
 
 export interface NavbarLinkProps{
-    link: 'progettazione' | 'programmazione' | 'robotica' | 'attivita' | 'chisiamo' | 'contattaci' | '/' | undefined,
+    link: 'certificazioni' | 'progettazione' | 'programmazione' | 'robotica' | 'attivita' | 'chisiamo' | 'contattaci' | '/' | undefined,
     title: string
-    hrVisibility: 'progettazione' | 'programmazione' | 'robotica' | 'attivita' | 'chisiamo' | 'contattaci' | '/' | undefined,
-    setHrVisibility: ((v: 'progettazione' | 'programmazione' | 'robotica' | 'attivita' | 'chisiamo' | 'contattaci' | '/' | undefined) => void) | undefined
+    hrVisibility: 'certificazioni' | 'progettazione' | 'programmazione' | 'robotica' | 'attivita' | 'chisiamo' | 'contattaci' | '/' | undefined,
+    setHrVisibility: ((v: 'certificazioni' | 'progettazione' | 'programmazione' | 'robotica' | 'attivita' | 'chisiamo' | 'contattaci' | '/' | undefined) => void) | undefined
     footer?: boolean
 }
 

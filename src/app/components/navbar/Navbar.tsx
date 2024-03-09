@@ -16,7 +16,7 @@ export interface NavbarProps{
 
 const Navbar: React.FC<NavbarProps> = ({}) => {
 
-    const [hrVisibility, setHrVisibility] = useState<'progettazione' | 'programmazione' | 'robotica' | 'attivita' | 'chisiamo' | 'contattaci' | '/' | undefined>("/")
+    const [hrVisibility, setHrVisibility] = useState<'certificazioni' | 'progettazione' | 'programmazione' | 'robotica' | 'attivita' | 'chisiamo' | 'contattaci' | '/' | undefined>("/")
     const showNavbarOrFooter = globalStore((state:any) => state.showNavbarOrFooter)
     const navbarBackgroundColor = globalStore((state:any) => state.navbarBackgroundColor)
     const updateNavbarBackgroundColor = globalStore((state:any) => state.updateNavbarBackgroundColor)
@@ -39,12 +39,12 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
                             <NavbarLink link={'chisiamo'} title={"Chi Siamo"} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility}/>
                             <NavbarDropdown textDropdown={"Progettazione"} itemsArray={["elettrica", "meccanica", "dinamica", "progettazione software"]} linkArray={["elettrica", "meccanica", "dinamica", "progettazioneSoftware"]} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility} linkable={true}/>
                             <NavbarDropdown textDropdown={"Attività"} itemsArray={["Metrologia", "Programmazione", "Robotica", "Robot Collaborativi", "Banchi Semiautomatici", "Linee assemblaggio automatizzate", "Sistemi di visione ed intelligenza artificiale"]} linkArray={["metrologia", "programmazione", "robotica", "robotCollaborativi", "banchiSemiautomatici", "lineeAssemblaggio", "intelligenzaArtificiale"]} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility} linkable={false}/>
-                            <NavbarDropdown textDropdown={"Certificazioni"} itemsArray={["Qualità", "Sicurezza e Ambiente"]} linkArray={["qualita", "sicurezzaAmbiente"]} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility} linkable={false}/>
+                            <NavbarLink link={'certificazioni'} title={"Certificazioni"} hrVisibility={hrVisibility} setHrVisibility={setHrVisibility}/>
                         </div>
 
                     </div>
 
-                    <MobileMenu itemsDropdownArray={["Metrologia", "Programmazione", "Robotica"]} linkDropdownArray={["metrologia", "programmazione", "robotica"]}/>
+                    <MobileMenu />
                 </div>
             }
 

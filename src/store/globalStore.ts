@@ -8,6 +8,12 @@ export const globalStore = create((set) => ({
     showNavbarOrFooter: true,
     navbarBackgroundColor: "#04203b",
     footerBackgroundColor: "#04203b",
+    dropdownProgVisibility: false,
+    dropdownAttivitaVisibility: false,
+    dropdownAttivitaItems: ["Metrologia", "Programmazione", "Robotica", "Robot Collaborativi", "Banchi Semiautomatici", "Linee assemblaggio automatizzate", "Sistemi di visione ed intelligenza artificiale"],
+    dropdownAttivitaLinks: ["metrologia", "programmazione", "robotica", "robotCollaborativi", "banchiSemiautomatici", "lineeAssemblaggio", "intelligenzaArtificiale"],
+    dropdownProgItems: ["progettazione", "elettrica", "meccanica", "dinamica", "progettazione software"],
+    dropdownProgLinks: ["progettazione", "elettrica", "meccanica", "dinamica", "progettazioneSoftware"],
     updateLoading: (loading:boolean) => set(() => ({
         loading: loading
     })),
@@ -28,5 +34,11 @@ export const globalStore = create((set) => ({
     })),
     updateFooterBackgroundColor: (footerBackgroundColor:string) => set(() => ({
         footerBackgroundColor: footerBackgroundColor
+    })),
+    updateDropdownProgVisibility: (visibility:boolean) => set(() => ({
+        dropdownProgVisibility: visibility
+    })),
+    updateDropdownAttivitaVisibility: (visibility:boolean) => set(() => ({
+        dropdownAttivitaVisibility: visibility
     }))
 }))

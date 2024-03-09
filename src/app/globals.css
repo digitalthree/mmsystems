@@ -9,7 +9,7 @@
   h2{
     @apply lg:text-[20px] md:text-[17px] text-[14px];
   }
-  p, span, li{
+  p, span, li, a{
     @apply lg:text-[20px] text-[14px] font-light;
   }
   button{
@@ -95,6 +95,35 @@
   background-size: cover;
   background-position: center;
 }
+
+.robotCollaborativi{
+  background-image: url("/img/attivita/robotCollaborativi/banner.png");
+  height: 88vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.lineeAssemblaggio{
+  background-image: url("/img/attivita/lineeAssemblaggio/banner.png");
+  height: 88vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.software {
+  background-image: url("/img/progettazione/software/banner.png");
+  height: 88vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.certificazioni{
+  background-image: url("/img/certificazioni/banner.png");
+  height: 88vh;
+  background-size: cover;
+  background-position: center;
+}
+
 
 .slide{
   display: flex;

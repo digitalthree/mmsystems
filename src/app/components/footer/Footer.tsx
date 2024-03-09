@@ -18,11 +18,11 @@ const Footer: React.FC<FooterProps> = ({}) => {
 
     const showNavbarOrFooter = globalStore((state: any) => state.showNavbarOrFooter)
     const footerBackgroundColor = globalStore((state: any) => state.footerBackgroundColor)
-    const windowInnerWidth = useWindowInnerWidth()
-
+    const dropdownProgVisibility = globalStore((state: any) => state.dropdownProgVisibility);
+    const dropdownAttivitaVisibility = globalStore((state: any) => state.dropdownAttivitaVisibility);
     return (
         <>
-            {showNavbarOrFooter &&
+            {showNavbarOrFooter && !dropdownProgVisibility && !dropdownAttivitaVisibility &&
                 <div className="w-full bg-secondary xl:p-10 p-5 pb-32 xl:pb-10"
                      style={{backgroundColor: footerBackgroundColor}}
                 >
