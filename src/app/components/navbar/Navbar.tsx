@@ -16,7 +16,7 @@ export interface NavbarProps{
 
 const Navbar: React.FC<NavbarProps> = ({}) => {
 
-    const [hrVisibility, setHrVisibility] = useState<'certificazioni' | 'progettazione' | 'programmazione' | 'robotica' | 'attivita' | 'chisiamo' | 'contattaci' | '/' | undefined>("/")
+    const [hrVisibility, setHrVisibility] = useState<'certificazioni' | 'progettazione' | 'programmazione' | 'robotica' | 'attivita' | 'chisiamo' | 'contattaci' | '/' | 'privacy' | undefined>("/")
     const showNavbarOrFooter = globalStore((state:any) => state.showNavbarOrFooter)
     const navbarBackgroundColor = globalStore((state:any) => state.navbarBackgroundColor)
     const updateNavbarBackgroundColor = globalStore((state:any) => state.updateNavbarBackgroundColor)

@@ -6,8 +6,8 @@ export interface NavbarDropdownProps {
     textDropdown: string,
     itemsArray: string[],
     linkArray: string[],
-    hrVisibility: 'certificazioni' | 'progettazione' | 'programmazione' | 'robotica' | 'attivita' | 'chisiamo' | 'contattaci' | '/' | undefined,
-    setHrVisibility: (v: 'certificazioni' | 'progettazione' | 'programmazione' | 'robotica' | 'attivita' | 'chisiamo' | 'contattaci' | '/' | undefined) => void
+    hrVisibility: 'certificazioni' | 'progettazione' | 'programmazione' | 'robotica' | 'attivita' | 'chisiamo' | 'contattaci' | '/' | 'privacy' | undefined,
+    setHrVisibility: (v: 'certificazioni' | 'progettazione' | 'programmazione' | 'robotica' | 'attivita' | 'chisiamo' | 'contattaci' | '/' | 'privacy' | undefined) => void
     linkable: boolean
 }
 
