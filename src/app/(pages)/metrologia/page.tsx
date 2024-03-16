@@ -33,7 +33,8 @@ export default function Page() {
                 </div>
             </div>
 
-            <div className="w-full flex relative pt-64 pb-20  flex-col items-center xl:items-start text-center xl:text-start gap-20 px-10 lg:px-0">
+            <div
+                className="w-full flex relative pt-64 pb-20  flex-col items-center xl:items-start text-center xl:text-start gap-20 px-10 lg:px-0">
                 <Image src={backgroundRight} alt={"img"} className="absolute top-0 right-0 w-1/2"/>
                 <Image src={backgroundLeft} alt={"img"} className="absolute top-0 left-0 w-1/2"/>
                 <div className="container mx-auto flex flex-row px-20 xl:px-0 gap-10 relative">
@@ -62,31 +63,32 @@ export default function Page() {
             <div className="w-full flex flex-col items-center xl:items-start text-center xl:text-start">
                 <div className="flex flex-row gap-10 items-center">
                     <div className="w-1/4 xl:block hidden"></div>
-                    <div className="flex xl:pb-12 pb-20 flex-col items-center xl:items-start px-20 xl:px-0 xl:w-3/4 gap-4">
+                    <div
+                        className="flex xl:pb-12 pb-20 flex-col items-center xl:items-start px-20 xl:px-0 xl:w-3/4 gap-4">
                         <Image src={icon3} alt={"icon1"} className="w-[25%] md:w-[10%] xl:w-[13%]"/>
-                        <span className="text-primary xl:text-2xl lg:text-xl">ANALISI STATICA - FEM</span>
+                        <span className="text-primary xl:text-2xl lg:text-xl">CALIBRI DI CONTROLLO</span>
                         <hr className="border border-primary w-1/3"/>
                         <p className="text-[#3F3F3F] text-center xl:text-left">
-                            Attraverso il controllo di un numero adeguato di campioni (SPC - controllo statistico di
-                            processo) si può misurare la variabilità e la capacità di un processo produttivo rilevandone
-                            le tendenze attraverso grafici ed indici di capacità
+                            Posaggio o calibro di controllo per diverse tipologie di particolari da collaudare.
                         </p>
                         <Image src={icon4} alt={"icon1"} className="w-[25%] md:w-[10%] xl:w-[13%] mt-10"/>
-                        <span className="text-primary font-semibold">RILIEVO CON BRACCI ANTROPOMORFI</span>
+                        <span className="text-primary xl:text-2xl lg:text-xl">SERVICE</span>
                         <hr className="border border-primary w-1/3"/>
                         <p className="text-[#3F3F3F] text-center xl:text-left">
-                            La nuova tecnologia del braccio di misura consente di effettuare controlli, attraverso il
-                            modello matematico, di particolari di difficile movimentazione. Il braccio è portatile e
-                            dispone di campo di misura di y2400, con una notevole flessibilità rispetto ad una macchina
-                            di misura tradizione (CMM)
+                            Messa a disposizione di personale tecnico per effettuare misurazioni presso la sede del
+                            cliente utilizzando le attrezzature del cliente stesso. Fornitura del personale tecnico e
+                            macchina di misura (braccio antropomorfo CAM2) per eseguire collaudi su particolari di
+                            difficile movimentazione
                         </p>
-                        <Link href="progettazione" className="py-2 mt-20 xl:py-2 px-2 text-white rounded-[100px] bg-[#3f3f3f] flex justify-between items-center xl:gap-1 w-full md:w-1/2 xl:w-1/2 relative z-50">
+                        <Link href="progettazione"
+                              className="py-2 mt-20 xl:py-2 px-2 text-white rounded-[100px] bg-[#3f3f3f] flex justify-between items-center xl:gap-1 w-full md:w-1/2 xl:w-1/2 relative z-50">
                             <span className="px-5">Progettazione</span>
                             <div className="p-1 rounded-3xl bg-white">
                                 <MdKeyboardArrowRight className="text-[#3f3f3f] xl:w-7 xl:h-7 w-5 h-5"/>
                             </div>
                         </Link>
-                        <Link href="contattaci" className="py-2 xl:py-2 px-2 text-white rounded-[100px] bg-[#3f3f3f] flex justify-between items-center xl:gap-1 w-full md:w-1/2 xl:w-1/2 relative z-50">
+                        <Link href="contattaci"
+                              className="py-2 xl:py-2 px-2 text-white rounded-[100px] bg-[#3f3f3f] flex justify-between items-center xl:gap-1 w-full md:w-1/2 xl:w-1/2 relative z-50">
                             <span className="px-5">Contattaci</span>
                             <div className="p-1 rounded-3xl bg-white">
                                 <MdKeyboardArrowRight className="text-[#3f3f3f] xl:w-7 xl:h-7 w-5 h-5"/>

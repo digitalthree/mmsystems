@@ -7,7 +7,7 @@
     @apply xl:text-[90px] lg:text-[60px] md:text-[48px] text-[35px] font-normal leading-[1];
   }
   h2{
-    @apply lg:text-[20px] md:text-[17px] text-[14px];
+    @apply lg:text-[40px] md:text-[27px] text-[20px] font-light;
   }
   p, span, li, a{
     @apply lg:text-[20px] text-[14px] font-light;
@@ -124,6 +124,12 @@
   background-position: center;
 }
 
+.intelligenzaArtificiale{
+  background-image: url("/img/intelligenzaArtificiale/banner.png");
+  height: 88vh;
+  background-size: cover;
+  background-position: center;
+}
 
 .slide{
   display: flex;

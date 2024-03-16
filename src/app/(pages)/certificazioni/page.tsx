@@ -42,7 +42,7 @@ export default function Page() {
                             <hr className="w-1/3 border border-[#2A9DE9]"/>
                             <p className="text-[#3F3F3F] md:text-start text-center">
                                 TÜV SÜD ha una vasta esperienza nella valutazione della sicurezza di attrezzature e
-                                macchina industriali. Gli esperti combinano l’esperienza acquisita nell’ambito della
+                                macchine industriali. Gli esperti combinano l’esperienza acquisita nell’ambito della
                                 sicurezza di base dei macchinari con uno sguardo sempre rivolto allo stato dell’arte
                                 delle tecnologie innovative, come la robotica, l’industria4.0 e la produzione
                                 additiva. <br/>
@@ -68,7 +68,7 @@ export default function Page() {
                                 l&apos;obiettivo di
                                 promuovere un&apos;attività economica rispettosa della Natura, innovativa,
                                 eco-sostenibile e
-                                eto-sostenibile. Consideriamo la &apos;Natura&apos; non solo come l&apos;ambiente
+                                etico-sostenibile. Consideriamo la &apos;Natura&apos; non solo come l&apos;ambiente
                                 circostante, ma come
                                 l&apos;intero universo percepibile attraverso i sensi, del quale l&apos;Uomo fa
                                 parte. <br/>

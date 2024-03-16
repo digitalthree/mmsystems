@@ -48,18 +48,16 @@ export default function Page() {
                         <p className="xl:w-4/5">
                             M.M. Systems propone soluzioni complete di robotica
                             collaborativa utilizzando tutte le possibilità offerte da questa
-                            nuova tecnologia inoltre a partire dal 2018 è diventata
+                            nuova tecnologia. Inoltre a partire dal 2018 è diventata
                             distributore per l’Italia dei Cobot TM Robot.L’avvento di questa
                             tecnologia permette la realizzazione di nuove tipologie di
                             applicazioni, in cui macchina e operatore collaborano
-                            attivamente per portare a termine il task richiesto.I Cobot
+                            attivamente per portare a termine il task richiesto. I Cobot
                             hanno caratteristiche funzionali di apprendimento automatico,
                             gestione in sicurezza delle collisioni, collaborazione uomo
-                            macchina, facilità d’uso e sensori di forza. I robot
-                            collaborativi sono utilizzati anchenelle operazioni di prelievo,
-                            posizionamento, avvitatura, asservimento macchine, lucidatura e
-                            assemblaggi questi ultimi possono essere utilizzati in tutti
-                            settori industriali.
+                            macchina, facilità d’uso e sensori di forza. I robot collaborativi sono utilizzati anche
+                            nelle operazioni di prelievo, posizionamento, avvitatura, asservimento macchine, lucidatura
+                            e assemblaggi, che possono essere utilizzati in tutti i settori industriali.
                         </p>
                     </div>
                     <div className="flex relative w-3/5 md:w-2/5 xl:w-2/6 mx-auto mt-8 md:mt-0">
@@ -97,7 +95,8 @@ export default function Page() {
                             <p className="text-[#3F3F3F]">
                                 Affidatevi ai nostri robot collaborativi per una manipolazione sicura e efficiente dei
                                 vostri materiali.
-                                Dalla movimentazione leggera a quella pesante, questi robot sono progettati per gestire una
+                                Dalla movimentazione leggera a quella pesante, questi robot sono progettati per gestire
+                                una
                                 vasta gamma di carichi, riducendo il rischio di incidenti e migliorando la sicurezza sul
                                 luogo di lavoro.
                             </p>
@@ -111,7 +110,8 @@ export default function Page() {
                             <hr className="w-full border border-primary"/>
                             <p className="text-[#3F3F3F]">
                                 Elevate la vostra produzione con i robot collaborativi specializzati nella saldatura.
-                                La precisione millimetrica e la ripetibilità costante assicurano saldature di alta qualità,
+                                La precisione millimetrica e la ripetibilità costante assicurano saldature di alta
+                                qualità,
                                 garantendo la robustezza e l&apos;affidabilità dei vostri prodotti.
                             </p>
                         </div>
@@ -124,7 +124,8 @@ export default function Page() {
                             <hr className="w-full border border-primary"/>
                             <p className="text-[#3F3F3F]">
                                 Semplificate il processo di palletizzazione con i nostri robot collaborativi.
-                                Questi sistemi automatizzati sono in grado di gestire carichi di diverse dimensioni e forme,
+                                Questi sistemi automatizzati sono in grado di gestire carichi di diverse dimensioni e
+                                forme,
                                 ottimizzando lo spazio e riducendo i costi di manodopera.
                             </p>
                         </div>
@@ -141,7 +142,9 @@ export default function Page() {
                                 <li>riducendo gli errori,</li>
                                 <li>aumentando la produttività complessiva.</li>
                             </p>
-                            <p className="text-[#3F3F3F]">Siamo qui <b className="font-bold"> per guidarvi verso il futuro dell&apos;automazione e della robotica </b>, rendendo il vostro ambiente lavorativo più intelligente, sicuro ed efficiente.</p>
+                            <p className="text-[#3F3F3F]">Siamo qui <b className="font-bold"> per guidarvi verso il
+                                futuro dell&apos;automazione e della robotica </b>, rendendo il vostro ambiente
+                                lavorativo più intelligente, sicuro ed efficiente.</p>
                         </div>
                     </div>
                     {windowInnerWidth < 800 && <Image src={icon5} alt={"icon 5"} className="w-[30%]"/>}

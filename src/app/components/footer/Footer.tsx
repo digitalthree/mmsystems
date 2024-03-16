@@ -38,10 +38,10 @@ const Footer: React.FC<FooterProps> = ({}) => {
                                     <NavbarLink link={'chisiamo'} title={"Chi Siamo"} hrVisibility={undefined}
                                                 setHrVisibility={undefined} footer={true}/>
                                     <span className="text-white mx-1 text-sm">|</span>
-                                    <NavbarLink link={'contattaci'} title={"Contattaci"} hrVisibility={undefined}
+                                    <NavbarLink link={'certificazioni'} title={"Certificazioni"} hrVisibility={undefined}
                                                 setHrVisibility={undefined} footer={true}/>
                                     <span className="text-white text-sm mx-1">|</span>
-                                    <NavbarLink link={'contattaci'} title={"Privacy Policy"} hrVisibility={undefined}
+                                    <NavbarLink link={'privacy'} title={"Privacy Policy"} hrVisibility={undefined}
                                                 setHrVisibility={undefined} footer={true}/>
                                 </div>
                                 <span className="text-white text-sm">© 2020 MM Systems, Inc. All Rights Reserved</span>

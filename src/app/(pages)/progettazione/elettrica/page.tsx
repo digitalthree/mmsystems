@@ -43,7 +43,7 @@ export default function Page() {
                     <p className="text-[#3F3F3F] text-center">
                         La MM Systems progetta e realizza impianti elettrici industriali e quadri di distribuzione, di
                         comando e controllo con sviluppo software in grado di soddisfare svariate esigenze: regolazione,
-                        manovra, monitoraggio, acquisizione dati e supervisione degli impianti.Progettiamo e realizziamo
+                        manovra, monitoraggio, acquisizione dati e supervisione degli impianti. Progettiamo e realizziamo
                         cabine di trasformazione MT/BT con distribuzione delle linee elettriche di BT ed impianti di
                         illuminazione. L’esperienza ormai decennale nella progettazione, costruzione e installazione di
                         quadri elettrici di media e bassa tensione consente alla MM Systems di operare in questo settore
@@ -55,9 +55,9 @@ export default function Page() {
                     <span className="text-[#2A5FE9] xl:text-2xl lg:text-xl uppercase">realizzazione</span>
                     <hr className="w-1/6 border border-white"/>
                     <p className="text-[#3F3F3F] text-center">
-                        I principali settori di attività dell’azienda, operativa in tutti i settori, sono:
+                        I principali settori di attività dell&apos;azienda, operativa in tutti i campi, sono::
                         progettazione, cablaggio bordo macchina, messa in servizio, quadri di distribuzione e
-                        automazione.Le nostre esperienze partono dagli ambiti industriali di automazione e di robotica
+                        automazione. Le nostre esperienze partono dagli ambiti industriali di automazione e di robotica
                         dove abbiamo grande specializzazione, ma la nostra gamma di interventi si è ampliata fino ad
                         includere qualsiasi tipo di progetto. La nostra azienda è specializzata in cablaggi per quadri
                         elettrici di comando e di controllo per automazione industriale, tutti gli impianti a bordo
