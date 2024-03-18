@@ -14,8 +14,7 @@ import Link from "next/link";
 export default function Page() {
     const updateNavbarBackgroundColor = globalStore((state: any) => state.updateNavbarBackgroundColor)
     const navbarBackgroundColor = globalStore((state: any) => state.navbarBackgroundColor)
-
-
+    const updateActiveMenuItem = globalStore((state:any) => state.updateActiveMenuItem)
     useEffect(() => {
         updateNavbarBackgroundColor("#f5f5f5")
     }, []);
@@ -122,7 +121,9 @@ export default function Page() {
                             Le nostre soluzioni automatizzate su misura possono trasformare la vostra produzione portando efficienza
                             precisione e affidabilità al prossimo livello.
                         </p>
-                        <Link href="contattaci" className="py-2 xl:py-2 px-2 text-white rounded-[100px] bg-[#3f3f3f] flex justify-between items-center xl:gap-1 w-full md:w-1/3 xl:w-1/5 relative z-50">
+                        <Link href="chisiamo#contattaci" className="py-2 xl:py-2 px-2 text-white rounded-[100px] bg-[#3f3f3f] flex justify-between items-center xl:gap-1 w-full md:w-1/3 xl:w-1/5 relative z-50"
+                            onClick={() => updateActiveMenuItem('chisiamo')}
+                        >
                             <span className="px-5">Contattaci</span>
                             <div className="p-1 rounded-3xl bg-white">
                                 <MdKeyboardArrowRight className="text-[#3f3f3f] xl:w-7 xl:h-7 w-5 h-5"/>

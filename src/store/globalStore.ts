@@ -14,6 +14,7 @@ export const globalStore = create((set) => ({
     dropdownAttivitaLinks: ["metrologia", "programmazione", "robotica", "robotCollaborativi", "banchiSemiautomatici", "lineeAssemblaggio", "intelligenzaArtificiale"],
     dropdownProgItems: ["progettazione", "elettrica", "meccanica", "dinamica", "progettazione software"],
     dropdownProgLinks: ["progettazione", "elettrica", "meccanica", "dinamica", "progettazioneSoftware"],
+    activeMenuItem: '/',
     updateLoading: (loading:boolean) => set(() => ({
         loading: loading
     })),
@@ -40,5 +41,8 @@ export const globalStore = create((set) => ({
     })),
     updateDropdownAttivitaVisibility: (visibility:boolean) => set(() => ({
         dropdownAttivitaVisibility: visibility
-    }))
+    })),
+    updateActiveMenuItem: (item:string) => set(() => ({
+        activeMenuItem: item
+    })),
 }))

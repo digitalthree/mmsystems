@@ -136,3 +136,6 @@
   justify-content: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}

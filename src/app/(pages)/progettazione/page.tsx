@@ -18,8 +18,7 @@ export default function Page() {
 
     const updateNavbarBackgroundColor = globalStore((state: any) => state.updateNavbarBackgroundColor)
     const navbarBackgroundColor = globalStore((state: any) => state.navbarBackgroundColor)
-
-
+    const updateActiveMenuItem = globalStore((state:any) => state.updateActiveMenuItem)
     useEffect(() => {
         updateNavbarBackgroundColor("#f5f5f5")
     }, []);
@@ -35,8 +34,10 @@ export default function Page() {
                     <hr className="w-1/6 border border-[#3f3f3f] mb-2"/>
                     <h1 className="text-[#3f3f3f] font-bold">COSTANTE
                         <br/> PROCESSO <br/> EVOLUTIVO</h1>
-                    <Link href="contattaci"
-                          className="w-1/3 xl:w-1/6 py-1 xl:py-2 px-2 text-white rounded-t-[100px] rounded-br-[100px] bg-gradient-to-r from-gray-300 to-primary flex justify-between items-center xl:gap-1">
+                    <Link href="/"
+                          className="w-1/3 xl:w-1/6 py-1 xl:py-2 px-2 text-white rounded-t-[100px] rounded-br-[100px] bg-gradient-to-r from-gray-300 to-primary flex justify-between items-center xl:gap-1"
+                          onClick={() => updateActiveMenuItem('/')}
+                    >
                         <span className="px-5">esplora</span>
                         <div className="p-2 rounded-3xl bg-white">
                             <MdKeyboardArrowRight className="text-primary xl:w-7 xl:h-7 w-5 h-5"/>

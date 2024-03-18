@@ -6,6 +6,7 @@ import icon1 from "../../../../../public/img/icon1.png";
 import icon2 from "../../../../../public/img/icon2.png";
 import icon3 from "../../../../../public/img/icon3.png";
 import {useWindowInnerWidth} from "@/hook/useWindowInnerWidth";
+import {globalStore} from "@/store/globalStore";
 
 export interface SecondSectionProps{
 
@@ -13,6 +14,7 @@ export interface SecondSectionProps{
 
 const ThirdSection: React.FC<SecondSectionProps> = ({}) => {
     const windowInnerWidth = useWindowInnerWidth()
+    const updateActiveMenuItem = globalStore((state:any) => state.updateActiveMenuItem)
     return(
         <div className="w-full bg-[#e4e4e4] flex flex-col items-center">
             <hr className="w-3/4 border border-white"/>
@@ -42,7 +44,9 @@ const ThirdSection: React.FC<SecondSectionProps> = ({}) => {
                             <li>Etica, fiducia, onestà.</li>
                         </ul>
                     </div>
-                    <Link href="chisiamo" className="lg:w-1/4 py-1 lg:py-2 px-2 text-white font-bold rounded-[100px] bg-primary flex justify-between items-center lg:gap-1">
+                    <Link href="chisiamo" className="lg:w-1/4 py-1 lg:py-2 px-2 text-white font-bold rounded-[100px] bg-primary flex justify-between items-center lg:gap-1"
+                        onClick={() => updateActiveMenuItem('chisiamo')}
+                    >
                         <span className="px-3">Lo Stabilimento</span>
                         <div className="p-2 rounded-3xl bg-white">
                             <MdKeyboardArrowRight className="text-primary lg:w-7 lg:h-7 w-5 h-5"/>

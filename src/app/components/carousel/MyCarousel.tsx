@@ -23,6 +23,7 @@ const MyCarousel: React.FC<MyCarouselProps> = ({}) => {
         <>
             <Carousel
                 showArrows showIndicators={false} showStatus={false} showThumbs={false}
+                className="relative z-50"
                 centerMode={windowInnerWidth > 1300}
                 infiniteLoop={true}
                 centerSlidePercentage={25}

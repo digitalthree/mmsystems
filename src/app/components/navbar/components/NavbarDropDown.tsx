@@ -6,8 +6,6 @@ export interface NavbarDropdownProps {
     textDropdown: string,
     itemsArray: string[],
     linkArray: string[],
-    hrVisibility: 'certificazioni' | 'progettazione' | 'programmazione' | 'robotica' | 'attivita' | 'chisiamo' | 'contattaci' | '/' | 'privacy' | undefined,
-    setHrVisibility: (v: 'certificazioni' | 'progettazione' | 'programmazione' | 'robotica' | 'attivita' | 'chisiamo' | 'contattaci' | '/' | 'privacy' | undefined) => void
     linkable: boolean
 }
 
@@ -15,26 +13,26 @@ const NavbarDropdown: React.FC<NavbarDropdownProps> = ({
                                                            textDropdown,
                                                            itemsArray,
                                                            linkArray,
-                                                           setHrVisibility,
-                                                           hrVisibility,
                                                            linkable
                                                        }) => {
     const updateLoading = globalStore((state: any) => state.updateLoading)
     const navbarBackgroundColor = globalStore((state: any) => state.navbarBackgroundColor)
     const footerBackgroundColor = globalStore((state: any) => state.footerBackgroundColor)
     const updateFooterBackgroundColor = globalStore((state: any) => state.updateFooterBackgroundColor)
+    const activeMenuItem = globalStore((state:any) => state.activeMenuItem)
+    const updateActiveMenuItem = globalStore((state:any) => state.updateActiveMenuItem)
     return (
         <>
             <div className="dropdown dropdown-hover md:block hidden">
                 {linkable ?
                     <Link href={"/" + textDropdown.toLowerCase()}
                           onClick={() => {
-                              setHrVisibility(textDropdown.toLowerCase() as ("progettazione" | "attivita"))
+                              updateActiveMenuItem(textDropdown.toLowerCase() as ("progettazione" | "attivita"))
                               updateLoading(false)
                           }}
                     >
                         <div tabIndex={0} role="button"
-                             className={`uppercase ${navbarBackgroundColor === "#04203b" ? 'text-white' : "text-[#3f3f3f]"} bg-transparent text-base ${hrVisibility && hrVisibility === textDropdown.toLowerCase() ? 'font-bold text-xl' : 'font-normal'}`}
+                             className={`uppercase ${navbarBackgroundColor === "#04203b" ? 'text-white' : "text-[#3f3f3f]"} bg-transparent text-base ${activeMenuItem === textDropdown.toLowerCase() ? 'font-bold text-xl' : 'font-normal'}`}
                              style={{color: footerBackgroundColor !== '#04203b' && footerBackgroundColor}}
                              onClick={() => updateFooterBackgroundColor("#04203b")}
                         >
@@ -43,7 +41,7 @@ const NavbarDropdown: React.FC<NavbarDropdownProps> = ({
                         </div>
                     </Link> :
                     <div tabIndex={0} role="button"
-                         className={`uppercase ${navbarBackgroundColor === "#04203b" ? 'text-white' : "text-[#3f3f3f]"} bg-transparent text-base ${hrVisibility && hrVisibility === textDropdown.toLowerCase() ? 'font-bold text-xl' : 'font-normal'}`}>
+                         className={`uppercase ${navbarBackgroundColor === "#04203b" ? 'text-white' : "text-[#3f3f3f]"} bg-transparent text-base ${activeMenuItem === textDropdown.toLowerCase() ? 'font-bold text-xl' : 'font-normal'}`}>
                         {textDropdown}
                     </div>
                 }
@@ -56,7 +54,7 @@ const NavbarDropdown: React.FC<NavbarDropdownProps> = ({
                                   href={linkable ? "/" + textDropdown.toLowerCase() + "/" + linkArray[index] : "/" + linkArray[index]}
                                   style={{color: (footerBackgroundColor !== '#04203b' && linkable) && footerBackgroundColor }}
                                   onClick={() => {
-                                      setHrVisibility(textDropdown.toLowerCase() as ("progettazione" | "attivita"))
+                                      updateActiveMenuItem(textDropdown.toLowerCase() as ("progettazione" | "attivita"))
                                       updateLoading(false)
                                   }}>
                                 {i}

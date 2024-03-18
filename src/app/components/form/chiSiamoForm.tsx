@@ -10,7 +10,6 @@ const ChiSiamoForm: React.FC<chiSiamoFormProps> = ({}) => {
   const SERVICE_ID = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID as string;
   const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID as string;
   const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY as string;
-  console.log("questa è la public key: " + PUBLIC_KEY);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -35,8 +34,8 @@ const ChiSiamoForm: React.FC<chiSiamoFormProps> = ({}) => {
   };
 
   return (
-    <>
-      <div className=" w-full flex justify-center items-center bg-[#E4E4E4] py-4">
+    <div id="contatti" className="w-full">
+      <Link href="#contatti" className="w-full flex justify-center items-center bg-[#E4E4E4] py-4" scroll={false}>
         <form
           ref={form}
           onSubmit={sendEmail}
@@ -173,8 +172,8 @@ const ChiSiamoForm: React.FC<chiSiamoFormProps> = ({}) => {
             </div>
           </div>
         </form>
-      </div>
-    </>
+      </Link>
+    </div>
   );
 };
 export default ChiSiamoForm;
