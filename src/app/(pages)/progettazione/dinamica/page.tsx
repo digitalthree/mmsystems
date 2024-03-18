@@ -2,9 +2,6 @@
 import {globalStore} from "@/store/globalStore";
 import React, {useEffect, useState} from "react";
 import Image from "next/image";
-import icon1 from "../../../../../public/img/progettazione/dinamica/icon1.png";
-import icon2 from "../../../../../public/img/progettazione/dinamica/icon2.png";
-import icon3 from "../../../../../public/img/progettazione/dinamica/icon3.png";
 import MyCarousel from "@/app/components/carousel/MyCarousel";
 import Link from "next/link";
 import {MdKeyboardArrowRight} from "react-icons/md";

@@ -35,10 +35,6 @@
 
 
 .section1{
-  /*background-image: url("/img/background.png");
-  background-size: cover ;
-  background-repeat: no-repeat;
-  background-attachment: local;*/
   @media (min-width: 1920px) {
     background-position: right 0 bottom 162%;
   }
@@ -48,41 +44,41 @@
 }
 
 .progettazione{
-  background-image: url("/img/progettazione/mmsystems-5B.png");
+  background-image: url("/img/progettazione/mmsystems-5B.jpg");
   background-size: cover;
   background-color: white;
 }
 
 .meccanica{
-  background-image: url("/img/progettazione/meccanica/mmsystems-11.png");
+  background-image: url("/img/progettazione/meccanica/mmsystems-11.jpg");
   background-size: cover;
   background-position: 0 40%;
   background-color: white;
 }
 
 .elettrica{
-  background-image: url("/img/progettazione/elettrica/mmsystems-16.png");
+  background-image: url("/img/progettazione/elettrica/mmsystems-16.jpg");
   background-size: cover;
   background-position: 0 40%;
   background-color: white;
 }
 
 .dinamica{
-  background-image: url("/img/progettazione/dinamica/mmsystems-15.png");
+  background-image: url("/img/progettazione/dinamica/mmsystems-15.jpg");
   background-size: cover;
   background-position: 0 40%;
   background-color: white;
 }
 
 .metrologia{
-  background-image: url("/img/attivita/metrologia/mmsystems-9.png");
+  background-image: url("/img/attivita/metrologia/mmsystems-9.jpg");
   height: 88vh;
   background-size: cover;
   background-position: center;
 }
 
 .plc{
-  background-image: url("/img/attivita/plc/mmsystems-6.png");
+  background-image: url("/img/attivita/plc/mmsystems-6.jpg");
   height: 88vh;
   background-size: cover;
   background-position: center;
@@ -90,42 +86,42 @@
 }
 
 .robotica{
-  background-image: url("/img/attivita/robotica/mmsystems-13.png");
+  background-image: url("/img/attivita/robotica/mmsystems-13.jpg");
   height: 88vh;
   background-size: cover;
   background-position: center;
 }
 
 .robotCollaborativi{
-  background-image: url("/img/attivita/robotCollaborativi/banner.png");
+  background-image: url("/img/attivita/robotCollaborativi/banner.jpg");
   height: 88vh;
   background-size: cover;
   background-position: center;
 }
 
 .lineeAssemblaggio{
-  background-image: url("/img/attivita/lineeAssemblaggio/banner.png");
+  background-image: url("/img/attivita/lineeAssemblaggio/banner.jpg");
   height: 88vh;
   background-size: cover;
   background-position: center;
 }
 
 .software {
-  background-image: url("/img/progettazione/software/banner.png");
+  background-image: url("/img/progettazione/software/banner.jpg");
   height: 88vh;
   background-size: cover;
   background-position: center;
 }
 
 .certificazioni{
-  background-image: url("/img/certificazioni/banner.png");
+  background-image: url("/img/certificazioni/banner.jpg");
   height: 88vh;
   background-size: cover;
   background-position: center;
 }
 
 .intelligenzaArtificiale{
-  background-image: url("/img/intelligenzaArtificiale/banner.png");
+  background-image: url("/img/intelligenzaArtificiale/banner.jpg");
   height: 88vh;
   background-size: cover;
   background-position: center;

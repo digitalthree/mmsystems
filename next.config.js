@@ -3,6 +3,9 @@ const { withNextVideo } = require('next-video/process');
 
 const nextConfig = {
     images: {
+        domains: [
+            'wuaq56n9.dev.cdn.imgeng.in'
+        ],
         remotePatterns: [
             {
                 protocol: 'https',

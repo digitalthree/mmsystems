@@ -7,7 +7,7 @@ import clienti from "../../../../public/img/clienti/clienti.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import Link from "next/link";
 import React from "react";
-import mmsystems3d from "../../../../public/img/chisiamo/mmsystems-3d.png";
+import mmsystems3d from "../../../../public/img/chisiamo/mmsystems-3d.jpg";
 import Seo from "@/app/components/Seo";
 
 export default function Page() {

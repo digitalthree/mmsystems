@@ -1,14 +1,7 @@
 import React, {useRef} from 'react';
-import Link from "next/link";
-import {MdKeyboardArrowRight} from "react-icons/md";
 import Image from "next/image";
-import icon1 from "../../../../../public/img/icon1.png";
-import icon2 from "../../../../../public/img/icon2.png";
-import icon3 from "../../../../../public/img/icon3.png";
 import image from "../../../../../public/img/mmsystems-18.png";
 import {useWindowInnerWidth} from "@/hook/useWindowInnerWidth";
-import graphImage from "@public/img/graph.png";
-import {motion} from "framer-motion";
 
 export interface SecondSectionProps {
 
