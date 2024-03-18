@@ -32,17 +32,13 @@ const Footer: React.FC<FooterProps> = ({}) => {
                         <div className="flex gap-10">
                             <div className="flex flex-col text-center xl:text-start">
                                 <div className="flex items-center">
-                                    <NavbarLink link={'/'} title={"Home"} hrVisibility={undefined}
-                                                setHrVisibility={undefined} footer={true}/>
+                                    <NavbarLink link={'/'} title={"Home"} footer={true}/>
                                     <span className="text-white mx-1 text-sm">|</span>
-                                    <NavbarLink link={'chisiamo'} title={"Chi Siamo"} hrVisibility={undefined}
-                                                setHrVisibility={undefined} footer={true}/>
+                                    <NavbarLink link={'chisiamo'} title={"Chi Siamo"} footer={true}/>
                                     <span className="text-white mx-1 text-sm">|</span>
-                                    <NavbarLink link={'certificazioni'} title={"Certificazioni"} hrVisibility={undefined}
-                                                setHrVisibility={undefined} footer={true}/>
+                                    <NavbarLink link={'certificazioni'} title={"Certificazioni"} footer={true}/>
                                     <span className="text-white text-sm mx-1">|</span>
-                                    <NavbarLink link={'privacy'} title={"Privacy Policy"} hrVisibility={undefined}
-                                                setHrVisibility={undefined} footer={true}/>
+                                    <NavbarLink link={'privacy'} title={"Privacy Policy"} footer={true}/>
                                 </div>
                                 <span className="text-white text-sm">© 2020 MM Systems, Inc. All Rights Reserved</span>
                                 <span className="text-white text-sm">Sito realizzato da <span

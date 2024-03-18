@@ -3,7 +3,7 @@ import Link from "next/link";
 import {globalStore} from "@/store/globalStore";
 
 export interface NavbarLinkProps{
-    link: '/' | 'chisiamo' | 'progettazione' | 'attivita' | 'certificazioni',
+    link: '/' | 'chisiamo' | 'progettazione' | 'attivita' | 'certificazioni' | 'privacy',
     title: string
     footer?: boolean
 }
