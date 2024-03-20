@@ -49,7 +49,7 @@ export default function Page() {
                             M.M. Systems propone soluzioni complete di robotica
                             collaborativa utilizzando tutte le possibilità offerte da questa
                             nuova tecnologia. Inoltre a partire dal 2018 è diventata
-                            distributore per l’Italia dei Cobot TM Robot.L’avvento di questa
+                            distributore per l’Italia dei Cobot TM Robot. L’avvento di questa
                             tecnologia permette la realizzazione di nuove tipologie di
                             applicazioni, in cui macchina e operatore collaborano
                             attivamente per portare a termine il task richiesto. I Cobot

@@ -77,7 +77,7 @@ export default function Page() {
                             <hr className="w-full border border-primary"/>
                             <p className="text-[#3F3F3F]">
                                 Implementiamo soluzioni di intelligenza artificiale, consentendo alle nostre macchine di
-                                apprendere da dati storici e migliorare costantemente le proprie prestazioni. br
+                                apprendere da dati storici e migliorare costantemente le proprie prestazioni. <br/>
                                 Questa integrazione strategica assicura una presa di decisioni <span
                                 className="font-bold">autonoma</span> e <span className="font-bold">adattativa</span>,
                                 contribuendo all&apos;efficienza operativa.
@@ -156,7 +156,7 @@ export default function Page() {
                         </p>
                         <p>
                             La visione di automazione e robotica evolve in una realtà intelligente e performante. Vi
-                            guidiamo <br/> verso il futuro dell’innovazione industrial.
+                            guidiamo <br/> verso il futuro dell’innovazione industriale.
                         </p>
                     </div>
                     <Link href="chisiamo#contatti" className="py-2 mt-10 xl:py-2 px-2 text-white rounded-[100px] bg-[#3f3f3f] flex justify-between items-center xl:gap-1 w-full md:w-1/3 xl:w-1/5 relative z-50"
