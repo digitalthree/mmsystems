@@ -8,6 +8,11 @@ export interface Img {
     height: number
 }
 
+export interface Video {
+    id: number,
+    srcKey: string
+}
+
 
 export let images:Img[] = [
     {id: 1, src: "/img/galleria/Cacciavite.png",  alt: "gallery", width: 525, height: 370},
@@ -35,4 +40,19 @@ export let images:Img[] = [
     {id: 23, src: "/img/galleria/Robot_2.png",  alt: "gallery", width: 525, height: 370},
     {id: 24, src: "/img/galleria/Saldatore.png",  alt: "gallery", width: 525, height: 370},
     {id: 25, src: "/img/galleria/Ufficio.png",  alt: "gallery", width: 525, height: 370},
+]
+
+export let videos:Video[] = [
+    {id:1, srcKey: "yKWFTkwk1OM"},
+    {id:2, srcKey: "ZOysvbJQSmo"},
+    {id:3, srcKey: "1DX5bAK14Bg"},
+    {id:4, srcKey: "k1lnOMc9HHc"},
+    {id:5, srcKey: "dbulGjVxNfM"},
+    {id:6, srcKey: "jair8_Yi7zc"},
+    {id:7, srcKey: "mSbFxRte6BU"},
+    {id:8, srcKey: "n_3Y1Vk9ygI"},
+    {id:9, srcKey: "yU3g1UibXQM"},
+    {id:10, srcKey: "OTFkUr1egEM"},
+    {id:11, srcKey: "OTFkUr1egEM"},
+
 ]

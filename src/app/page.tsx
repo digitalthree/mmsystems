@@ -129,10 +129,10 @@ export default function Home() {
             {showVideo ? (
               <div className="flex justify-center w-full h-[100vh]">
                 <YouTube
-                  videoId="yhdL4jz74WM"
+                  videoId="yKWFTkwk1OM"
                   opts={opts}
-                  className="absolute top-0"
-                  iframeClassName="w-[1920px] h-[100vh]"
+                  className="absolute top-0 w-full"
+                  iframeClassName="w-full h-[100vh]"
                   onEnd={() => {
                     updateShowVideo(false);
                     updateShowNavbarOrFooter(true);

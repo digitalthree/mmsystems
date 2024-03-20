@@ -132,6 +132,6 @@
   justify-content: center;
 }
 
-html {
-  scroll-behavior: smooth;
+.carousel .slide iframe{
+  margin: 1.25rem;
 }

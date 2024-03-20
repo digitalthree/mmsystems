@@ -3,6 +3,7 @@ import React from 'react';
 import Image from "next/image";
 import clienti from "../../../../../public/img/clienti/clienti.png";
 import YouTube from 'react-youtube';
+import MyCarouselVideo from "@/app/components/carousel/MyCarouselVideo";
 
 export interface ClientiVideoSectionProps{
     
@@ -21,12 +22,13 @@ const ClientiVideoSection: React.FC<ClientiVideoSectionProps> = ({}) => {
             </div>
             <div className="w-full bg-white">
                 <div className="container flex flex-col py-20 xl:px-0 px-10 mx-auto bg-white items-center">
-                    <h1 className="font-bold uppercase">video e recensioni</h1>
+                    <h1 className="font-bold uppercase">media gallery</h1>
                     <hr className="w-full border border-black my-10"/>
-                    <YouTube videoId="yhdL4jz74WM"
+                    {/*<YouTube videoId="yKWFTkwk1OM"
                              iframeClassName="w-[100%] h-[400px] md:w-[500px] md:h-[300px] xl:w-[1000px] xl:h-[500px]"
-                    />
+                    />*/}
                 </div>
+                <MyCarouselVideo/>
             </div>
         </>
     )

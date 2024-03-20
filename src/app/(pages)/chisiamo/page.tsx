@@ -2,13 +2,14 @@
 import { globalStore } from "@/store/globalStore";
 import ChiSiamoForm from "@/app/components/form/chiSiamoForm";
 import Image from "next/image";
-import { URL } from "url";
+import { motion } from "framer-motion";
 import clienti from "../../../../public/img/clienti/clienti.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import Link from "next/link";
 import React from "react";
 import mmsystems3d from "../../../../public/img/chisiamo/mmsystems-3d.jpg";
 import Seo from "@/app/components/Seo";
+import YouTube from "react-youtube";
 
 export default function Page() {
   const navbarBackgroundColor = globalStore(
@@ -23,6 +24,17 @@ export default function Page() {
     index: true,
   };
 
+  const opts = {
+    playerVars: {
+      autoplay: 1,
+      controls: 1,
+      rel: 0,
+      showinfo: 1,
+      mute: 1,
+      loop: 0,
+    },
+  };
+
   return (
     <>
       <Seo metadata={seo} />
@@ -30,12 +42,23 @@ export default function Page() {
         className="w-full min-h-[85vh] flex flex-col justify-center items-center"
         style={{ backgroundColor: navbarBackgroundColor }}
       >
-        <div className="lgh-[80vh] flex items-center">
+        <div className="flex items-center">
           <Image src={mmsystems3d} alt={""} />
         </div>
         {/* AGGIUNGERE VIDEO */}
-        <div className="h-[80vh] flex justify-center items-center relative w-full">
-          <div className="absolute right-48">
+        <div className="h-screen bg-black mt-20 flex justify-center items-center relative w-full">
+          <YouTube
+              videoId="ZOysvbJQSmo"
+              opts={opts}
+              className="absolute top-0 w-full"
+              iframeClassName="w-full h-[90vh]"
+          />
+          <motion.div
+              className="absolute right-48"
+              initial={{ x: 1000 }}
+              animate={{ x: 0 }}
+              transition={{ duration: 3, delay: 5 }}
+          >
             <div className="flex flex-col items-end">
               <span className="text-primary xl:text-2xl lg:text-xl">MM SYSTEMS</span>
               <hr className="w-full border border-white mb-4" />
@@ -52,7 +75,7 @@ export default function Page() {
                 </div>
               </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
         {/* Inizio sezione stats */}
         <div className="container grid grid-cols-1 md:grid-cols-2 gap-7 p-10 my-10 text-center">
