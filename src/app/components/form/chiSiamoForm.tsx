@@ -155,7 +155,7 @@ const ChiSiamoForm: React.FC<chiSiamoFormProps> = ({}) => {
                 <span className="label-text text-gray-900 font-normal">
                   Ho letto e accetto l`informativa sulla
                   <Link
-                    href="/"
+                    href="/privacy"
                     className=" ml-1 font-bold hover:underline underline-offset-4"
                   >
                     privacy

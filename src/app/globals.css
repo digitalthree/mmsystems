@@ -135,3 +135,9 @@
 .carousel .slide iframe{
   margin: 1.25rem;
 }
+
+.dropdown.dropdown-open .dropdown-content,
+.dropdown:not(.dropdown-hover):focus .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  visibility: hidden;
+  opacity: 1}
