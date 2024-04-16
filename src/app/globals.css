@@ -71,14 +71,15 @@
 }
 
 .metrologia{
-  background-image: url("/img/attivita/metrologia/mmsystems-9.jpg");
+  background-image: url("/img/mmsystems-18.png");
   height: 88vh;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .plc{
-  background-image: url("/img/attivita/plc/mmsystems-6.jpg");
+  background-image: url("/img/attivita/plc/programmazioneBackground.jpg");
   height: 88vh;
   background-size: cover;
   background-position: center;

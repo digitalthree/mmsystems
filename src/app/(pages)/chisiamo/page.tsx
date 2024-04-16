@@ -97,7 +97,7 @@ export default function Page() {
           </div>
           <div className="flex flex-col mb-5 md:text-left">
             <h1 className="font-bold text-white">
-              146 PROGETTI
+              585 PROGETTI
             </h1>
             <span className=" text-primary xl:text-2xl lg:text-xl">
               COMPLETATI
@@ -105,7 +105,7 @@ export default function Page() {
           </div>
           <div className="flex flex-col mb-5 md:text-right justify-center">
             <h1 className="font-bold text-white">
-              16 TOP
+              120 TOP
             </h1>
             <span className=" text-primary xl:text-2xl lg:text-xl">
               CLIENTS

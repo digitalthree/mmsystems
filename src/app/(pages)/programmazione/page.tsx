@@ -2,7 +2,7 @@
 import {globalStore} from "@/store/globalStore";
 import React, {useEffect} from "react";
 import Image from "next/image";
-import image1 from "../../../../public/img/attivita/plc/mmsystems-17.png";
+import image1 from "../../../../public/img/attivita/plc/plcprogrammazione.jpg";
 import icon1 from "../../../../public/img/attivita/plc/icon1.png";
 import icon2 from "../../../../public/img/attivita/plc/icon2.png";
 import backgroundRight2 from "../../../../public/img/backgroundRight2.png";
@@ -49,7 +49,7 @@ export default function Page() {
                 className="w-full flex relative py-20 flex-col items-center xl:items-start text-center xl:text-start gap-20 px-10 lg:px-0">
                 <Image src={backgroundRight} alt={"img"} className="absolute top-0 right-0 w-1/2"/>
                 <div className="container mx-auto flex px-20 xl:px-0 gap-10">
-                    <Image src={image1} alt={"icon1"} className="w-1/2 left-0 xl:block hidden"/>
+                    <Image src={image1} alt={"icon1"} className="w-[40%] left-0 xl:block hidden"/>
                     <div className="flex flex-col items-center xl:items-start gap-4">
                         <span className="text-primary xl:text-2xl lg:text-xl">I NOSTRI SERVIZI</span>
                         <hr className="border border-primary w-2/3"/>

@@ -8,8 +8,6 @@ export interface SecondSectionProps {
 }
 
 const SecondSection: React.FC<SecondSectionProps> = ({}) => {
-    const windowInnerWidth = useWindowInnerWidth()
-    const ref2 = useRef(null)
     return (
         <div className="w-full bg-[#e4e4e4] relative">
             <div className="container mx-auto flex lg:h-[110vh] md:h-[60vh] h-[40vh] items-center">

@@ -48,15 +48,15 @@ const Footer: React.FC<FooterProps> = ({}) => {
                         <div className="flex flex-col items-center gap-2">
                             <Image src={logo} alt={"logo"} className="w-[120px] mb-2"/>
                             <div className="flex gap-4">
-                                <div className="p-1 bg-white">
+                                <a href="https://www.facebook.com/profile.php?id=100054522818033" target="_blank" className="p-1 bg-white">
                                     <RiFacebookLine className="text-secondary" size={20}/>
-                                </div>
-                                <div className="p-1 bg-white">
+                                </a>
+                                <a href="https://it.linkedin.com/company/mm-systems-srl" target="_blank" className="p-1 bg-white">
                                     <RiLinkedinLine className="text-secondary" size={20}/>
-                                </div>
-                                <div className="p-1 bg-white">
+                                </a>
+                                <a href="https://www.youtube.com/@m.m.systems7842" target="_blank" className="p-1 bg-white">
                                     <RiYoutubeLine className="text-secondary" size={20}/>
-                                </div>
+                                </a>
                             </div>
 
                         </div>

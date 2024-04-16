@@ -28,7 +28,7 @@ export default function Page() {
         <div className="w-full relative" style={{backgroundColor: navbarBackgroundColor}}>
             <div className="metrologia" style={{backgroundColor: navbarBackgroundColor}}>
                 <div
-                    className="container my-auto gap-4 h-full flex flex-col mx-auto justify-center items-center text-center">
+                    className="container my-auto gap-4 h-full flex flex-col mx-auto justify-center items-start text-center">
                     <h1 className="text-[#3f3f3f] font-bold">METROLOGIA</h1>
                 </div>
             </div>
