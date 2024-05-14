@@ -8,10 +8,11 @@ import icon2 from "../../../../public/img/attivita/plc/icon2.png";
 import backgroundRight2 from "../../../../public/img/backgroundRight2.png";
 import backgroundRight from "../../../../public/img/backgroundRight.png";
 import sw1 from "../../../../public/img/attivita/plc/sw1.png";
-import sw2 from "../../../../public/img/attivita/plc/sw2.png";
+import sw2 from "../../../../public/img/attivita/plc/pilz.png";
 import sw3 from "../../../../public/img/attivita/plc/sw3.png";
 import sw4 from "../../../../public/img/attivita/plc/sw4.png";
 import sw5 from "../../../../public/img/attivita/plc/sw5.png";
+import sw6 from "../../../../public/img/attivita/plc/fatek.png";
 
 
 export default function Page() {
@@ -85,12 +86,13 @@ export default function Page() {
                 <div className="flex flex-col items-center mb-20">
                     <hr className="w-full lg:w-1/5 border border-primary"/>
                     <div
-                        className="container items-center grid grid-cols-2 lg:grid-cols-5 gap-20 relative z-50 py-10 lg:py-0">
+                        className="container items-center grid grid-cols-2 lg:grid-cols-6 gap-20 relative z-50 py-10 lg:py-0">
                         <Image src={sw1} alt={"sw1"}/>
                         <Image src={sw2} alt={"sw2"}/>
                         <Image src={sw3} alt={"sw3"}/>
                         <Image src={sw4} alt={"sw4"}/>
                         <Image src={sw5} alt={"sw5"}/>
+                        <Image src={sw6} alt={"sw6"}/>
                     </div>
                     <hr className="w-full lg:w-1/5 border border-primary"/>
                 </div>
