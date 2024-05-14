@@ -57,9 +57,11 @@
 }
 
 .elettrica{
-  background-image: url("/img/progettazione/elettrica/mmsystems-16.jpg");
-  background-size: cover;
-  background-position: 0 40%;
+  background-image: url("/img/progettazione/elettrica/background.png");
+  height: 88vh;
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: right;
   background-color: white;
 }
 
