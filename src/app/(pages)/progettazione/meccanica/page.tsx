@@ -13,6 +13,8 @@ import Link from "next/link";
 import {MdKeyboardArrowRight} from "react-icons/md";
 import backgroundLeft from "../../../../../public/img/backgroundLeft.png";
 import backgroundRight0 from "../../../../../public/img/backgroundRight0.png";
+import {Img} from "@/data/images";
+import {fetchImages} from "@/pages/api/galleryProgettazioneMeccanica";
 
 
 export default function Page() {
@@ -25,6 +27,13 @@ export default function Page() {
     useEffect(() => {
         updateNavbarBackgroundColor("#e4e4e4")
         updateFooterBackgroundColor("#7E2AE9")
+    }, []);
+
+    const [images, setImages] = useState<Img[]>([])
+    useEffect(() => {
+        fetchImages().then(res => {
+            setImages(res)
+        })
     }, []);
 
     return (
@@ -87,7 +96,7 @@ export default function Page() {
                     <p className="text-center">Maschere e calibri di controllo per componenti saldati o stampati</p>
                 </div>
             </div>
-            <MyCarousel/>
+            <MyCarousel images={images} centerSlidePercentage={50}/>
             <div className="container flex flex-col py-20 mx-auto items-center">
                 <Link href="/galleria"
                       className="py-1 xl:py-2 px-2 text-white rounded-[100px] bg-[#7E2AE9] flex justify-between items-center xl:gap-1 relative z-50 hover:cursor-pointer">

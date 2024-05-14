@@ -16,8 +16,6 @@ export interface Video {
 
 export let images:Img[] = [
     {id: 1, src: "/img/galleria/Computer.png",  alt: "gallery", width: 525, height: 370},
-    {id: 2, src: "/img/galleria/Laser.png",  alt: "gallery", width: 525, height: 370},
-    {id: 3, src: "/img/galleria/Laser_2.png",  alt: "gallery", width: 525, height: 370},
     {id: 4, src: "/img/galleria/Logo.png",  alt: "gallery", width: 525, height: 370},
     {id: 5, src: "/img/galleria/Macchinario_1.png",  alt: "gallery", width: 525, height: 370},
     {id: 6, src: "/img/galleria/Macchinario_2.png",  alt: "gallery", width: 525, height: 370},
@@ -36,12 +34,11 @@ export let images:Img[] = [
     {id: 19, src: "/img/galleria/Programmatore_2.png",  alt: "gallery", width: 525, height: 370},
     {id: 20, src: "/img/galleria/Robot.png",  alt: "gallery", width: 525, height: 370},
     {id: 21, src: "/img/galleria/Robot_2.png",  alt: "gallery", width: 525, height: 370},
-    {id: 22, src: "/img/galleria/Saldatore.png",  alt: "gallery", width: 525, height: 370},
 ]
 
 export let videos:Video[] = [
-    {id:1, srcKey: "yKWFTkwk1OM"},
-    {id:2, srcKey: "ZOysvbJQSmo"},
+    {id:1, srcKey: "EBNALOJr-0g"},
+    {id:2, srcKey: "WGgVxlnbHyo"},
     {id:3, srcKey: "1DX5bAK14Bg"},
     {id:4, srcKey: "k1lnOMc9HHc"},
     {id:5, srcKey: "dbulGjVxNfM"},
@@ -51,5 +48,29 @@ export let videos:Video[] = [
     {id:9, srcKey: "yU3g1UibXQM"},
     {id:10, srcKey: "OTFkUr1egEM"},
     {id:11, srcKey: "OTFkUr1egEM"},
+]
 
+export let imagesElettrica:Img[] = [
+    {id: 1, src: "/img/progettazione/elettrica/BiancheGrandi1.gif",  alt: "gallery", width: 525, height: 370},
+    {id: 2, src: "/img/progettazione/elettrica/BiancheGrandi2.gif",  alt: "gallery", width: 525, height: 370},
+    {id: 3, src: "/img/progettazione/elettrica/BiancheGrandi3.gif",  alt: "gallery", width: 525, height: 370},
+    {id: 4, src: "/img/progettazione/elettrica/BiancheGrandi4.gif",  alt: "gallery", width: 525, height: 370},
+    {id: 5, src: "/img/progettazione/elettrica/BiancheGrandi5.gif",  alt: "gallery", width: 525, height: 370},
+    {id: 6, src: "/img/progettazione/elettrica/BianchePiccole1.gif",  alt: "gallery", width: 525, height: 370},
+    {id: 7, src: "/img/progettazione/elettrica/BianchePiccole2.gif",  alt: "gallery", width: 525, height: 370},
+    {id: 8, src: "/img/progettazione/elettrica/BianchePiccole3.gif",  alt: "gallery", width: 525, height: 370},
+    {id: 9, src: "/img/progettazione/elettrica/BianchePiccole4.gif",  alt: "gallery", width: 525, height: 370},
+    {id: 10, src: "/img/progettazione/elettrica/BianchePiccole5.gif",  alt: "gallery", width: 525, height: 370},
+    {id: 11, src: "/img/progettazione/elettrica/BianchePiccole6.gif",  alt: "gallery", width: 525, height: 370},
+]
+
+export let imagesMeccanica:Img[] = [
+    {id: 1, src: "/img/progettazione/meccanica/ProcessSimulate_1.JPG",  alt: "gallery", width: 525, height: 370},
+    {id: 2, src: "/img/progettazione/meccanica/ProcessSimulate_2.JPG",  alt: "gallery", width: 525, height: 370},
+]
+
+export let imagesDinamica:Img[] = [
+    {id: 1, src: "/img/progettazione/dinamica/Visual_studio_code.png",  alt: "gallery", width: 525, height: 370},
+    {id: 2, src: "/img/progettazione/dinamica/TMFlow.png",  alt: "gallery", width: 525, height: 370},
+    {id: 3, src: "/img/progettazione/dinamica/Tia_Portal.png",  alt: "gallery", width: 525, height: 370},
 ]

@@ -8,17 +8,12 @@ import {fetchImages} from "@/pages/api/gallery";
 import {Img} from "@/data/images";
 
 export interface MyCarouselProps{
-
+    images: Img[],
+    centerSlidePercentage?: number
 }
 
-const MyCarousel: React.FC<MyCarouselProps> = ({}) => {
+const MyCarousel: React.FC<MyCarouselProps> = ({images, centerSlidePercentage}) => {
     const windowInnerWidth = useWindowInnerWidth()
-    const [images, setImages] = useState<Img[]>([])
-    useEffect(() => {
-        fetchImages().then(res => {
-            setImages(res)
-        })
-    }, []);
     return(
         <>
             <Carousel
@@ -26,7 +21,7 @@ const MyCarousel: React.FC<MyCarouselProps> = ({}) => {
                 className="relative z-50"
                 centerMode={windowInnerWidth > 1300}
                 infiniteLoop={true}
-                centerSlidePercentage={25}
+                centerSlidePercentage={centerSlidePercentage ? centerSlidePercentage : 25}
                 selectedItem={1}
                 renderArrowPrev={(clickHandler, hasNext) => {
                     return (

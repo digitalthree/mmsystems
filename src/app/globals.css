@@ -71,11 +71,11 @@
 }
 
 .metrologia{
-  /*background-image: url("/img/mmsystems-18.png");*/
+  background-image: url("/img/attivita/metrologia/background.jpg");
   height: 88vh;
-  /*background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;*/
+  background-position: right;
 }
 
 .plc{

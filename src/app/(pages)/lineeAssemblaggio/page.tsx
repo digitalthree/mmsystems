@@ -10,6 +10,7 @@ import icon3 from "@public/img/attivita/lineeAssemblaggio/icon3.png";
 import icon4 from "@public/img/attivita/lineeAssemblaggio/icon4.png";
 import {MdKeyboardArrowRight} from "react-icons/md";
 import Link from "next/link";
+import YouTube from "react-youtube";
 
 export default function Page() {
     const updateNavbarBackgroundColor = globalStore((state: any) => state.updateNavbarBackgroundColor)
@@ -21,11 +22,32 @@ export default function Page() {
 
     const windowInnerWidth = useWindowInnerWidth()
 
+    const opts = {
+        playerVars: {
+            autoplay: 1,
+            controls: 1,
+            rel: 0,
+            showinfo: 1,
+            mute: 1,
+            loop: 0,
+            start: 30,
+            end: 63
+        },
+    };
+
     return (
         <div className="w-full" style={{backgroundColor: navbarBackgroundColor}}>
-            <div className="lineeAssemblaggio bg-gray-300 h-[70vh]">
+            <section className="w-full relative h-[90vh] flex">
+                <YouTube
+                    videoId="MIG_oV7ayqw"
+                    opts={opts}
+                    className="absolute top-0 w-full"
+                    iframeClassName="w-full h-[90vh]"
+                />
+            </section>
+            <div className="pt-20 text-center">
                 <div
-                    className="container my-auto h-full flex flex-col mx-auto justify-center lg:items-start lg:text-start items-center text-center">
+                    className="container my-auto h-full flex flex-col mx-auto justify-center items-center text-center">
                     <span className="text-primary uppercase lg:text-[30px] text-[14px] font-semibold">mmsystems</span>
                     <h1 className="text-[#3f3f3f] font-bold">
                         <span
@@ -35,7 +57,7 @@ export default function Page() {
                     </h1>
                 </div>
             </div>
-            <div className="container mx-auto flex flex-col gap-5 pt-10 px-10 xl:px-0">
+            <div className="container text-center mx-auto flex flex-col gap-5 pt-10 px-10 xl:px-0">
                 <p>
                     Le nostre soluzioni personalizzate rappresentano l&apos;apice dell&apos;automazione industriale,
                     mirate a
@@ -116,8 +138,8 @@ export default function Page() {
                         </div>
                     </div>
                     {windowInnerWidth < 800 && <Image src={icon4} alt={"icon 4"} className="w-[20%]"/>}
-                    <div className="flex flex-col gap-10">
-                        <p className="text-start">
+                    <div className="flex flex-col gap-10 items-center">
+                        <p className="text-center">
                             Le nostre soluzioni automatizzate su misura possono trasformare la vostra produzione portando efficienza
                             precisione e affidabilità al prossimo livello.
                         </p>

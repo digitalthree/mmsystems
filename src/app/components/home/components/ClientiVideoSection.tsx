@@ -2,7 +2,6 @@ import Video from "next-video";
 import React from 'react';
 import Image from "next/image";
 import clienti from "../../../../../public/img/clienti/clienti.png";
-import YouTube from 'react-youtube';
 import MyCarouselVideo from "@/app/components/carousel/MyCarouselVideo";
 
 export interface ClientiVideoSectionProps{

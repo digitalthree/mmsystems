@@ -3,7 +3,7 @@ import {globalStore} from "@/store/globalStore";
 import React, {useEffect, useState} from "react";
 import Image from "next/image";
 import image1 from "../../../../public/img/attivita/metrologia/mmsystems-14.png";
-import image2 from "../../../../public/img/attivita/metrologia/mmsystems-1.png";
+import image2 from "../../../../public/img/attivita/metrologia/image2.jpg";
 import icon1 from "../../../../public/img/attivita/metrologia/icon1.png";
 import icon2 from "../../../../public/img/attivita/metrologia/icon2.png";
 import icon3 from "../../../../public/img/attivita/metrologia/icon3.png";
@@ -59,12 +59,8 @@ export default function Page() {
                         </p>
                     </div>
                 </div>
-            </div>
-            <div className="w-full flex flex-col items-center xl:items-start text-center xl:text-start">
-                <div className="flex flex-row gap-10 items-center">
-                    <div className="w-1/4 xl:block hidden"></div>
-                    <div
-                        className="flex xl:pb-12 pb-20 flex-col items-center xl:items-start px-20 xl:px-0 xl:w-3/4 gap-4">
+                <div className="container lg:mt-20 mx-auto flex flex-row px-20 xl:px-0 gap-10 relative">
+                    <div className="flex flex-col items-center xl:items-start w-full xl:w-1/2 gap-4">
                         <Image src={icon3} alt={"icon1"} className="w-[25%] md:w-[10%] xl:w-[13%]"/>
                         <span className="text-primary xl:text-2xl lg:text-xl">CALIBRI DI CONTROLLO</span>
                         <hr className="border border-primary w-1/3"/>
@@ -80,29 +76,30 @@ export default function Page() {
                             macchina di misura (braccio antropomorfo CAM2) per eseguire collaudi su particolari di
                             difficile movimentazione
                         </p>
-                        <Link href="progettazione"
-                              className="py-2 mt-20 xl:py-2 px-2 text-white rounded-[100px] bg-[#3f3f3f] flex justify-between items-center xl:gap-1 w-full md:w-1/2 xl:w-1/2 relative z-50"
-                              onClick={() => updateActiveMenuItem('progettazione')}
-                        >
-                            <span className="px-5">Progettazione</span>
-                            <div className="p-1 rounded-3xl bg-white">
-                                <MdKeyboardArrowRight className="text-[#3f3f3f] xl:w-7 xl:h-7 w-5 h-5"/>
-                            </div>
-                        </Link>
-                        <Link href="chisiamo#contatti"
-                              className="py-2 xl:py-2 px-2 text-white rounded-[100px] bg-[#3f3f3f] flex justify-between items-center xl:gap-1 w-full md:w-1/2 xl:w-1/2 relative z-50"
-                              onClick={() => updateActiveMenuItem('chisiamo')}
-                        >
-                            <span className="px-5">Contattaci</span>
-                            <div className="p-1 rounded-3xl bg-white">
-                                <MdKeyboardArrowRight className="text-[#3f3f3f] xl:w-7 xl:h-7 w-5 h-5"/>
-                            </div>
-                        </Link>
                     </div>
-                    <Image src={image2} alt={"icon1"} className="w-[40%] right-0 bottom-0 z-50 xl:block hidden"/>
+                    <Image src={image2} alt={"icon1"} className="w-1/2 left-0 xl:block hidden"/>
                 </div>
             </div>
-            {/*<Image src={backgroundRight2} alt={"img"} className="absolute bottom-0 right-0 w-1/2"/>*/}
+            <div className="container mx-auto flex flex-col px-20 pb-20 xl:px-0 gap-3 relative">
+                <Link href="progettazione"
+                      className="py-2 xl:py-2 px-2 text-white rounded-[100px] bg-[#3f3f3f] flex justify-between items-center xl:gap-1 w-full md:w-1/2 xl:w-1/2 relative z-50"
+                      onClick={() => updateActiveMenuItem('progettazione')}
+                >
+                    <span className="px-5">Progettazione</span>
+                    <div className="p-1 rounded-3xl bg-white">
+                        <MdKeyboardArrowRight className="text-[#3f3f3f] xl:w-7 xl:h-7 w-5 h-5"/>
+                    </div>
+                </Link>
+                <Link href="chisiamo#contatti"
+                      className="py-2 xl:py-2 px-2 text-white rounded-[100px] bg-[#3f3f3f] flex justify-between items-center xl:gap-1 w-full md:w-1/2 xl:w-1/2 relative z-50"
+                      onClick={() => updateActiveMenuItem('chisiamo')}
+                >
+                    <span className="px-5">Contattaci</span>
+                    <div className="p-1 rounded-3xl bg-white">
+                        <MdKeyboardArrowRight className="text-[#3f3f3f] xl:w-7 xl:h-7 w-5 h-5"/>
+                    </div>
+                </Link>
+            </div>
         </div>
     )
 }

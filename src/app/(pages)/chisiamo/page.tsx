@@ -48,7 +48,7 @@ export default function Page() {
         {/* AGGIUNGERE VIDEO */}
         <div className="h-screen bg-black mt-20 flex justify-center items-center relative w-full">
           <YouTube
-              videoId="ZOysvbJQSmo"
+              videoId="EBNALOJr-0g"
               opts={opts}
               className="absolute top-0 w-full"
               iframeClassName="w-full h-[90vh]"
