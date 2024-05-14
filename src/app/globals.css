@@ -69,9 +69,9 @@
 .dinamica{
   background-image: url("/img/progettazione/dinamica/background.jpeg");
   height: 88vh;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: top;
 }
 
 .metrologia{
@@ -114,9 +114,9 @@
 .software {
   background-image: url("/img/progettazione/software/background.png");
   height: 88vh;
-  background-size: contain;
-  background-position: right;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  background-color: white;
 }
 
 .certificazioni{

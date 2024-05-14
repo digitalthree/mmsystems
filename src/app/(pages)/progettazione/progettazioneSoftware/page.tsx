@@ -35,9 +35,9 @@ export default function Page() {
 
     return (
         <div className="w-full relative" style={{backgroundColor: navbarBackgroundColor}}>
-            <div className="software bg-gray-300 h-[70vh]">
+            <div className="software">
                 <div
-                    className="container my-auto gap-4 h-full flex flex-col mx-auto justify-center items-center xl:items-start text-center xl:text-start">
+                    className="container my-auto gap-4 h-full flex flex-col mx-auto justify-center items-center xl:items-end text-center xl:text-end">
                     <span className="text-[#71B6AE] xl:text-2xl lg:text-xl font-semibold">SPAZIO VIRTUALE</span>
                     <h1 className="text-[#3f3f3f] font-bold">PROGETTAZIONE
                         <br/>SOFTWARE</h1>
