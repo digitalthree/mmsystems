@@ -70,7 +70,7 @@ export let imagesMeccanica:Img[] = [
 ]
 
 export let imagesDinamica:Img[] = [
-    {id: 1, src: "/img/progettazione/dinamica/Visual_studio_code.png",  alt: "gallery", width: 525, height: 370},
+    {id: 1, src: "/img/progettazione/dinamica/Visual_Studio_Code.png",  alt: "gallery", width: 525, height: 370},
     {id: 2, src: "/img/progettazione/dinamica/TMFlow.png",  alt: "gallery", width: 525, height: 370},
     {id: 3, src: "/img/progettazione/dinamica/Tia_Portal.png",  alt: "gallery", width: 525, height: 370},
 ]
