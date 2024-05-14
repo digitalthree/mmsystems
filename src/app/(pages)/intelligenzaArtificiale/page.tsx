@@ -13,6 +13,7 @@ import backgroundRight from "@public/img/backgroundRight.png";
 import backgroundRightBottom from "@public/img/backgroundRight2.png";
 import {MdKeyboardArrowRight} from "react-icons/md";
 import Link from "next/link";
+import YouTube from "react-youtube";
 
 
 export default function Page() {
@@ -25,11 +26,32 @@ export default function Page() {
 
     const windowInnerWidth = useWindowInnerWidth()
 
+    const opts = {
+        playerVars: {
+            autoplay: 1,
+            controls: 1,
+            rel: 0,
+            showinfo: 1,
+            mute: 1,
+            loop: 0,
+            start: 70,
+            end: 85
+        },
+    };
+
     return (
         <div className="w-full" style={{backgroundColor: navbarBackgroundColor}}>
-            <div className="intelligenzaArtificiale bg-gray-300 h-[70vh]">
+            <section className="w-full relative h-[90vh] flex">
+                <YouTube
+                    videoId="uYbPb3wJpGk"
+                    opts={opts}
+                    className="absolute top-0 w-full"
+                    iframeClassName="w-full h-[90vh]"
+                />
+            </section>
+            <div className="py-20">
                 <div
-                    className="container my-auto h-full flex flex-col mx-auto justify-center lg:items-start lg:text-start items-center text-center">
+                    className="container my-auto h-full flex flex-col mx-auto justify-center items-center text-center">
                     <span className="uppercase lg:text-[30px] text-[14px] font-semibold">le nostre attività</span>
                     <h1 className="text-[#3f3f3f] font-bold">
                         <span className="font-bold xl:text-[90px] lg:text-[60px] md:text-[48px] text-[35px]">SISTEMI DI VISIONE</span><br/>
@@ -40,7 +62,7 @@ export default function Page() {
                     </h1>
                 </div>
             </div>
-            <div className="container mx-auto pt-10 px-10 xl:px-0 flex flex-col items-center xl:items-start text-center xl:text-start">
+            <div className="container mx-auto pt-10 px-10 xl:px-0 flex flex-col items-center text-center">
                 <p>
                     Non solo vantiamo l’utilizzo delle più avanzate tecnologie di visione e intelligenza artificiale, ma
                     integriamo queste innovazioni in modo sinergico per offrire soluzioni altamente performanti e

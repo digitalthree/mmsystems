@@ -11,7 +11,7 @@ import MyCarousel from "@/app/components/carousel/MyCarousel";
 import {MdKeyboardArrowRight} from "react-icons/md";
 import Link from "next/link";
 import {Img} from "@/data/images";
-import {fetchImages} from "@/pages/api/galleryProgettazioneElettrica";
+import {fetchImages} from "@/pages/api/gallery";
 
 
 export default function Page() {

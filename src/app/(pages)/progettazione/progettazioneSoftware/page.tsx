@@ -12,7 +12,7 @@ import {MdKeyboardArrowRight} from "react-icons/md";
 import backgroundLeft from "@public/img/backgroundLeft.png";
 import MyCarousel from "@/app/components/carousel/MyCarousel";
 import {Img} from "@/data/images";
-import {fetchImages} from "@/pages/api/galleryProgettazioneDinamica";
+import {fetchImages} from "@/pages/api/gallery";
 
 export default function Page() {
     const updateNavbarBackgroundColor = globalStore((state: any) => state.updateNavbarBackgroundColor)
@@ -86,7 +86,7 @@ export default function Page() {
                     {windowInnerWidth < 800 && <Image src={icon3} alt={"icon 3"} className="w-[20%]"/>}
                 </div>
             </div>
-            <MyCarousel images={images} centerSlidePercentage={33}/>
+            <MyCarousel images={images}/>
             <div className="container flex flex-col py-20 mx-auto items-center relative z-50">
                 <Link href="/galleria"
                       className="py-1 xl:py-2 px-2 text-white rounded-[100px] bg-[#71B6AE] flex justify-between items-center xl:gap-1 hover:cursor-pointer">

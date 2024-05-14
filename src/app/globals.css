@@ -50,9 +50,10 @@
 }
 
 .meccanica{
-  background-image: url("/img/progettazione/meccanica/mmsystems-11.jpg");
+  background-image: url("/img/progettazione/meccanica/background.jpg");
+  height: 88vh;
   background-size: cover;
-  background-position: 0 40%;
+  background-position: center;
   background-color: white;
 }
 
@@ -66,10 +67,11 @@
 }
 
 .dinamica{
-  background-image: url("/img/progettazione/dinamica/mmsystems-15.jpg");
-  background-size: cover;
-  background-position: 0 40%;
-  background-color: white;
+  background-image: url("/img/progettazione/dinamica/background.jpeg");
+  height: 88vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .metrologia{
@@ -110,10 +112,11 @@
 }
 
 .software {
-  background-image: url("/img/progettazione/software/banner.jpg");
+  background-image: url("/img/progettazione/software/background.png");
   height: 88vh;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .certificazioni{
