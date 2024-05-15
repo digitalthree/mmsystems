@@ -14,7 +14,7 @@ import ridurre4 from "@public/img/progettazione/dinamica/ridurre-4.png";
 import ottimizzare5 from "@public/img/progettazione/dinamica/ottimizzare5.png";
 import dimostrare6 from "@public/img/progettazione/dinamica/dimostrare6.png";
 import {Img} from "@/data/images";
-import {fetchImages} from "@/pages/api/galleryProgettazioneDinamica";
+import {fetchImages} from "@/pages/api/gallery";
 import YouTube from "react-youtube";
 
 
@@ -42,18 +42,33 @@ export default function Page() {
         },
     };
 
+    const [images, setImages] = useState<Img[]>([])
+    useEffect(() => {
+        fetchImages().then(res => {
+            setImages(res)
+        })
+    }, []);
+
     return (
         <div className="w-full relative" style={{backgroundColor: navbarBackgroundColor}}>
-            <div className="dinamica h-[70vh]">
+            <section className="w-full rounded-full relative h-[90vh] flex mx-auto z-50">
+                <YouTube
+                    videoId="fIVJ7vdIrz0"
+                    opts={opts}
+                    className="absolute top-0 w-full"
+                    iframeClassName="w-full h-[90vh]"
+                />
+            </section>
+            <div className="py-20">
                 <div
-                    className="container my-auto gap-4 h-full flex flex-col mx-auto justify-center items-center xl:items-start text-center xl:text-start">
+                    className="container my-auto gap-4 h-full flex flex-col mx-auto justify-center items-center text-center">
                     <span className="text-[#CE2AE9] xl:text-2xl lg:text-xl uppercase">simulazione di processo</span>
                     <hr className="border border-[#3f3f3f] w-1/6"/>
                     <h1 className="text-[#3f3f3f] font-bold uppercase">fattibilità e<br/> sviluppo <br/> delle tue idee</h1>
                 </div>
             </div>
 
-            <div className="flex mx-auto py-20 flex-col items-center xl:items-start text-center xl:text-start gap-20 xl:w-4/5 px-10 lg:px-0">
+            <div className="flex mx-auto pb-20 flex-col items-center xl:items-start text-center xl:text-start gap-20 xl:w-4/5 px-10 lg:px-0">
                 <div className="flex flex-col gap-3 items-center mx-auto">
                     <p className="text-[#3F3F3F] text-center">
                         Grazie alla Simulazione Di Processo MM Systems ti aiuterà a sviluppare e studiare la fattibilità delle tue idee
@@ -73,7 +88,7 @@ export default function Page() {
                     <Image src={bilanciare} alt={"banchi assemblaggio"} className="w-1/2"/>
                     <p className="text-center">Bilanciare costi da sostenere e prestazioni ottenibili</p>
                 </div>
-                <div className="flex flex-col items-center gap-4">
+                <div className="flex flex-col items-center gap-4 z-50">
                     <Image src={ridurre4} alt={"banchi assemblaggio"} className="w-1/2"/>
                     <p className="text-center">Ridurre i tempi di avviamento</p>
                 </div>
@@ -86,14 +101,7 @@ export default function Page() {
                     <p className="text-center">Dimostrare la validità delle proprie idee</p>
                 </div>
             </div>
-            <section className="w-full rounded-full relative h-[90vh] flex mx-auto z-50">
-                <YouTube
-                    videoId="fIVJ7vdIrz0"
-                    opts={opts}
-                    className="absolute top-0 w-full"
-                    iframeClassName="w-full h-[90vh]"
-                />
-            </section>
+            <MyCarousel images={images}/>
             <div className="container flex flex-col py-20 mx-auto items-center">
                 <Link href="/galleria" className="py-1 xl:py-2 px-2 text-white rounded-[100px] bg-[#CE2AE9] flex justify-between items-center xl:gap-1 relative z-50 hover:cursor-pointer">
                     <span className="px-5">Sfoglia la Gallery</span>
