@@ -17,7 +17,7 @@ export default function Page() {
             rel: 0,
             showinfo: 1,
             mute: 1,
-            loop: 0,
+            loop: 0
         },
     };
     return (
@@ -28,6 +28,9 @@ export default function Page() {
                     opts={opts}
                     className="absolute top-0 w-full"
                     iframeClassName="w-full h-[90vh]"
+                    onReady={event => {
+                        event.target.setPlaybackRate(2)
+                    }}
                 />
             </section>
             <div
