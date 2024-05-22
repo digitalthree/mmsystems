@@ -17,7 +17,7 @@ export interface Video {
 export let images:Img[] = [
     {id: 0, src: "/img/galleria/gallery1.jpeg",  alt: "gallery", width: 525, height: 370},
     {id: 1, src: "/img/galleria/gallery2.jpeg",  alt: "gallery", width: 525, height: 370},
-    {id: 2, src: "/img/galleria/CampioneDelValore.jpeg",  alt: "gallery", width: 525, height: 370},
+    {id: 2, src: "/img/galleria/campioneDelValore.jpeg",  alt: "gallery", width: 525, height: 370},
     {id: 3, src: "/img/galleria/Computer.png",  alt: "gallery", width: 525, height: 370},
     {id: 4, src: "/img/galleria/Logo.png",  alt: "gallery", width: 525, height: 370},
     {id: 5, src: "/img/galleria/Macchinario_1.png",  alt: "gallery", width: 525, height: 370},
