@@ -112,11 +112,10 @@
 }
 
 .software {
-  background-image: url("/img/progettazione/software/background.png");
+  background-image: url("/img/progettazione/software/progSw.png");
   height: 88vh;
   background-size: cover;
   background-position: left top;
-  background-color: white;
 }
 
 .certificazioni{
