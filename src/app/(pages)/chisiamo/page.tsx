@@ -15,7 +15,6 @@ export default function Page() {
   const navbarBackgroundColor = globalStore(
     (state: any) => state.navbarBackgroundColor
   );
-  const loading = globalStore((state: any) => state.loading);
 
   const seo = {
     title: "Chi Siamo",
@@ -37,7 +36,7 @@ export default function Page() {
 
   return (
     <>
-      <Seo metadata={seo} />
+      {/*<Seo metadata={seo} />*/}
       <div
         className="w-full min-h-[85vh] flex flex-col justify-center items-center"
         style={{ backgroundColor: navbarBackgroundColor }}
