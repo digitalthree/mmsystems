@@ -22,7 +22,7 @@ const Seo: React.FC<SeoProps> = ({
   return (
     <>
       
-        <title>{"MM Systems | " + metadata.title}</title>
+        {/*<title>{"MM Systems | " + metadata.title}</title>
         <meta name="title" content={"MM Systems | " + metadata.title} />
         <meta name="description" content={metadata.description} />
         <meta
@@ -53,7 +53,7 @@ const Seo: React.FC<SeoProps> = ({
         <link rel="author" href="https://groupmm.net" />
         <meta name="author" content="MM Systems" />
         <link rel="author" href="https://digital-three.com" />
-        <meta name="author" content="Digital-Three" />
+        <meta name="author" content="Digital-Three" />*/}
      
     </>
   );
