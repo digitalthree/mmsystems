@@ -81,7 +81,7 @@ export default function Page() {
                             <hr className="w-full border border-primary"/>
                             <p className="text-[#3F3F3F]">
                                 Collaboriamo con i brand leader nel settore della visione, integrando sistemi che
-                                garantiscono una percezione visiva di altissima <b className="font-bold">qualità</b>
+                                garantiscono una percezione visiva di altissima <b className="font-bold">qualità</b>.
                                 <br/>
                                 L’acquisizione dei dati visivi è solo l’inizio: applichiamo algoritmi sofisticati per
                                 preparare i dati, assicurando che siano ottimizzati per l’elaborazione dell’intelligenza
@@ -129,11 +129,11 @@ export default function Page() {
             <div className="w-full relative py-20">
                 <Image src={backgroundLeft} alt={"background left"} className="absolute top-0 left-0 w-[40%]"/>
                 <Image src={backgroundRight} alt={"background right"} className="absolute top-0 right-0 w-[40%]"/>
-                <div className="container mx-auto flex flex-col xl:text-end text-center pt-20 px-10 items-center xl:items-end xl:px-0">
-                    <div className="flex justify-center xl:justify-end">
+                <div className="container mx-auto flex flex-col xl:text-start text-center pt-20 px-10 items-center xl:items-start xl:px-0">
+                    <div className="flex justify-center xl:justify-start">
                         <h1 className="uppercase font-bold text-[#3f3f3f] z-50">processo <br/> integrato</h1>
                     </div>
-                    <div className="flex flex-col items-center justify-center xl:items-end gap-10 mt-10">
+                    <div className="flex flex-col items-center justify-center xl:items-start gap-10 mt-10">
                         <p>
                             · Acquisizione e Analisi Visiva: I nostri sistemi di visione catturano dati visivi in tempo
                             reale, <br/>interpretando immagini con precisione.

@@ -63,7 +63,7 @@ export default function Page() {
                     <span className="text-[#2A5FE9] xl:text-2xl lg:text-xl uppercase">realizzazione</span>
                     <hr className="w-1/6 border border-white"/>
                     <p className="text-[#3F3F3F] text-center">
-                        I principali settori di attività dell&apos;azienda, operativa in tutti i campi, sono::
+                        I principali settori di attività dell&apos;azienda, operativa in tutti i campi, sono:
                         progettazione, cablaggio bordo macchina, messa in servizio, quadri di distribuzione e
                         automazione. Le nostre esperienze partono dagli ambiti industriali di automazione e di robotica
                         dove abbiamo grande specializzazione, ma la nostra gamma di interventi si è ampliata fino ad

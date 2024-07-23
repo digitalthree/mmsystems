@@ -130,7 +130,7 @@ export default function Page() {
                 </span>
                 <p className=" text-[#3f3f3f] text-center xl:text-left mb-12 w-5/6 md:w-full">
                   Realtà abruzzese consolidata nel panorama europeo
-                  dell`industria di automazione robotica. La MM systems, dal
+                  dell`industria di automazione robotica. La MM Systems, dal
                   2007 ad oggi, grazie al suo fondatore Miki Morleo, personalità
                   e professionista particolarmente attivo nel settore della
                   produzione di apparecchiature elettriche ed elettromeccaniche;

@@ -59,9 +59,9 @@ export default function Page() {
                         degli anni nei vari settori della progettazione meccanica.
                     </p>
                     <p className="text-[#3F3F3F] text-center mt-4">
-                        MM System può eseguire:
+                        MM Systems può eseguire:
                         <li>
-                            assemblaggio e realizzazione di componenti meccanici nel pieno rispetto delle specifiche progettuali fornite o se richiesto,
+                            assemblaggio e realizzazione di componenti meccanici nel pieno rispetto delle specifiche progettuali fornite o se richieste,
                         </li>
                         <li>
                             impiegarsi nella sola engineering per sviluppare la soluzione più efficiente in base alle esigenze del cliente.

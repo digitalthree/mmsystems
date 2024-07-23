@@ -37,7 +37,7 @@ export default function Page() {
                     </h1>
                     <p>
                         Oltre ai programmi su PLC e PC per il controllo e la supervisione di singole unita’ produttive,
-                        la MM System realizza software per l’automazione di fabbrica:
+                        la MM Systems realizza software per l’automazione di fabbrica:
                         <p>
                             <li>Dalla comunicazione in rete locale tra le varie linee;</li>
                             <li>Alla gestione centralizzata della produzione.</li>

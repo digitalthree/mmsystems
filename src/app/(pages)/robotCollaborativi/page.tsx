@@ -46,7 +46,7 @@ export default function Page() {
                                 INNOVATIVI - SICURI - INTELLIGENTI
                             </span>
                         <p className="xl:w-4/5">
-                            M.M. Systems propone soluzioni complete di robotica
+                            MM Systems propone soluzioni complete di robotica
                             collaborativa utilizzando tutte le possibilità offerte da questa
                             nuova tecnologia. Inoltre a partire dal 2018 è diventata
                             distributore per l’Italia dei Cobot TM Robot. L’avvento di questa
@@ -137,10 +137,10 @@ export default function Page() {
                             <span className="text-primary xl:text-2xl lg:text-xl uppercase">Con i robot collaborativi, offriamo</span>
                             <hr className="w-full border border-primary"/>
                             <p className="list-disc text-[#3F3F3F]">
-                                <li>soluzioni su misura per le vostre esigenze specifiche,</li>
-                                <li>migliorando l&apos;efficienza,</li>
-                                <li>riducendo gli errori,</li>
-                                <li>aumentando la produttività complessiva.</li>
+                                <li>soluzioni su misura per le vostre esigenze specifiche;</li>
+                                <li>migliorando l&apos;efficienza;</li>
+                                <li>riducendo gli errori;</li>
+                                <li>aumentando la produttività complessiva;</li>
                             </p>
                             <p className="text-[#3F3F3F]">Siamo qui <b className="font-bold"> per guidarvi verso il
                                 futuro dell&apos;automazione e della robotica </b>, rendendo il vostro ambiente

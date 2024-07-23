@@ -55,7 +55,7 @@ const NavbarDropdown: React.FC<NavbarDropdownProps> = ({
                 }
                 {showDropdown &&
                     <ul tabIndex={0}
-                        className={`p-0 pt-6 menu dropdown-content z-[1] ${navbarBackgroundColor === "#04203b" ? 'text-white' : "text-[#3f3f3f]"} bg-transparent uppercase text-base rounded-box ${textDropdown === "Attività" ? 'w-[400px]' : 'w-64'}`}>
+                        className={`p-0 bg-white px-3 py-3 menu dropdown-content z-[1] ${navbarBackgroundColor === "#04203b" ? 'text-white' : "text-[#3f3f3f]"} bg-transparent uppercase text-base rounded-box ${textDropdown === "Attività" ? 'w-[400px]' : 'w-64'}`}>
                         {itemsArray.map((i, index) => {
                             return (
                                 <Link key={index} className={`text-sm ${navbarBackgroundColor === "#04203b" ? 'text-primary' : "text-[#3f3f3f]"}`}

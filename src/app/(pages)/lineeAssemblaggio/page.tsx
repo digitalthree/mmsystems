@@ -47,7 +47,7 @@ export default function Page() {
             </section>
             <div className="pt-20 text-center">
                 <div
-                    className="container my-auto h-full flex flex-col mx-auto justify-center items-center text-center">
+                    className="container my-auto h-full flex flex-col mx-auto justify-start items-start text-start">
                     <span className="text-primary uppercase lg:text-[30px] text-[14px] font-semibold">mmsystems</span>
                     <h1 className="text-[#3f3f3f] font-bold">
                         <span
@@ -57,7 +57,7 @@ export default function Page() {
                     </h1>
                 </div>
             </div>
-            <div className="container text-center mx-auto flex flex-col gap-5 pt-10 px-10 xl:px-0">
+            <div className="container text-start mx-auto flex flex-col gap-5 pt-10 px-10 xl:px-0">
                 <p>
                     Le nostre soluzioni personalizzate rappresentano l&apos;apice dell&apos;automazione industriale,
                     mirate a

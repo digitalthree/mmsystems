@@ -46,7 +46,7 @@ export default function Page() {
                         <p className="text-[#3F3F3F] text-center xl:text-left">
                             Attraverso il controllo di un numero adeguato di campioni (SPC - controllo statistico di
                             processo) si può misurare la variabilità e la capacità di un processo produttivo rilevandone
-                            le tendenze attraverso grafici ed indici di capacità
+                            le tendenze attraverso grafici ed indici di capacità.
                         </p>
                         <Image src={icon2} alt={"icon1"} className="w-[25%] md:w-[10%] xl:w-[13%] mt-10"/>
                         <span className="text-primary xl:text-2xl lg:text-xl">RILIEVO CON BRACCI ANTROPOMORFI</span>
@@ -55,7 +55,7 @@ export default function Page() {
                             La nuova tecnologia del braccio di misura consente di effettuare controlli, attraverso il
                             modello matematico, di particolari di difficile movimentazione. Il braccio è portatile e
                             dispone di campo di misura di y2400, con una notevole flessibilità rispetto ad una macchina
-                            di misura tradizione (CMM)
+                            di misura tradizionale (CMM).
                         </p>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ export default function Page() {
                             Messa a disposizione di personale tecnico per effettuare misurazioni presso la sede del
                             cliente utilizzando le attrezzature del cliente stesso. Fornitura del personale tecnico e
                             macchina di misura (braccio antropomorfo CAM2) per eseguire collaudi su particolari di
-                            difficile movimentazione
+                            difficile movimentazione.
                         </p>
                     </div>
                     <Image src={image2} alt={"icon1"} className="w-1/2 left-0 xl:block hidden"/>

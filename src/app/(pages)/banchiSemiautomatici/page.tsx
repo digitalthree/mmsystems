@@ -28,7 +28,7 @@ export default function Page() {
                     opts={opts}
                     className="absolute top-0 w-full"
                     iframeClassName="w-full h-[90vh]"
-                    onReady={event => {
+                    onReady={(event: { target: { setPlaybackRate: (arg0: number) => void; }; }) => {
                         event.target.setPlaybackRate(2)
                     }}
                 />
@@ -46,7 +46,7 @@ export default function Page() {
                     <p className="z-50 mt-8">
                         Sistemi integrati di assemblaggio, handling e collaudo, trasformando l’innovazione e la
                         tecnologia in qualità, sicurezza ed efficienza dei processi industriali. I prodotti
-                        sviluppati dalla M.M. Systems, sono progettati, realizzati e messi a punto su misura.
+                        sviluppati dalla MM Systems, sono progettati, realizzati e messi a punto su misura.
                         Sempre pronti a trovare soluzioni speciali per le specifiche esigenze dei propri
                         clienti.
                     </p>

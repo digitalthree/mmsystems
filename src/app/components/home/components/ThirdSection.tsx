@@ -24,7 +24,7 @@ const ThirdSection: React.FC<SecondSectionProps> = ({}) => {
                         <span className="text-[#04203B] xl:text-2xl lg:text-xl text-lg uppercase xl:mb-10 mb-0">eccellenza nel servizio e nell`esecuzione</span>
                         <hr className="xl:w-2/3 w-1/2 border border-white my-2"/>
                         <span className="text-primary">PROGETTAZIONE: <span className="text-primary">Elettrica, Meccanica, Simulazione dinamica</span></span>
-                        <span className="text-primary">ATTIVITA`: <span className="text-primary">Metrologia</span></span>
+                        <span className="text-primary uppercase">ATTIVITà: <span className="text-primary">Metrologia</span></span>
                         <span className="text-primary">PROGRAMMAZIONE: <span className="text-primary">PLC</span></span>
                         <span className="text-primary">ROBOTICA: <span className="text-primary">Isole robotizzate, Robot Collaborativi e Banchi semiautomatici</span></span>
                         <hr className="xl:w-1/3 w-1/2 border border-white my-2"/>

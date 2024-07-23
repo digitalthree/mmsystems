@@ -45,7 +45,7 @@ export default function Page() {
                             <h1 className="text-primary font-bold">ISOLE ROBOTIZZATE</h1>
                         </h1>
                         <p className="text-[#3f3f3f] font-normal md:w-4/5">
-                            Le nostre soluzioni. La M.M. Systems offre soluzioni robotizzate
+                            Le nostre soluzioni. La MM Systems offre soluzioni robotizzate
                             di automazione su misura per il vostro settore utilizzando tutti i
                             marchi dei brand di robotica presenti sul mercato. I nostri
                             clienti internazionali provengono dai settori diversi, tra cui
@@ -53,7 +53,7 @@ export default function Page() {
                             robotizzate possono svolgere le più svariate funzioni: manipolare,
                             asservire macchinari, assemblare, avvitare, rivettare, sigillare,
                             incollare, saldare, verniciare, pulire, misurare, controllare,
-                            imballare o combinazioni di queste operazioni. La MMsystems, con
+                            imballare o combinazioni di queste operazioni. La MM systems, con
                             ormai oltre 10 anni di esperienza in questo settore, offre in
                             tutte le circostanze: affidabilità, precisione e qualità, senza
                             trascurare nessun passaggio dalla progettazione alla
