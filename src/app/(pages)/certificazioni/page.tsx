@@ -68,7 +68,7 @@ export default function Page() {
                                 l&apos;obiettivo di
                                 promuovere un&apos;attività economica rispettosa della Natura, innovativa,
                                 eco-sostenibile e
-                                etico-sostenibile. Consideriamo la "Natura" non solo come l&apos;ambiente
+                                etico-sostenibile. Consideriamo la &quot;Natura&quot; non solo come l&apos;ambiente
                                 circostante, ma come
                                 l&apos;intero universo percepibile attraverso i sensi, del quale l&apos;Uomo fa
                                 parte. <br/>
