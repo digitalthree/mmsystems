@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/app/components/navbar/Navbar";
@@ -17,9 +16,7 @@ export default function RootLayout({
     <html lang="it" className="scroll-smooth">
       <body className={inter.className}>
         <Navbar />
-        <ChildComponent>
-            {children}
-        </ChildComponent>
+        <ChildComponent>{children}</ChildComponent>
         <Footer />
       </body>
     </html>

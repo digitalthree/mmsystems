@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import YouTube, { YouTubeEvent, YouTubeProps } from "react-youtube";
 import { globalStore } from "@/store/globalStore";
 import SecondSection from "@/app/components/home/components/SecondSection";
-import Seo from "./components/Seo";
+import Seo from '@/app/components/Seo'
 
 export default function Home() {
   const loading = globalStore((state: any) => state.loading);
@@ -75,17 +75,11 @@ export default function Home() {
     },
   };
 
-  const seo = {
-    title: "Soluzioni Industriali",
-    description:
-      "La MM Systems Srl fornisce all’Industria impianti nel campo dell’automazione e dell’impiantistica generale.",
-    url: "",
-    index: true,
-  };
+
   
   return (
     <>
-      <Seo metadata={seo} />
+    <Seo/>
       <div
         className="w-full"
         style={{ backgroundColor: navbarBackgroundColor }}

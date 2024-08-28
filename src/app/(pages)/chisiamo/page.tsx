@@ -16,12 +16,6 @@ export default function Page() {
     (state: any) => state.navbarBackgroundColor
   );
 
-  const seo = {
-    title: "Chi Siamo",
-    description: "Chi Siamo",
-    url: "chisiamo",
-    index: true,
-  };
 
   const opts = {
     playerVars: {
@@ -36,7 +30,10 @@ export default function Page() {
 
   return (
     <>
-      {/*<Seo metadata={seo} />*/}
+      <Seo 
+        title="Chi Siamo"
+        description="Realtà abruzzese consolidata nel panorama europeo dell`industria di automazione robotica. La MM Systems, grazie al suo fondatore Miki Morleo, personalità e professionista particolarmente attivo nel settore della produzione di apparecchiature elettriche"
+       />
       <div
         className="w-full min-h-[85vh] flex flex-col justify-center items-center"
         style={{ backgroundColor: navbarBackgroundColor }}

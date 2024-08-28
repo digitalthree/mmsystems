@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: 
+
+User-agent: *
+Disallow: /privacy
+
+Sitemap: https://www.groupmm.net/sitemap.xml

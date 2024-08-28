@@ -18,6 +18,7 @@ import icona4 from "../../../../public/img/attivita/robotica/qualita.png";
 import RoboticaCarousel from "@/app/components/carousel/robotica/RoboticaCarousel";
 import {MdKeyboardArrowRight} from "react-icons/md";
 import Link from "next/link";
+import Seo from "@/app/components/Seo"
 
 export default function Page() {
     const updateNavbarBackgroundColor = globalStore(
@@ -37,6 +38,10 @@ export default function Page() {
 
     return (
         <>
+        <Seo
+        title="Robotica e Isole Robotizzate"
+        description=" La MM Systems offre soluzioni robotizzate di automazione su misura per il vostro settore utilizzando tutti i marchi dei brand di robotica presenti sul mercato."
+        />
             <div className="w-full robotica flex justify-center">
                 <div className="w-full min-h-[85vh] flex flex-col justify-center items-center">
                     <div className=" container p-8 gap-4 h-full flex flex-col justify-center">

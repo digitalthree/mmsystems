@@ -1,30 +1,22 @@
-import React from "react";
+import { useEffect } from 'react';
+import { usePathname } from 'next/navigation'
 
-interface Metadata {
-  title: string;
-  description: string;
-  url: string;
-  index: boolean;
-}
-
-interface SeoProps {
-  metadata: Metadata;
-}
-const Seo: React.FC<SeoProps> = ({
-  metadata = {
-    title: "",
-    description: "",
-    url: "",
-    index: true,
-  },
+const Seo = ({
+  title = "Soluzioni Industriali",
+  description = "La MM Systems Srl fornisce all’Industria impianti nel campo dell’automazione e dell’impiantistica generale.",
+  index= true,
 }) => {
-  const seoImage = "https://mmsystems-theta.vercel.app/img/seo.png";
+  useEffect(() => {}, []);
+  if (description.length > 155){
+    description= description.slice(0,150) + " ..."
+  }
+  const url = usePathname();
+  const seoImage = "https://www.groupmm.net/img/seo.png"
   return (
-    <>
-      
-        {/*<title>{"MM Systems | " + metadata.title}</title>
-        <meta name="title" content={"MM Systems | " + metadata.title} />
-        <meta name="description" content={metadata.description} />
+      <>
+        <title>{"MM Systems | " + title}</title>
+        <meta name="title" content={"MM Systems | " + title} />
+        <meta name="description" content={description} />
         <meta
           name="keywords"
           content="MM Systems,Automazioni,Elettrica,Robot,Industriale,Software"
@@ -32,30 +24,30 @@ const Seo: React.FC<SeoProps> = ({
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content={"https://mmsystems-theta.vercel.app/" + metadata.url}
+          content={"https://www.groupmm.net" + url}
         />
-        <meta property="og:title" content={"MM Systems | " + metadata.title} />
-        <meta property="og:description" content={metadata.description} />
+        <link rel="canonical" href={"https://www.groupmm.net" + url}/>
+        <meta property="og:title" content={"MM Systems | " + title} />
+        <meta property="og:description" content={description} />
         <meta property="og:image" content={seoImage} />
+        <meta property="twitter:image" content={seoImage} />
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:url"
-          content={"https://mmsystems-theta.vercel.app/" + metadata.url}
+          content={"https://www.groupmm.net" + url}
         />
         <meta
           property="twitter:title"
-          content={"MM Systems | " + metadata.title}
+          content={"MM Systems | " + title}
         />
-        <meta property="twitter:description" content={metadata.description} />
-        <meta property="twitter:image" content={seoImage} />
-        <meta name="robots" content={metadata.index ? "index, follow" : "noindex, nofollow"}/>
-        <meta name="googlebot" content={metadata.index ? "index, follow" : "noindex, nofollow"}/>
+        <meta property="twitter:description" content={description} />
+        <meta name="robots" content={index ? "index, follow" : "noindex, nofollow"}/>
+        <meta name="googlebot" content={index ? "index, follow" : "noindex, nofollow"}/>
         <link rel="author" href="https://groupmm.net" />
         <meta name="author" content="MM Systems" />
         <link rel="author" href="https://digital-three.com" />
-        <meta name="author" content="Digital-Three" />*/}
-     
-    </>
+        <meta name="author" content="Digital-Three" />
+        </>
   );
 };
 
